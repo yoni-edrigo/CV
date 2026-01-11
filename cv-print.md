@@ -1,6 +1,6 @@
 # Yonatan Vasilevski
 
-**054-7282-477** | **yonivasilevski@gmail.com** | [Yoni Vasilevski](https://www.linkedin.com/in/yoni-vasilevski-517780211/) | [GitHub](https://github.com/yoni-edrigo)
+**[054-7282-477](tel:+972547282477)** | **[yonivasilevski@gmail.com](mailto:yonivasilevski@gmail.com)** | [Yoni Vasilevski](https://www.linkedin.com/in/yoni-vasilevski-517780211/) | [GitHub](https://github.com/yoni-edrigo)
 
 ---
 
@@ -12,18 +12,17 @@ Software developer and tech entrepreneur specializing in AI-integrated education
 
 ## Projects
 
-### Business Websites
+### Long-Running Projects - Complex Systems
 
-**DJ Bar Twito** ([www.dj-bar-twito.co.il](https://www.dj-bar-twito.co.il)) – DJ sound and lighting services for weddings and events.
-*React TypeScript, WIX Headless Services*
+**Kavim Ledmutam** ([www.kavimledmutam.co.il](https://www.kavimledmutam.co.il))
+Volunteer memorial project connecting painters with families of fallen IDF heroes. Built React frontend with memorial pages and comprehensive CRM managing 7 operational crews using WIX platform with custom HTTP endpoints.
+*React, WIX No-Code Builder*
 
-**Loft5** ([www.loft5.vip](https://www.loft5.vip)) – Event hall booking with karaoke, photography, and F&B management.
-*React TypeScript, Convex*
+**MePo** ([www.mepo.info](https://www.mepo.info))
+Educational data management platform connecting schools, extracurricular programs, transportation providers, and parents. Part of ongoing Master's thesis research on educational technology innovation. V3 currently in development with enhanced features.
+*React TypeScript, SQL, Google Cloud Platform*
 
-**HaShovach** ([www.hashovach.com](https://www.hashovach.com)) – Zimmer accommodation booking with wellness center.
-*React TypeScript, Convex*
-
-### Applications
+### Applications - Focused Solutions
 
 **ADELA Research** ([adela-research.onrender.com](https://adela-research.onrender.com)) – Behavioral research platform for Weizmann Institute studying childhood decision-making.
 *React TypeScript*
@@ -31,23 +30,10 @@ Software developer and tech entrepreneur specializing in AI-integrated education
 **Gushnik** ([gushnik.com](https://gushnik.com)) – Professional networking platform for local business owners.
 *React TypeScript*
 
-### Long-Running Projects
+### Business Websites - Client Adaptability
 
-**Webbi – Multi-Tenant Site Building Platform**
-Advanced platform enabling businesses to create branded mini-site experiences through a template-based system. Features multi-tenant architecture supporting unlimited business subdomains with customized content and design. Solved complex authentication challenges with auth token management across subdomains. Deployed on Cloudflare Workers for global edge computing performance.
-*React TypeScript, Convex, Cloudflare Workers*
-
-**Kavim Ledmutam** ([www.kavimledmutam.co.il](https://www.kavimledmutam.co.il))
-Volunteer memorial project established after October 7th, 2023, connecting volunteer painters with families of fallen IDF heroes to create memorial portraits. Features React-based frontend with individual memorial pages, family story management, and public comment system. Includes comprehensive CRM built on WIX platform with custom HTTP endpoints, supporting 7 operational crews (order management, delivery, content writers, social media, painters, logistics, family liaisons).
-*React, WIX No-Code Builder*
-
-**MePo** ([www.mepo.info](https://www.mepo.info))
-Comprehensive platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Features unified communication center connecting all education ecosystem participants, secure data sharing protocols ensuring student privacy, and real-time coordination between schools, after-school programs, and transportation services.
-*React TypeScript, SQL, Google Cloud Platform*
-
-**Teacher Companion App – Master's Thesis Project**
-Digital companion application designed to relieve teachers' emotional stress and streamline the complete teaching workflow cycle: plan → execute → assess → reflect → re-plan. Research focuses on reducing "technological fatigue" by unifying disparate teaching tools into a single interface. Currently testing multiple implementation approaches including interactive whiteboarding, customizable widgets, and AI-powered teaching assistant.
-*React TypeScript, AI SDK*
+Developed custom booking and landing page solutions for diverse service businesses, demonstrating ability to rapidly adapt technical architecture to unique client requirements. Built client-focused applications using React TypeScript with flexible backend integration (Convex, WIX Headless Services), creating polished user experiences across event services, hospitality, and wellness industries: [DJ Bar Twito](https://www.dj-bar-twito.co.il), [Loft5](https://www.loft5.vip), [HaShovach](https://www.hashovach.com).
+*React TypeScript, Convex, WIX Headless Services*
 
 ---
 
@@ -68,6 +54,7 @@ Digital companion application designed to relieve teachers' emotional stress and
 ## Education
 
 **Master's Degree – Management and Organization of Education Systems** | **Tel-Hai College** | **2022 – 2025**
+Thesis: Developing AI-powered teaching companion that streamlines the complete workflow cycle (plan → execute → assess → reflect → re-plan). Research focuses on reducing "technological fatigue" by unifying teaching tools into a single interface.
 
 **Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)** | **Tel-Hai College** | **2018 – 2023**
 
@@ -80,8 +67,6 @@ Digital companion application designed to relieve teachers' emotional stress and
 **Acting Head of HR Systems Organization Department, Ground Forces** | **2017 – 2018**
 
 **Recruit Commander, Magal Division** | **2015 – 2017**
-
----
 
 ## Languages
 
