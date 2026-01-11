@@ -49,15 +49,15 @@ Software developer and tech entrepreneur specializing in AI-integrated education
 
 ## Professional Experience
 
-**Freelance** | **2019 – Present** – Web development for small and medium businesses. *React TS, CSS, Convex, TanStack*
+**Freelance, 2019 – Present** – Web development for small and medium businesses. *React TS, CSS, Convex, TanStack*
 
-**Co-Founder & CEO, MePo Technology** | **2022 – Present** – Educational software design, development, marketing, and sales to regional authorities.
+**Co-Founder & CEO, MePo Technology, 2022 – Present** – Educational software design, development, marketing, and sales to regional authorities.
 
-**CTO, Kavim Le'Dmutam** | **2023 – Present** – Digital platform development with memorial pages and CRM system.
+**CTO, Kavim Le'Dmutam, 2023 – Present** – Digital platform development.
 
-**Project Managers Mentor, Shelach Studies** | **2024 – Present** – Mentoring young leadership training in state and special education.
+**Project Managers Mentor, Shelach Studies, 2024 – Present** – Mentoring young leadership training in state and special education.
 
-**Development and Research, Tel-Hai Innovation Lab** | **2019 – 2023** – Database management, software testing, and educational initiatives.
+**Development and Research, Tel-Hai Innovation Lab, 2019 – 2023** – Database management, software testing, and educational initiatives.
 
 ---
 
