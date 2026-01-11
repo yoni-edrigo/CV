@@ -33,8 +33,43 @@
             margin-bottom: 25px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
+            align-items: center;
             gap: 15px;
+        }
+
+        .view-tabs {
+            display: flex;
+            gap: 10px;
+        }
+
+        .tab-btn {
+            padding: 10px 24px;
+            background: #f5f5f5;
+            color: #333;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .tab-btn.active {
+            background: #333;
+            color: white;
+            border-color: #333;
+        }
+
+        .tab-btn:hover:not(.active) {
+            background: #e0e0e0;
+        }
+
+        .cv-content {
+            display: none;
+        }
+
+        .cv-content.active {
+            display: block;
         }
 
         .download-btn {
@@ -184,12 +219,14 @@
             line-height: 1.7;
         }
 
-        ul {
-            margin: 12px 0 20px 20px;
+        .main-content ul {
+            margin: 12px 0 20px 60px;
+            padding-left: 0;
         }
 
-        li {
+        .main-content li {
             margin-bottom: 10px;
+            padding-left: 10px;
         }
 
         em {
@@ -240,6 +277,14 @@
         @media print {
             .download-section {
                 display: none;
+            }
+
+            .cv-content {
+                display: block !important;
+            }
+
+            #web-view {
+                display: none !important;
             }
 
             body {
@@ -300,12 +345,14 @@
                 widows: 3;
             }
 
-            ul {
-                margin: 5px 0 10px 15px;
+            .main-content ul {
+                margin: 5px 0 10px 50px;
+                padding-left: 0;
             }
 
-            li {
+            .main-content li {
                 margin-bottom: 4px;
+                padding-left: 10px;
             }
 
             em {
@@ -364,6 +411,11 @@
             /* Better page break handling */
             h2, h3 {
                 page-break-inside: avoid;
+            }
+
+            /* Force page break before Professional Experience */
+            .page-break-before {
+                page-break-before: always;
             }
 
             /* Keep job titles with their content */
@@ -549,26 +601,41 @@ Software developer and tech entrepreneur specializing in AI-integrated education
 
 ## Projects
 
-### Commercial Web Platforms
+### Business Websites
 
-Developed multiple full-stack business websites including event services, venue booking systems, and hospitality platforms with integrated payment processing, content management, and customer engagement features. Built using React TypeScript with Convex and WIX Headless backends.
+**DJ Bar Twito** ([www.dj-bar-twito.co.il](https://www.dj-bar-twito.co.il)) – DJ sound and lighting services for weddings and events.
+*React TypeScript, WIX Headless Services*
 
-### Research & Community Applications
+**Loft5** ([www.loft5.vip](https://www.loft5.vip)) – Event hall booking with karaoke, photography, and F&B management.
+*React TypeScript, Convex*
 
-Created specialized web applications including a behavioral research platform for the Weizmann Institute studying childhood decision-making, and a professional networking platform connecting local business owners and entrepreneurs. Developed with React TypeScript.
+**HaShovach** ([www.hashovach.com](https://www.hashovach.com)) – Zimmer accommodation booking with wellness center.
+*React TypeScript, Convex*
+
+### Applications
+
+**ADELA Research** ([adela-research.onrender.com](https://adela-research.onrender.com)) – Behavioral research platform for Weizmann Institute studying childhood decision-making.
+*React TypeScript*
+
+**Gushnik** ([gushnik.com](https://gushnik.com)) – Professional networking platform for local business owners.
+*React TypeScript*
 
 ### Long-Running Projects
 
-**Webbi** – Multi-tenant site building platform with unique subdomains and cross-subdomain authentication.
+**Webbi – Multi-Tenant Site Building Platform**
+Advanced platform enabling businesses to create branded mini-site experiences through a template-based system. Features multi-tenant architecture supporting unlimited business subdomains with customized content and design. Solved complex authentication challenges with auth token management across subdomains. Deployed on Cloudflare Workers for global edge computing performance.
 *React TypeScript, Convex, Cloudflare Workers*
 
-**Kavim Ledmutam** ([www.kavimledmutam.co.il](https://www.kavimledmutam.co.il)) – Memorial project connecting painters with families of fallen IDF heroes, featuring CRM with multi-team workflow.
+**Kavim Ledmutam** ([www.kavimledmutam.co.il](https://www.kavimledmutam.co.il))
+Volunteer memorial project established after October 7th, 2023, connecting volunteer painters with families of fallen IDF heroes to create memorial portraits. Features React-based frontend with individual memorial pages, family story management, and public comment system. Includes comprehensive CRM built on WIX platform with custom HTTP endpoints, supporting 7 operational crews (order management, delivery, content writers, social media, painters, logistics, family liaisons).
 *React, WIX No-Code Builder*
 
-**MePo** ([www.mepo.info](https://www.mepo.info)) – Platform for managing and sharing student data between schools, activities, transportation, and parents.
+**MePo** ([www.mepo.info](https://www.mepo.info))
+Comprehensive platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Features unified communication center connecting all education ecosystem participants, secure data sharing protocols ensuring student privacy, and real-time coordination between schools, after-school programs, and transportation services.
 *React TypeScript, SQL, Google Cloud Platform*
 
-**Teacher Companion App** – Master's thesis project streamlining teaching workflow with AI-powered assistance.
+**Teacher Companion App – Master's Thesis Project**
+Digital companion application designed to relieve teachers' emotional stress and streamline the complete teaching workflow cycle: plan → execute → assess → reflect → re-plan. Research focuses on reducing "technological fatigue" by unifying disparate teaching tools into a single interface. Currently testing multiple implementation approaches including interactive whiteboarding, customizable widgets, and AI-powered teaching assistant.
 *React TypeScript, AI SDK*
 
 ---
@@ -625,8 +692,10 @@ Created specialized web applications including a behavioral research platform fo
     </script>
 
     <script>
-        function addIcons() {
-            const mainContent = document.querySelector('.main-content');
+        function addIcons(containerSelector = '') {
+            const container = containerSelector ? document.querySelector(containerSelector) : document;
+            const mainContent = container.querySelector('.main-content');
+            if (!mainContent) return;
             const firstP = mainContent.querySelector('p');
             if (firstP) {
                 firstP.classList.add('contact-info');
@@ -652,9 +721,13 @@ Created specialized web applications including a behavioral research platform fo
                 if (sectionIcons[text]) {
                     h2.innerHTML = `<i class="${sectionIcons[text]}"></i>${text}`;
                 }
+                // Add page break before Professional Experience in print view
+                if (text === 'Professional Experience') {
+                    h2.classList.add('page-break-before');
+                }
             });
 
-            const sidebar = document.querySelector('.sidebar');
+            const sidebar = container.querySelector('.sidebar');
             const languagesList = sidebar.querySelector('ul');
             if (languagesList) {
                 languagesList.querySelectorAll('li').forEach(li => {
@@ -689,11 +762,27 @@ Created specialized web applications including a behavioral research platform fo
             }
         }
 
+        function switchTab(tab) {
+            // Update tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update content
+            document.querySelectorAll('.cv-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(tab).classList.add('active');
+        }
+
         async function loadCV() {
             try {
                 // Read from embedded markdown
                 const markdown = document.getElementById('cv-markdown').textContent;
+                const printMarkdown = document.getElementById('cv-print-markdown').textContent;
 
+                // Parse web version
                 const languagesMatch = markdown.match(/## Languages\n\n([\s\S]*?)(?=\n##|$)/);
                 const skillsMatch = markdown.match(/## Skills and Tools\n\n([\s\S]*?)(?=\n##|$)/);
                 const languagesContent = languagesMatch ? languagesMatch[1].trim() : '';
@@ -704,31 +793,70 @@ Created specialized web applications including a behavioral research platform fo
                 const languagesHtml = marked.parse(languagesContent);
                 const skillsHtml = marked.parse(skillsContent);
 
+                // Parse print version
+                const printLanguagesMatch = printMarkdown.match(/## Languages\n\n([\s\S]*?)(?=\n##|$)/);
+                const printSkillsMatch = printMarkdown.match(/## Skills and Tools\n\n([\s\S]*?)(?=\n##|$)/);
+                const printLanguagesContent = printLanguagesMatch ? printLanguagesMatch[1].trim() : '';
+                const printSkillsContent = printSkillsMatch ? printSkillsMatch[1].trim() : '';
+                let printMainMarkdown = printMarkdown.replace(/## Languages\n\n[\s\S]*?(?=\n##|$)/, '');
+                printMainMarkdown = printMainMarkdown.replace(/## Skills and Tools\n\n[\s\S]*?(?=\n##|$)/, '');
+                const printMainHtml = marked.parse(printMainMarkdown);
+                const printLanguagesHtml = marked.parse(printLanguagesContent);
+                const printSkillsHtml = marked.parse(printSkillsContent);
+
                 document.body.innerHTML = `
                     <div class="outer-wrapper">
                         <div class="download-section">
-                            <button class="download-btn" onclick="printCV()"><i class="fas fa-file-pdf"></i> Download PDF</button>
+                            <div class="view-tabs">
+                                <button class="tab-btn active" onclick="switchTab('web-view')">Web View</button>
+                                <button class="tab-btn" onclick="switchTab('print-view')">Print View</button>
+                            </div>
+                            <button class="download-btn" onclick="window.print()"><i class="fas fa-file-pdf"></i> Download PDF</button>
                         </div>
-                        <div class="cv-wrapper">
-                            <div class="container">
-                                <div class="main-content">
-                                    ${mainHtml}
-                                </div>
-                                <div class="sidebar">
-                                    <div>
-                                        <h2><i class="fas fa-language"></i>Languages</h2>
-                                        ${languagesHtml}
+
+                        <div class="cv-content active" id="web-view">
+                            <div class="cv-wrapper">
+                                <div class="container">
+                                    <div class="main-content">
+                                        ${mainHtml}
                                     </div>
-                                    <div>
-                                        <h2><i class="fas fa-tools"></i>Skills & Tools</h2>
-                                        ${skillsHtml}
+                                    <div class="sidebar">
+                                        <div>
+                                            <h2><i class="fas fa-language"></i>Languages</h2>
+                                            ${languagesHtml}
+                                        </div>
+                                        <div>
+                                            <h2><i class="fas fa-tools"></i>Skills & Tools</h2>
+                                            ${skillsHtml}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cv-content" id="print-view">
+                            <div class="cv-wrapper">
+                                <div class="container">
+                                    <div class="main-content">
+                                        ${printMainHtml}
+                                    </div>
+                                    <div class="sidebar">
+                                        <div>
+                                            <h2><i class="fas fa-language"></i>Languages</h2>
+                                            ${printLanguagesHtml}
+                                        </div>
+                                        <div>
+                                            <h2><i class="fas fa-tools"></i>Skills & Tools</h2>
+                                            ${printSkillsHtml}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 `;
-                addIcons();
+                addIcons('#web-view');
+                addIcons('#print-view');
             } catch (error) {
                 document.body.innerHTML = `
                     <div class="error">
@@ -736,72 +864,6 @@ Created specialized web applications including a behavioral research platform fo
                         <p>${error.message}</p>
                     </div>
                 `;
-            }
-        }
-
-        let originalContent = null;
-
-        async function printCV() {
-            try {
-                // Save original content
-                originalContent = document.body.innerHTML;
-
-                // Read from embedded print markdown
-                const printMarkdown = document.getElementById('cv-print-markdown').textContent;
-
-                // Parse print markdown
-                const languagesMatch = printMarkdown.match(/## Languages\n\n([\s\S]*?)(?=\n##|$)/);
-                const skillsMatch = printMarkdown.match(/## Skills and Tools\n\n([\s\S]*?)(?=\n##|$)/);
-                const languagesContent = languagesMatch ? languagesMatch[1].trim() : '';
-                const skillsContent = skillsMatch ? skillsMatch[1].trim() : '';
-                let mainMarkdown = printMarkdown.replace(/## Languages\n\n[\s\S]*?(?=\n##|$)/, '');
-                mainMarkdown = mainMarkdown.replace(/## Skills and Tools\n\n[\s\S]*?(?=\n##|$)/, '');
-
-                const mainHtml = marked.parse(mainMarkdown);
-                const languagesHtml = marked.parse(languagesContent);
-                const skillsHtml = marked.parse(skillsContent);
-
-                // Replace with print content
-                document.body.innerHTML = `
-                    <div class="outer-wrapper">
-                        <div class="download-section">
-                            <button class="download-btn" onclick="printCV()"><i class="fas fa-file-pdf"></i> Download PDF</button>
-                        </div>
-                        <div class="cv-wrapper">
-                            <div class="container">
-                                <div class="main-content">
-                                    ${mainHtml}
-                                </div>
-                                <div class="sidebar">
-                                    <div>
-                                        <h2><i class="fas fa-language"></i>Languages</h2>
-                                        ${languagesHtml}
-                                    </div>
-                                    <div>
-                                        <h2><i class="fas fa-tools"></i>Skills & Tools</h2>
-                                        ${skillsHtml}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                addIcons();
-
-                // Wait a bit for rendering
-                await new Promise(resolve => setTimeout(resolve, 100));
-
-                // Print
-                window.print();
-
-                // Restore original content after print dialog
-                await new Promise(resolve => setTimeout(resolve, 500));
-                document.body.innerHTML = originalContent;
-
-            } catch (error) {
-                console.error('Error loading print version:', error);
-                // Fallback to regular print
-                window.print();
             }
         }
 

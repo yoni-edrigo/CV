@@ -14,35 +14,39 @@ Software developer and tech entrepreneur specializing in AI-integrated education
 
 ### Business Websites
 
-**DJ Bar Twito** ([www.dj-bar-twito.co.il](https://www.dj-bar-twito.co.il)) – Landing page for DJ sound and lighting services specializing in weddings and events.
+**DJ Bar Twito** ([www.dj-bar-twito.co.il](https://www.dj-bar-twito.co.il)) – DJ sound and lighting services for weddings and events.
 *React TypeScript, WIX Headless Services*
 
-**Loft5** ([www.loft5.vip](https://www.loft5.vip)) – Event hall booking website for a luxury venue with integrated karaoke, photography, and F&B management.
+**Loft5** ([www.loft5.vip](https://www.loft5.vip)) – Event hall booking with karaoke, photography, and F&B management.
 *React TypeScript, Convex*
 
-**HaShovach** ([www.hashovach.com](https://www.hashovach.com)) – Landing page and booking system for zimmer accommodation with wellness center services.
+**HaShovach** ([www.hashovach.com](https://www.hashovach.com)) – Zimmer accommodation booking with wellness center.
 *React TypeScript, Convex*
 
-### Single Page Applications
+### Applications
 
-**ADELA Research App** ([adela-research.onrender.com](https://adela-research.onrender.com)) – Research application studying decision-making in children ages 5-6 for the Weizmann Institute.
+**ADELA Research** ([adela-research.onrender.com](https://adela-research.onrender.com)) – Behavioral research platform for Weizmann Institute studying childhood decision-making.
 *React TypeScript*
 
-**Gushnik** ([gushnik.com](https://gushnik.com)) – Networking platform connecting local business owners and professionals.
+**Gushnik** ([gushnik.com](https://gushnik.com)) – Professional networking platform for local business owners.
 *React TypeScript*
 
 ### Long-Running Projects
 
-**Webbi** – Multi-tenant site building platform with unique subdomains and cross-subdomain authentication.
+**Webbi – Multi-Tenant Site Building Platform**
+Advanced platform enabling businesses to create branded mini-site experiences through a template-based system. Features multi-tenant architecture supporting unlimited business subdomains with customized content and design. Solved complex authentication challenges with auth token management across subdomains. Deployed on Cloudflare Workers for global edge computing performance.
 *React TypeScript, Convex, Cloudflare Workers*
 
-**Kavim Ledmutam** ([www.kavimledmutam.co.il](https://www.kavimledmutam.co.il)) – Memorial project connecting painters with families of fallen IDF heroes, featuring CRM with multi-team workflow.
+**Kavim Ledmutam** ([www.kavimledmutam.co.il](https://www.kavimledmutam.co.il))
+Volunteer memorial project established after October 7th, 2023, connecting volunteer painters with families of fallen IDF heroes to create memorial portraits. Features React-based frontend with individual memorial pages, family story management, and public comment system. Includes comprehensive CRM built on WIX platform with custom HTTP endpoints, supporting 7 operational crews (order management, delivery, content writers, social media, painters, logistics, family liaisons).
 *React, WIX No-Code Builder*
 
-**MePo** ([www.mepo.info](https://www.mepo.info)) – Platform for managing and sharing student data between schools, activities, transportation, and parents.
+**MePo** ([www.mepo.info](https://www.mepo.info))
+Comprehensive platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Features unified communication center connecting all education ecosystem participants, secure data sharing protocols ensuring student privacy, and real-time coordination between schools, after-school programs, and transportation services.
 *React TypeScript, SQL, Google Cloud Platform*
 
-**Teacher Companion App** – Master's thesis project streamlining teaching workflow with AI-powered assistance.
+**Teacher Companion App – Master's Thesis Project**
+Digital companion application designed to relieve teachers' emotional stress and streamline the complete teaching workflow cycle: plan → execute → assess → reflect → re-plan. Research focuses on reducing "technological fatigue" by unifying disparate teaching tools into a single interface. Currently testing multiple implementation approaches including interactive whiteboarding, customizable widgets, and AI-powered teaching assistant.
 *React TypeScript, AI SDK*
 
 ---
