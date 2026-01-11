@@ -446,8 +446,9 @@
 
         async function loadCV() {
             try {
-                // Fetch the README.md file from jsDelivr CDN
-                const response = await fetch('https://cdn.jsdelivr.net/gh/yoni-edrigo/CV@main/README.md');
+                // Fetch the README.md file from jsDelivr CDN with cache busting
+                const cacheBust = Date.now();
+                const response = await fetch(`https://cdn.jsdelivr.net/gh/yoni-edrigo/CV@main/README.md?${cacheBust}`);
                 const markdown = await response.text();
 
                 const languagesMatch = markdown.match(/## Languages\n\n([\s\S]*?)(?=\n##|$)/);
@@ -498,8 +499,9 @@
                 // Save original content
                 originalContent = document.body.innerHTML;
 
-                // Fetch print markdown from jsDelivr CDN
-                const response = await fetch('https://cdn.jsdelivr.net/gh/yoni-edrigo/CV@main/cv-print.md');
+                // Fetch print markdown from jsDelivr CDN with cache busting
+                const cacheBust = Date.now();
+                const response = await fetch(`https://cdn.jsdelivr.net/gh/yoni-edrigo/CV@main/cv-print.md?${cacheBust}`);
                 const printMarkdown = await response.text();
 
                 // Parse print markdown

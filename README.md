@@ -1,6 +1,6 @@
 # Yonatan Vasilevski
 
-**054-7282-477** | **yonivasilevski@gmail.com** | [Yoni Vasilevski](https://www.linkedin.com/in/yoni-vasilevski-517780211/) | [GitHub](https://github.com/yoni-edrigo)
+**054-7282-477** | **yonivasilevski@gmail.com** | [LinkedIn](https://www.linkedin.com/in/yoni-vasilevski-517780211/) | [GitHub](https://github.com/yoni-edrigo)
 
 ---
 
