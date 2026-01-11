@@ -1,18 +1,18 @@
 # Yonatan Vasilevski
 
-**054-7282-477** | **yonivasilevski@gmail.com**
+**054-7282-477** | **yonivasilevski@gmail.com** | [Yoni Vasilevski](https://www.linkedin.com/in/yoni-vasilevski-517780211/) | [GitHub](https://github.com/yoni-edrigo)
 
 ---
 
 ## Professional Summary
 
-Software developer and tech entrepreneur specializing in research and development of AI-integrated educational technology systems. Proven experience in developing digital educational products and smart systems. Combines team leadership capabilities with development and implementation of innovative solutions in complex organizational environments.
+Software developer and tech entrepreneur specializing in AI-integrated educational technology. Proven experience developing digital educational products and leading teams to implement innovative solutions in complex environments.
 
 ---
 
 ## Projects
 
-### Fullstack Landing Sites
+### Business Websites
 
 **DJ Bar Twito** ([www.dj-bar-twito.co.il](https://www.dj-bar-twito.co.il))
 Landing page for DJ sound and lighting services specializing in weddings and events.
@@ -39,38 +39,22 @@ Networking platform connecting local business owners and professionals. Serves a
 ### Long-Running Projects
 
 **Webbi – Multi-Tenant Site Building Platform** *(In Development)*
-Advanced site building platform enabling businesses to create branded mini-site experiences through a template-based system. Each business receives a unique subdomain with customized content and design.
-
-- Multi-tenant architecture supporting unlimited business subdomains
-- Template system generating unique mini-site experiences per business
-- Solved complex authentication challenges with auth token management across subdomains
-- Cloudflare Workers deployment for global edge computing performance
+Site building platform enabling businesses to create branded mini-site experiences through a template system. Features multi-tenant architecture with unique subdomains and cross-subdomain authentication.
 
 *Built with: React TypeScript (frontend), Convex (database & backend services), Cloudflare Workers (deployment)*
 
 **Kavim Ledmutam** ([www.kavimledmutam.co.il](https://www.kavimledmutam.co.il)) – Memorial Project Platform
-Volunteer-based memorial project established after October 7th, 2023 events. Connects volunteer painters with families of fallen IDF heroes to create memorial portraits.
-
-- React-based frontend landing page with individual memorial pages for each hero
-- Story management system enabling families to share narratives
-- Public comment system for friends and family to leave messages and memories
-- Comprehensive CRM built on WIX platform with custom HTTP endpoints for data retrieval
-- Multi-team workflow management supporting 7 operational crews (order management, delivery, content writers, social media, painters, logistics, family liaisons)
+Volunteer memorial project connecting painters with families of fallen IDF heroes. Features individual memorial pages, family story management, and comprehensive CRM with multi-team workflow supporting 7 operational crews.
 
 *Built with: React (frontend), WIX No-Code Builder with custom HTTP endpoints (backend CMS)*
 
 **MePo** ([www.mepo.info](https://www.mepo.info)) – Educational Data Management Platform
-Comprehensive platform for safely managing and sharing student data between multiple stakeholders including schools, extracurricular activities, transportation providers, and parents.
-
-- Unified communication center connecting all education ecosystem participants
-- Secure data sharing protocols ensuring student privacy
-- Real-time coordination between schools, after-school programs, and transportation services
-- Parent portal for accessing student schedules, activities, and updates
+Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Features unified communication center and secure data sharing protocols.
 
 *Built with: React TypeScript (frontend), SQL Database, hosted on Google Cloud Platform*
 
 **Teacher Companion App – Master's Thesis Project** *(In Development)*
-Digital companion application designed to relieve teachers' emotional stress and streamline the complete teaching workflow cycle: plan → execute → assess → reflect → re-plan. Research focuses on reducing "technological fatigue" by unifying disparate teaching tools into a single interface. Currently testing multiple implementation approaches including interactive whiteboarding, customizable widgets, and AI-powered teaching assistant.
+Digital companion streamlining the teaching workflow cycle (plan → execute → assess → reflect → re-plan). Reduces "technological fatigue" by unifying teaching tools into a single interface with AI-powered assistance.
 *Technologies: React TypeScript, AI SDK integration, widget architecture*
 
 ---
@@ -87,19 +71,12 @@ Develops websites and web applications for small and medium business owners base
 ### Co-Founder & CEO | MePo Technology Venture
 **2022 – Present**
 
-- Design and development of software that assists teachers in their work through planning-execution-assessment.
-- Managing software development of a digital communication center connecting schools, extracurricular activities, transportation, and parents.
-- Marketing and sales to regional authorities in Israel and schools.
-
-**Currently operating in Northern Israeli schools and education ecosystems.**
+Design and development of educational software and digital communication platform. Marketing and sales to regional authorities and schools in Northern Israel.
 
 ### CTO | "Kavim Le'Dmutam" Memorial Project
 **2023 – Present**
 
-- Established a digital platform serving as the front end for the project's activities, including a memorial page for each hero commemorated. (React based platform)
-- Built a complex CRM system for managing orders through all their stages.
-
-**Built with WIX no-code site building, with coding / exposing http points to retrieve data on the front site.**
+Established React-based digital platform with memorial pages and CRM system for order management. Built with WIX no-code and custom HTTP endpoints.
 
 ### Project Managers Mentor | Shelach Studies – Jerusalem District
 **2024 – Present**
@@ -118,7 +95,7 @@ Member of the Innovation Lab development team. Responsible for databases and sof
 ### Master's Degree – Management and Organization of Education Systems
 **Tel-Hai College** | **2022 – 2025**
 
-Research framework focuses on studying the design of tools for teachers, emphasizing a tool that unifies the work cycle into a single interface. The proposed tool combines planning, teaching, and assessment tools in one place, with emphasis on continuity and reducing "technological fatigue."
+Research focuses on designing unified teaching tools that reduce "technological fatigue" by combining planning, teaching, and assessment in one interface.
 
 ### Bachelor's Degree – Jewish Studies and Land of Israel Studies (with Teaching Certificate)
 **Tel-Hai College** | **2018 – 2023**

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yonatan Vasilevski - CV</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -22,14 +23,14 @@
         .outer-wrapper {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
         }
 
         .download-section {
             background: white;
-            padding: 20px;
+            padding: 25px 30px;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             display: flex;
             justify-content: flex-end;
@@ -62,13 +63,14 @@
 
         .container {
             display: flex;
-            gap: 30px;
-            padding: 40px;
+            gap: 40px;
+            padding: 50px 60px;
         }
 
         .main-content {
             flex: 1;
             max-width: 900px;
+            padding-right: 20px;
         }
 
         .sidebar {
@@ -82,53 +84,89 @@
 
         .sidebar h2 {
             font-size: 16px;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             border-bottom: 1px solid #333;
             padding-bottom: 8px;
             color: #333;
             font-weight: 600;
         }
 
+        .sidebar h2 i {
+            margin-right: 8px;
+            color: #667eea;
+            font-size: 14px;
+        }
+
         .sidebar ul {
             list-style: none;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         .sidebar li {
-            margin-bottom: 8px;
-            padding-left: 15px;
+            margin-bottom: 10px;
+            padding-left: 20px;
             position: relative;
             font-size: 13px;
             color: #555;
         }
 
-        .sidebar li:before {
-            content: "•";
+        .sidebar li i {
             position: absolute;
             left: 0;
-            color: #333;
-            font-weight: bold;
+            color: #667eea;
+            width: 16px;
+            text-align: center;
+        }
+
+        .sidebar li:before {
+            content: none;
         }
 
         h1 {
             font-size: 36px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: #2c3e50;
+        }
+
+        h1 i,
+        h2 i {
+            margin-right: 10px;
+            color: #667eea;
         }
 
         h2 {
             font-size: 24px;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            margin-top: 40px;
+            margin-bottom: 20px;
             color: #34495e;
             border-bottom: 2px solid #667eea;
             padding-bottom: 8px;
         }
 
+        h2:first-of-type {
+            margin-top: 30px;
+        }
+
+        .contact-info {
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .contact-info i {
+            margin-right: 8px;
+            color: #667eea;
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-info a {
+            margin: 0 10px;
+        }
+
         h3 {
             font-size: 18px;
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin-top: 25px;
+            margin-bottom: 12px;
             color: #555;
         }
 
@@ -142,16 +180,16 @@
         }
 
         p {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             line-height: 1.7;
         }
 
         ul {
-            margin: 10px 0 15px 20px;
+            margin: 12px 0 20px 20px;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         em {
@@ -166,7 +204,7 @@
         hr {
             border: none;
             border-top: 1px solid #e0e0e0;
-            margin: 30px 0;
+            margin: 35px 0;
         }
 
         /* Hide Languages and Skills from main content */
@@ -204,26 +242,120 @@
                 display: none;
             }
 
-            .sidebar {
-                position: relative;
-                width: 100%;
-                border-left: none;
-                border-top: 2px solid #e0e0e0;
-                padding-left: 0;
-                padding-top: 30px;
-                break-inside: avoid;
-            }
-
-            .container {
-                flex-direction: column;
-            }
-
             body {
                 background: white;
+                font-size: 11pt;
+                line-height: 1.4;
+                padding: 1.5cm 0;
             }
 
             .outer-wrapper {
                 padding: 0;
+                max-width: 100%;
+            }
+
+            .cv-wrapper {
+                box-shadow: none;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 0 15px;
+                gap: 15px;
+            }
+
+            .main-content {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 22pt;
+                margin-bottom: 8px;
+            }
+
+            h2 {
+                font-size: 14pt;
+                margin-top: 15px;
+                margin-bottom: 8px;
+                padding-bottom: 4px;
+                page-break-after: avoid;
+            }
+
+            h3 {
+                font-size: 12pt;
+                margin-top: 12px;
+                margin-bottom: 6px;
+                page-break-after: avoid;
+            }
+
+            .contact-info {
+                font-size: 10pt;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 8px;
+                line-height: 1.4;
+                orphans: 3;
+                widows: 3;
+            }
+
+            ul {
+                margin: 5px 0 10px 15px;
+            }
+
+            li {
+                margin-bottom: 4px;
+            }
+
+            em {
+                font-size: 10pt;
+            }
+
+            hr {
+                margin: 10px 0;
+            }
+
+            .sidebar {
+                position: relative;
+                width: 100%;
+                border-left: none;
+                border-top: 1px solid #e0e0e0;
+                padding: 15px 0 0 0;
+                margin-top: 10px;
+                break-inside: avoid;
+            }
+
+            .sidebar h2 {
+                font-size: 13pt;
+                margin-bottom: 8px;
+            }
+
+            .sidebar ul {
+                margin-bottom: 15px;
+                column-count: 3;
+                column-gap: 20px;
+            }
+
+            .sidebar li {
+                font-size: 10pt;
+                margin-bottom: 4px;
+                break-inside: avoid;
+            }
+
+            /* Better page break handling */
+            h2, h3 {
+                page-break-inside: avoid;
+            }
+
+            /* Keep job titles with their content */
+            h3 + p, h3 + em {
+                page-break-before: avoid;
+            }
+
+            /* Avoid breaking projects */
+            h3 + p + em {
+                page-break-after: avoid;
             }
         }
 
@@ -247,39 +379,226 @@
 <body>
     <div class="loading">Loading CV...</div>
 
+    <script type="text/markdown" id="cv-markdown">
+# Yonatan Vasilevski
+
+**054-7282-477** | **yonivasilevski@gmail.com** | [Yoni Vasilevski](https://www.linkedin.com/in/yoni-vasilevski-517780211/) | [GitHub](https://github.com/yoni-edrigo)
+
+---
+
+## Professional Summary
+
+Software developer and tech entrepreneur specializing in AI-integrated educational technology. Proven experience developing digital educational products and leading teams to implement innovative solutions in complex environments.
+
+---
+
+## Projects
+
+### Business Websites
+
+**DJ Bar Twito** ([www.dj-bar-twito.co.il](https://www.dj-bar-twito.co.il))
+Landing page for DJ sound and lighting services specializing in weddings and events.
+*Built with: React TypeScript (frontend), WIX Headless Services (backend)*
+
+**Loft5** ([www.loft5.vip](https://www.loft5.vip))
+Professional event hall booking website for a luxury venue in Qazrin with integrated karaoke, photography services, and F&B management.
+*Built with: React TypeScript (frontend), Convex (database & storage backend)*
+
+**HaShovach** ([www.hashovach.com](https://www.hashovach.com))
+Landing page and booking system for zimmer accommodation with integrated wellness center offering massage therapy and spa services.
+*Built with: React TypeScript (frontend), Convex (database & storage backend)*
+
+### Single Page Applications (2024-Present)
+
+**ADELA Research App** ([adela-research.onrender.com](https://adela-research.onrender.com)) – Weizmann Institute
+Research application studying decision-making in children ages 5-6, testing kindergarten children's responses to violent day-to-day situations as part of a behavioral research study.
+*Built with: React TypeScript*
+
+**Gushnik** ([gushnik.com](https://gushnik.com)) – Local Business Club Platform
+Networking platform connecting local business owners and professionals. Serves as a membership-based community hub facilitating connections and business development among local entrepreneurs.
+*Built with: React TypeScript*
+
+### Long-Running Projects
+
+**Webbi – Multi-Tenant Site Building Platform** *(In Development)*
+Site building platform enabling businesses to create branded mini-site experiences through a template system. Features multi-tenant architecture with unique subdomains and cross-subdomain authentication.
+
+*Built with: React TypeScript (frontend), Convex (database & backend services), Cloudflare Workers (deployment)*
+
+**Kavim Ledmutam** ([www.kavimledmutam.co.il](https://www.kavimledmutam.co.il)) – Memorial Project Platform
+Volunteer memorial project connecting painters with families of fallen IDF heroes. Features individual memorial pages, family story management, and comprehensive CRM with multi-team workflow supporting 7 operational crews.
+
+*Built with: React (frontend), WIX No-Code Builder with custom HTTP endpoints (backend CMS)*
+
+**MePo** ([www.mepo.info](https://www.mepo.info)) – Educational Data Management Platform
+Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Features unified communication center and secure data sharing protocols.
+
+*Built with: React TypeScript (frontend), SQL Database, hosted on Google Cloud Platform*
+
+**Teacher Companion App – Master's Thesis Project** *(In Development)*
+Digital companion streamlining the teaching workflow cycle (plan → execute → assess → reflect → re-plan). Reduces "technological fatigue" by unifying teaching tools into a single interface with AI-powered assistance.
+*Technologies: React TypeScript, AI SDK integration, widget architecture*
+
+---
+
+## Professional Experience
+
+### Freelance
+**2019 – Present**
+
+Develops websites and web applications for small and medium business owners based on needs analysis.
+
+**Building mainly with:** React TS, CSS, CONVEX Backend services, TANSTACK tools.
+
+### Co-Founder & CEO | MePo Technology Venture
+**2022 – Present**
+
+Design and development of educational software and digital communication platform. Marketing and sales to regional authorities and schools in Northern Israel.
+
+### CTO | "Kavim Le'Dmutam" Memorial Project
+**2023 – Present**
+
+Established React-based digital platform with memorial pages and CRM system for order management. Built with WIX no-code and custom HTTP endpoints.
+
+### Project Managers Mentor | Shelach Studies – Jerusalem District
+**2024 – Present**
+
+Mentoring development and management of young leadership training in state education and special education frameworks.
+
+### Development and Research | Tel-Hai Innovation Lab
+**2019 – 2023**
+
+Member of the Innovation Lab development team. Responsible for databases and software testing. Partner in educational initiatives in formal and informal education, including activities in robotics, electronic controllers, 3D, and software.
+
+---
+
+## Education
+
+### Master's Degree – Management and Organization of Education Systems
+**Tel-Hai College** | **2022 – 2025**
+
+Research focuses on designing unified teaching tools that reduce "technological fatigue" by combining planning, teaching, and assessment in one interface.
+
+### Bachelor's Degree – Jewish Studies and Land of Israel Studies (with Teaching Certificate)
+**Tel-Hai College** | **2018 – 2023**
+
+### C++ Programming Course
+**Hebrew University of Jerusalem** | **2013**
+
+---
+
+## Military Service
+
+### Acting Head of HR Systems Organization Department | Ground Forces
+**2017 – 2018**
+
+### Recruit Commander | Magal Division
+**2015 – 2017**
+
+---
+
+## Languages
+
+- **Hebrew** – Native
+- **English** – Full proficiency
+- **Russian** – Good proficiency
+
+---
+
+## Skills and Tools
+
+- Software Development (React TS)
+- 3D and Modeling (Fusion, Blender)
+- Adobe Suite (graphics, image, and video editing)
+- Task Management
+- Creativity
+- Problem Solving
+- Critical Thinking
+    </script>
+
     <script>
-        // Your GitHub CV URL - uses @main to always fetch the latest version
-        const CV_URL = 'https://cdn.jsdelivr.net/gh/yoni-edrigo/CV@main/README.md';
+        function addIcons() {
+            const mainContent = document.querySelector('.main-content');
+            const firstP = mainContent.querySelector('p');
+            if (firstP) {
+                firstP.classList.add('contact-info');
+                let html = firstP.innerHTML;
+                html = html.replace(/(<strong>)(\d{3}-\d{4}-\d{3})/g, '$1<i class="fas fa-phone"></i> $2');
+                html = html.replace(/(<strong>)(yonivasilevski@gmail\.com)/g, '$1<i class="fas fa-envelope"></i> $2');
+                html = html.replace(/(<a href="mailto:[^"]*">)/g, '$1<i class="fas fa-envelope"></i> ');
+                html = html.replace(/(<a href="https:\/\/www\.linkedin\.com[^"]*">)/g, '$1<i class="fab fa-linkedin"></i> ');
+                html = html.replace(/(<a href="https:\/\/github\.com[^"]*">)/g, '$1<i class="fab fa-github"></i> ');
+                firstP.innerHTML = html;
+            }
+
+            const sectionIcons = {
+                'Professional Summary': 'fas fa-user-tie',
+                'Projects': 'fas fa-code',
+                'Professional Experience': 'fas fa-briefcase',
+                'Education': 'fas fa-graduation-cap',
+                'Military Service': 'fas fa-medal'
+            };
+
+            mainContent.querySelectorAll('h2').forEach(h2 => {
+                const text = h2.textContent.trim();
+                if (sectionIcons[text]) {
+                    h2.innerHTML = `<i class="${sectionIcons[text]}"></i>${text}`;
+                }
+            });
+
+            const sidebar = document.querySelector('.sidebar');
+            const languagesList = sidebar.querySelector('ul');
+            if (languagesList) {
+                languagesList.querySelectorAll('li').forEach(li => {
+                    if (!li.querySelector('i')) {
+                        li.innerHTML = '<i class="fas fa-comment"></i>' + li.innerHTML;
+                    }
+                });
+            }
+
+            const skillsList = sidebar.querySelectorAll('ul')[1];
+            if (skillsList) {
+                skillsList.querySelectorAll('li').forEach(li => {
+                    if (!li.querySelector('i')) {
+                        const text = li.textContent.toLowerCase();
+                        let icon = 'fas fa-check-circle';
+                        if (text.includes('react') || text.includes('software') || text.includes('development')) {
+                            icon = 'fas fa-code';
+                        } else if (text.includes('3d') || text.includes('modeling') || text.includes('blender')) {
+                            icon = 'fas fa-cube';
+                        } else if (text.includes('adobe') || text.includes('graphics') || text.includes('design')) {
+                            icon = 'fas fa-palette';
+                        } else if (text.includes('task') || text.includes('management')) {
+                            icon = 'fas fa-tasks';
+                        } else if (text.includes('creativity')) {
+                            icon = 'fas fa-lightbulb';
+                        } else if (text.includes('problem') || text.includes('critical')) {
+                            icon = 'fas fa-brain';
+                        }
+                        li.innerHTML = `<i class="${icon}"></i>` + li.innerHTML;
+                    }
+                });
+            }
+        }
 
         async function loadCV() {
             try {
-                const response = await fetch(CV_URL);
-                if (!response.ok) throw new Error('Failed to load CV');
-
-                const markdown = await response.text();
-
-                // Extract Languages and Skills sections
+                const markdown = document.getElementById('cv-markdown').textContent;
                 const languagesMatch = markdown.match(/## Languages\n\n([\s\S]*?)(?=\n##|$)/);
                 const skillsMatch = markdown.match(/## Skills and Tools\n\n([\s\S]*?)(?=\n##|$)/);
-
                 const languagesContent = languagesMatch ? languagesMatch[1].trim() : '';
                 const skillsContent = skillsMatch ? skillsMatch[1].trim() : '';
-
-                // Remove Languages and Skills sections from main content
                 let mainMarkdown = markdown.replace(/## Languages\n\n[\s\S]*?(?=\n##|$)/, '');
                 mainMarkdown = mainMarkdown.replace(/## Skills and Tools\n\n[\s\S]*?(?=\n##|$)/, '');
-
-                // Parse markdown
                 const mainHtml = marked.parse(mainMarkdown);
                 const languagesHtml = marked.parse(languagesContent);
                 const skillsHtml = marked.parse(skillsContent);
 
-                // Build the page
                 document.body.innerHTML = `
                     <div class="outer-wrapper">
                         <div class="download-section">
-                            <button class="download-btn" onclick="window.print()">Download PDF</button>
-                            <a href="https://github.com/yoni-edrigo/CV/raw/main/en_cv_yoni_vasilevski_2026.docx" class="download-btn" download>Download DOCX</a>
+                            <button class="download-btn" onclick="window.print()"><i class="fas fa-file-pdf"></i> Download PDF</button>
+                            <a href="https://github.com/yoni-edrigo/CV/raw/main/en_cv_yoni_vasilevski_2026.docx" class="download-btn" download><i class="fas fa-file-word"></i> Download DOCX</a>
                         </div>
                         <div class="cv-wrapper">
                             <div class="container">
@@ -287,22 +606,21 @@
                                     ${mainHtml}
                                 </div>
                                 <div class="sidebar">
-                                    <h2>Languages</h2>
+                                    <h2><i class="fas fa-language"></i>Languages</h2>
                                     ${languagesHtml}
-                                    <h2>Skills & Tools</h2>
+                                    <h2><i class="fas fa-tools"></i>Skills & Tools</h2>
                                     ${skillsHtml}
                                 </div>
                             </div>
                         </div>
                     </div>
                 `;
-
+                addIcons();
             } catch (error) {
                 document.body.innerHTML = `
                     <div class="error">
                         <h2>Error Loading CV</h2>
                         <p>${error.message}</p>
-                        <p>Please check the GitHub repository URL and commit hash.</p>
                     </div>
                 `;
             }
