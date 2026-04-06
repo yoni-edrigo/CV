@@ -1,0 +1,76 @@
+# Dev Manager – Development Manager role, Ministry of Innovation, Science & Technology / Culture & Sport
+base: base-en
+label: "Dev Manager"
+order: 2
+layout: simple
+
+summary: >
+  Software developer and tech entrepreneur with hands-on experience
+  building technology products end-to-end — from needs analysis
+  through development and cloud deployment. Co-founded and leads an
+  EdTech venture serving schools in Northern Israel. Experienced in
+  React TypeScript, AI integration, and agentic AI-assisted development
+  (Claude Code, Cursor, Copilot).
+
+projects:
+  categories:
+    - heading: "Selected Projects"
+      items:
+        - title: "MePo – Educational Data Management Platform"
+          url: "https://www.mepo.info"
+          description: "Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Built with React TypeScript, SQL, and Google Cloud Platform."
+        - title: "Teacher Companion App – Master's Thesis Project"
+          description: "AI-powered digital companion streamlining the teaching workflow cycle (plan > execute > assess > reflect). Built with React TypeScript and AI SDK integration."
+        - title: "Kavim Ledmutam – Memorial Project Platform"
+          url: "https://www.kavimledmutam.co.il"
+          description: "React-based platform with memorial pages and a CRM system supporting a multi-team volunteer workflow across 7 operational crews."
+
+experience:
+  - title: "Co-Founder & CEO | MePo Technology Venture"
+    period: "2022 – Present"
+    description: "Design and development of educational software and a digital communication platform. Responsible for product direction, technology choices, and delivery to regional authorities and schools in Northern Israel."
+  - title: "CTO | Kavim Le'Dmutam Memorial Project"
+    period: "2023 – Present"
+    description: "Established a React-based platform with memorial pages and a CRM for order management. Coordinates technology decisions and delivery for a volunteer project with multiple operational teams."
+  - title: "Freelance Web Developer"
+    period: "2019 – Present"
+    description: "Develops web applications for small and medium businesses, academic institutions, and research projects. Main stack: React TypeScript, Convex."
+  - title: "Project Managers Mentor | Shelach Studies – Jerusalem District"
+    period: "2024 – Present"
+    description: "Mentors young project managers in state and special education frameworks, supporting their professional growth and program delivery."
+
+education:
+  - degree: "M.A. – Management and Organization of Education Systems"
+    institution: "Tel-Hai College"
+    period: "2022 – 2025"
+    description: "Thesis research on designing unified teaching tools that reduce 'technological fatigue' by combining planning, teaching, and assessment in one interface."
+  - degree: "B.A. – Jewish Studies and Land of Israel Studies (Teaching Certificate)"
+    institution: "Tel-Hai College"
+    period: "2018 – 2023"
+
+military:
+  - role: "Acting Head of HR Systems Organization Department"
+    unit: "Ground Forces"
+    period: "2017 – 2018"
+  - role: "Recruit Commander"
+    unit: "Magal Division"
+    period: "2015 – 2017"
+
+languages:
+  - name: "Hebrew"
+    level: "Native"
+  - name: "English"
+    level: "Fluent"
+  - name: "Russian"
+    level: "Good proficiency"
+
+skills:
+  label: "Skills"
+  items:
+    - "Product development & delivery"
+    - "Frontend – React, TypeScript, JavaScript"
+    - "Backend & Cloud – Node.js, Convex, SQL, Google Cloud Platform"
+    - "AI Integration – Claude, OpenAI SDKs"
+    - "AI-Assisted Development – Claude Code, Cursor, Copilot"
+    - "Needs analysis & stakeholder management"
+    - "Mentoring & professional growth"

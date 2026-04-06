@@ -1,0 +1,83 @@
+# Fullpath - AI practitioner and product lead focus
+base: base-en
+label: "Fullpath"
+order: 6
+
+summary: >
+  AI practitioner and software developer with hands-on experience building
+  LLM-integrated products and agentic AI workflows. Proficient in AI SDK
+  integration, prompt engineering, and production-grade agentic tooling (Claude
+  Code, Cursor, GitHub Copilot). Strong product sense developed across multiple
+  client-facing products with experience collaborating across research, product,
+  and end-user teams. Combines technical depth (React TypeScript) with genuine
+  passion for practical LLM adoption in product development.
+
+projects: false
+
+experience:
+  - title: "Co-Founder & Product Lead"
+    org: "MePo Educational Technology"
+    period: "2022 – Present"
+    bullets:
+      - "Designed and developed AI-integrated teacher companion software for the full workflow cycle (plan > teach > assess)"
+      - "Managed development of a digital communication hub connecting schools, extracurricular programs, transportation, and parents"
+      - "Managed full product lifecycle across both products: discovery, prototyping, delivery, and monitoring"
+      - "Marketing and sales to regional authorities and schools across Northern Israel"
+  - title: "Freelance Software Developer"
+    period: "2019 – Present"
+    bullets:
+      - "Developed Teacher Companion App with AI SDK integration — LLM-powered tool automating the teacher workflow cycle (plan > teach > assess > reflect > re-plan); core of Master's thesis research"
+      - "Expert-level agentic AI development using Claude Code, Cursor, and GitHub Copilot for production code generation, debugging, and workflow automation"
+      - "Built and shipped 10+ web applications for businesses, academic institutions, and social organizations, owning the full cycle from needs analysis through QA and delivery"
+      - "Delivered ADELA behavioral research app for Weizmann Institute; local business networking platform; booking systems for hospitality clients"
+    note: "React TypeScript, Convex, WIX Headless Services, AI SDK"
+  - title: "CTO"
+    org: "Kavim Le'Dmutam Memorial Project"
+    period: "2023 – Present"
+    bullets:
+      - "Architected and shipped React-based platform with CRM supporting 7 operational crews"
+      - "Designed multi-team workflows and monitored system quality across concurrent stakeholder groups"
+  - title: "Youth Leadership Coordinator"
+    org: "Shelach Studies – Jerusalem District, Ministry of Education"
+    period: "2024 – Present"
+    bullets:
+      - "Coordinate Jerusalem youth leadership programs for young Shelach instructors (Mesh'tzim)"
+      - "Deliver AI workshops for teachers, introducing practical LLM tools into classroom workflows"
+  - title: "Development & Research"
+    org: "Tel-Hai Innovation Lab"
+    period: "2019 – 2023"
+    bullets:
+      - "Developed and QA'd educational software products; maintained databases and testing infrastructure"
+      - "Collaborated with educators, researchers, and technical teams on cross-functional initiatives"
+
+education:
+  - degree: "Master's Degree – Management and Organization of Education Systems"
+    institution: "Tel-Hai College"
+    period: "2022 – 2025"
+    description: "Thesis: Developing an AI-powered teaching companion using LLM integration to streamline the complete workflow cycle. Research focused on reducing \"technological fatigue\" through unified, AI-assisted tooling."
+  - degree: "Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)"
+    institution: "Tel-Hai College"
+    period: "2018 – 2023"
+  - degree: "C++ Programming Course"
+    institution: "Hebrew University of Jerusalem"
+    period: "2013"
+
+languages:
+  - name: "Hebrew"
+    level: "Native"
+  - name: "English"
+    level: "Full professional proficiency (verbal and written)"
+  - name: "Russian"
+    level: "Good proficiency"
+
+skills:
+  label: "Skills and Tools"
+  items:
+    - "AI SDK & LLM Integration (Claude API, OpenAI)"
+    - "Agentic AI Development (Claude Code, Cursor, Copilot)"
+    - "JavaScript / React TypeScript"
+    - "Prompt Engineering & AI Workflow Design"
+    - "Product Development & Roadmapping"
+    - "QA & Evaluation (software and AI outputs)"
+    - "Cross-functional Collaboration"
+    - "Analytical Thinking & Problem Solving"

@@ -1,0 +1,514 @@
+:root {
+  --primary: #1a1a1a;
+  --accent: #2563eb;
+  --secondary: #4b5563;
+  --bg-light: #f8fafc;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  line-height: 1.35;
+  color: var(--primary);
+  background: #f1f5f9;
+  -webkit-print-color-adjust: exact;
+}
+
+/* --- Tab bar --- */
+.tab-bar {
+  max-width: 850px;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.view-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 6px 14px;
+  background: var(--bg-light);
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.tab-btn.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.tab-btn:hover:not(.active) {
+  background: #e2e8f0;
+}
+
+.download-btn {
+  padding: 6px 14px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.download-btn:hover {
+  background: #333;
+}
+
+/* --- CV content tabs --- */
+.cv-content {
+  display: none;
+}
+
+.cv-content.active {
+  display: block;
+}
+
+/* --- Page layout --- */
+.page {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  padding: 25px 35px;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 8px 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 12px;
+}
+
+header h1 {
+  font-size: 26pt;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 8.5pt;
+  color: var(--secondary);
+  flex-wrap: wrap;
+}
+
+.contact-info i {
+  color: var(--accent);
+  font-size: 8pt;
+  width: 14px;
+  text-align: center;
+}
+
+.contact-info a {
+  color: var(--secondary);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--secondary);
+}
+
+.contact-info a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* --- Two-column body --- */
+.cv-body {
+  display: grid;
+  grid-template-columns: 1.9fr 1.1fr;
+  gap: 20px;
+}
+
+section {
+  margin-bottom: 14px;
+}
+
+/* --- Headings --- */
+h2 {
+  font-size: 12pt;
+  color: var(--accent);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+h2 i {
+  font-size: 11pt;
+  width: 18px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 10.5pt;
+  margin-bottom: 1px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+h3 a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+h3 a:hover {
+  color: var(--accent);
+}
+
+.date {
+  font-size: 8pt;
+  color: var(--secondary);
+  font-weight: normal;
+}
+
+/* --- Content elements --- */
+p,
+li {
+  font-size: 9pt;
+  margin-bottom: 3px;
+  color: #374151;
+}
+
+ul {
+  margin: 3px 0 6px 16px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 2px;
+}
+
+.tech-stack {
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+.project-item,
+.experience-item {
+  margin-bottom: 8px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* --- Sidebar --- */
+.sidebar-section {
+  margin-bottom: 15px;
+}
+
+.sidebar-section h2 {
+  font-size: 11pt;
+}
+
+.sidebar-section h3 {
+  font-size: 9pt;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  color: var(--primary);
+}
+
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.badge {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 8pt;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.sidebar-section p {
+  font-size: 8.5pt;
+  margin-bottom: 6px;
+}
+
+.sidebar-section em {
+  font-size: 8pt;
+  color: var(--secondary);
+}
+
+/* --- RTL support --- */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl header {
+  text-align: center;
+}
+
+.rtl .contact-info {
+  direction: rtl;
+}
+
+.rtl .cv-body {
+  grid-template-columns: 1.1fr 1.9fr;
+}
+
+.rtl .cv-body > .main-col {
+  order: 2;
+}
+
+.rtl .cv-body > .side-col {
+  order: 1;
+}
+
+/* --- Simple single-column layout --- */
+.page.simple {
+  padding: 16px 28px;
+  font-size: 9.5pt;
+  line-height: 1.35;
+}
+
+.page.simple .cv-body {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.page.simple .side-col {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+  align-items: start;
+}
+
+/* Skills and Education span full width; Military + Languages share a row */
+.page.simple .side-col > section:nth-of-type(1),
+.page.simple .side-col > section:nth-of-type(2) {
+  grid-column: 1 / -1;
+}
+
+.page.simple section {
+  margin-bottom: 6px;
+}
+
+.page.simple h2 {
+  font-size: 11pt;
+  margin-bottom: 3px;
+  padding-bottom: 2px;
+}
+
+.page.simple h3 {
+  font-size: 10pt;
+}
+
+.page.simple .experience-item,
+.page.simple .project-item {
+  margin-bottom: 4px;
+}
+
+.page.simple .experience-item p,
+.page.simple .project-item p,
+.page.simple section p {
+  margin: 2px 0;
+}
+
+.page.simple header {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+}
+
+.page.simple header h1 {
+  font-size: 22pt;
+  margin-bottom: 2px;
+}
+
+.page.simple .badge-container {
+  display: block;
+}
+
+.page.simple .badge {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 9.5pt;
+  color: var(--primary);
+}
+
+.page.simple .badge::after {
+  content: " \2022 ";
+  color: var(--secondary);
+}
+
+.page.simple .badge:last-child::after {
+  content: "";
+}
+
+.rtl h2 {
+  direction: rtl;
+}
+
+.rtl ul {
+  margin-left: 0;
+  margin-right: 16px;
+  padding: 0;
+}
+
+.rtl .item-header {
+  flex-direction: row;
+}
+
+.rtl .badge-container {
+  justify-content: flex-start;
+}
+
+.rtl .badge {
+  direction: rtl;
+}
+
+.rtl .sidebar-section p {
+  text-align: right;
+}
+
+.rtl .date {
+  white-space: nowrap;
+}
+
+/* --- Responsive --- */
+@media (max-width: 700px) {
+  .cv-body {
+    grid-template-columns: 1fr;
+  }
+
+  .rtl .cv-body {
+    grid-template-columns: 1fr;
+  }
+
+  .rtl .cv-body > .main-col,
+  .rtl .cv-body > .side-col {
+    order: unset;
+  }
+
+  .page {
+    padding: 15px;
+  }
+
+  .tab-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .view-tabs {
+    justify-content: center;
+  }
+}
+
+/* --- Print --- */
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .tab-bar {
+    display: none;
+  }
+
+  .cv-content {
+    display: block !important;
+  }
+
+  .cv-content:not(.active) {
+    display: none !important;
+  }
+
+  .page {
+    padding: 0.3in;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .page + .page {
+    page-break-before: always;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+
+  .contact-info a {
+    border-bottom: none;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .project-item,
+  .experience-item,
+  .sidebar-section {
+    page-break-inside: avoid;
+  }
+
+  p,
+  ul {
+    orphans: 3;
+    widows: 3;
+  }
+}

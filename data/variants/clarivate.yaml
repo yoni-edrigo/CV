@@ -1,0 +1,79 @@
+# Clarivate PM - Technical product management focus
+base: base-en
+label: "Clarivate PM"
+order: 8
+
+summary: >
+  Education technology professional with Master's degree in Management and
+  Organization of Education Systems and 5+ years managing concurrent projects.
+  Specialized in educational software project management, CMS/LMS platform
+  administration, and AI-driven workflow optimization. Experience coordinating
+  cross-functional teams, managing multilingual content, and building analytics
+  dashboards.
+
+projects: false
+
+experience:
+  - title: "Co-Founder & CEO"
+    org: "MePo Educational Technology Venture"
+    period: "2022 – Present"
+    description: "Lead educational software development for platform serving schools and educational service providers across Northern Israel."
+    bullets:
+      - "Coordinate development cycles, feature releases, and stakeholder requirements across 3+ years of platform evolution"
+      - "Manage SQL database and Google Cloud Platform infrastructure configuration"
+      - "Track platform usage metrics and user engagement across multiple stakeholder groups"
+      - "Manage multilingual content and interface elements for Hebrew and English users"
+  - title: "CTO"
+    org: "Kavim Le'Dmutam Memorial Project"
+    period: "2023 – Present"
+    description: "Oversee digital platform development for volunteer organization connecting artists with IDF families."
+    bullets:
+      - "Manage end-to-end delivery of CRM system and workflow tools supporting 7 operational crews"
+      - "Configure and maintain WIX-based CMS with custom HTTP endpoints"
+      - "Coordinate workflows between painters, coordinators, family liaisons, and content managers"
+  - title: "Project Managers Mentor"
+    org: "Shelach Studies – Jerusalem District"
+    period: "2024 – Present"
+    description: "Mentor project managers developing young leadership training programs in state and special education frameworks."
+  - title: "Development and Research"
+    org: "Tel-Hai Innovation Lab"
+    period: "2019 – 2023"
+    bullets:
+      - "Maintained databases and testing infrastructure for educational software products"
+      - "Created user guides and technical documentation for educational programs"
+      - "Collaborated with instructional designers, educators, and technical teams on formal and informal education projects"
+  - title: "Freelance Web Developer"
+    period: "2019 – Present"
+    bullets:
+      - "Successfully delivered 10+ web applications with timelines ranging from 1 week to 3 years"
+      - "Conduct needs analysis, define project scope, and manage client expectations"
+      - "Use GitHub version control for all projects with systematic commit and deployment processes"
+
+education:
+  - degree: "Master's Degree – Management and Organization of Education Systems"
+    institution: "Tel-Hai College"
+    period: "2022 – 2025"
+    description: "Thesis: Developing AI-powered teaching companion streamlining workflow cycles. Focus on reducing \"technological fatigue\" by unifying teaching tools into single interface with AI assistance."
+  - degree: "Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)"
+    institution: "Tel-Hai College"
+    period: "2018 – 2023"
+
+languages:
+  - name: "Hebrew"
+    level: "Native proficiency"
+  - name: "English"
+    level: "Full professional proficiency (written and spoken)"
+  - name: "Russian"
+    level: "Good working proficiency"
+
+skills:
+  label: "Technical Skills"
+  items:
+    - "Version Control: Git, GitHub (daily use across all projects)"
+    - "AI Productivity Tools: Claude Code, Cursor, GitHub Copilot (expert level)"
+    - "Content Management Systems: WIX CMS, Convex, custom HTTP endpoints"
+    - "Databases & Cloud: SQL, Google Cloud Platform"
+    - "Development: React TypeScript, modern web technologies"
+    - "Project Management: Agile methodologies, requirements analysis, scope management"
+    - "Analytics: Dashboard building, usage tracking, metrics reporting"
+    - "Additional Tools: Adobe Suite, 3D modeling"

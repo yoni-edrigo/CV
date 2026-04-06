@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/Users/yoniv/Documents/GitHub/CV/tabs/*.md)",
+      "Bash(rm -rf tabs/)",
+      "Bash(rm -f README.md cv-print.md cv.html.bak en_cv_yoni_vasilevski_2026_updated.html)"
+    ]
+  }
+}

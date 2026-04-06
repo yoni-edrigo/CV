@@ -1,0 +1,4 @@
+# Web View - uses English base as-is (most complete version)
+base: base-en
+label: "Web View"
+order: 1

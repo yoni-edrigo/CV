@@ -1,0 +1,75 @@
+# Simple – One-column minimal CV modeled on a clean reference layout
+base: base-en
+label: "Simple"
+order: 1
+layout: simple
+
+summary: >
+  Software developer and tech entrepreneur specializing in AI-integrated
+  educational technology. Experienced in React TypeScript, agentic
+  AI-assisted development, and building end-to-end products for schools,
+  businesses, and research institutions. Eager to apply my skills to
+  impactful, innovative projects.
+
+projects:
+  categories:
+    - heading: "Selected Projects"
+      items:
+        - title: "MePo – Educational Data Management Platform"
+          url: "https://www.mepo.info"
+          description: "Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Built with React TypeScript, SQL, and Google Cloud Platform."
+        - title: "Teacher Companion App – Master's Thesis Project"
+          description: "AI-powered digital companion streamlining the teaching workflow cycle (plan > execute > assess > reflect). Built with React TypeScript and AI SDK integration."
+        - title: "Kavim Ledmutam – Memorial Project Platform"
+          url: "https://www.kavimledmutam.co.il"
+          description: "Volunteer memorial project connecting painters with families of fallen IDF heroes. Features individual memorial pages and a multi-team CRM workflow."
+
+experience:
+  - title: "Freelance Web Developer"
+    period: "2019 – Present"
+    description: "Developing websites and web applications for small and medium businesses, academic institutions, and research projects. Main stack: React TypeScript, Convex, TanStack tools."
+  - title: "Co-Founder & CEO | MePo Technology Venture"
+    period: "2022 – Present"
+    description: "Design and development of educational software and a digital communication platform. Marketing and sales to regional authorities and schools in Northern Israel."
+  - title: "CTO | Kavim Le'Dmutam Memorial Project"
+    period: "2023 – Present"
+    description: "Established a React-based digital platform with memorial pages and a CRM system for order management, built with custom HTTP endpoints."
+  - title: "Development & Research | Tel-Hai Innovation Lab"
+    period: "2019 – 2023"
+    description: "Member of the Innovation Lab development team. Responsible for databases and software testing. Partner in educational initiatives including robotics, electronic controllers, 3D, and software."
+
+education:
+  - degree: "M.A. – Management and Organization of Education Systems"
+    institution: "Tel-Hai College"
+    period: "2022 – 2025"
+    description: "Research focus: designing unified teaching tools that reduce 'technological fatigue' by combining planning, teaching, and assessment in one interface."
+  - degree: "B.A. – Jewish Studies and Land of Israel Studies (Teaching Certificate)"
+    institution: "Tel-Hai College"
+    period: "2018 – 2023"
+  - degree: "C++ Programming Course"
+    institution: "Hebrew University of Jerusalem"
+    period: "2013"
+
+military:
+  - role: "Acting Head of HR Systems Organization Department"
+    unit: "Ground Forces"
+    period: "2017 – 2018"
+  - role: "Recruit Commander"
+    unit: "Magal Division"
+    period: "2015 – 2017"
+
+languages:
+  - name: "Hebrew"
+    level: "Native"
+  - name: "English"
+    level: "Fluent"
+  - name: "Russian"
+    level: "Good proficiency"
+
+skills:
+  label: "Skills"
+  items:
+    - "Frontend – React, TypeScript, JavaScript, HTML, CSS"
+    - "Backend & Data – Node.js, Convex, SQL, Google Cloud Platform"
+    - "AI-Assisted Development – Claude Code, Cursor, GitHub Copilot"
+    - "Creative Tools – Blender, Fusion 360, Adobe Suite"

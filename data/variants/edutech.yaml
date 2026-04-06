@@ -1,0 +1,88 @@
+# EduTech – General Educational Technology position
+base: base-en
+label: "EduTech"
+order: 12
+
+summary: >
+  Educational technology developer with a Master's degree in Management and
+  Organization of Education Systems and a teaching certificate. Combines
+  hands-on software development (React TypeScript) with direct classroom
+  experience and pedagogical research. Built and shipped EdTech products
+  used by schools and educators in Northern Israel. Experienced in AI-assisted
+  development and integrating AI tools into teaching workflows.
+
+projects: false
+
+experience:
+  - title: "Co-Founder & CEO"
+    org: "MePo – Educational Technology Venture"
+    period: "2022 – Present"
+    description: "Educational data management platform connecting schools, extracurricular programs, transportation providers, and parents in Northern Israel."
+    bullets:
+      - "Designed and developed platform for managing and sharing student data across institutions with secure data protocols"
+      - "Built unified communication center enabling schools and parents to coordinate across services"
+      - "Led product lifecycle from needs analysis with educators through development, deployment, and ongoing iteration"
+      - "Marketed and presented the platform to regional authorities and school administrators"
+    note: "React TypeScript, SQL, Google Cloud Platform"
+  - title: "Freelance Software Developer"
+    period: "2019 – Present"
+    bullets:
+      - "Developing AI-powered Teacher Companion App that streamlines the teaching workflow cycle (plan > execute > assess > reflect > re-plan) — core of Master's thesis research"
+      - "Built ADELA behavioral research application for Weizmann Institute, studying decision-making in children ages 5-6"
+      - "Shipped 10+ web applications for businesses, academic institutions, and social organizations"
+      - "Proficient in agentic AI-assisted development using Claude Code, Cursor, and GitHub Copilot"
+    note: "React TypeScript, Convex, AI SDK integration"
+  - title: "Youth Leadership Coordinator"
+    org: "Shelach Studies – Jerusalem District, Ministry of Education"
+    period: "2024 – Present"
+    bullets:
+      - "Mentor young project managers in state education and special education frameworks"
+      - "Lead workshops for teachers on integrating AI tools into classroom practice"
+      - "Plan and manage educational programs meeting Ministry of Education objectives and timelines"
+  - title: "CTO"
+    org: "Kavim Le'Dmutam – National Memorial Project"
+    period: "2023 – Present"
+    bullets:
+      - "Built React-based platform with CRM supporting 7 operational volunteer crews"
+      - "Designed multi-team workflows, documentation systems, and project coordination processes"
+  - title: "Development & Research"
+    org: "Tel-Hai Innovation Lab"
+    period: "2019 – 2023"
+    bullets:
+      - "Developed and tested educational software products; managed databases and QA processes"
+      - "Created training programs in robotics, electronic controllers, 3D modeling, and software for formal and informal education settings"
+      - "Taught computational thinking with digital tools in K-12 classrooms"
+      - "Collaborated with educators and researchers on cross-functional educational initiatives"
+
+education:
+  - degree: "Master's Degree – Management and Organization of Education Systems"
+    institution: "Tel-Hai College"
+    period: "2022 – 2025"
+    description: "Thesis: Designing an AI-powered teaching companion that reduces 'technological fatigue' by unifying planning, teaching, and assessment tools in a single interface."
+  - degree: "Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)"
+    institution: "Tel-Hai College"
+    period: "2018 – 2023"
+  - degree: "C++ Programming Course"
+    institution: "Hebrew University of Jerusalem"
+    period: "2013"
+
+languages:
+  - name: "Hebrew"
+    level: "Native"
+  - name: "English"
+    level: "Full professional proficiency (verbal and written)"
+  - name: "Russian"
+    level: "Good proficiency"
+
+skills:
+  label: "Skills & Tools"
+  items:
+    - "EdTech Product Development"
+    - "React TypeScript / JavaScript"
+    - "AI Integration (Claude Code, Cursor, Copilot)"
+    - "Curriculum & Training Design"
+    - "Learning Environment Analysis"
+    - "Project Management & Needs Analysis"
+    - "Database Management (SQL, GCP)"
+    - "Cross-functional Team Collaboration"
+    - "Adobe Suite / 3D Tools (Blender, Fusion 360)"

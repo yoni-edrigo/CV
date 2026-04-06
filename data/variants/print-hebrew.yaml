@@ -1,0 +1,4 @@
+# Print View Hebrew - uses Hebrew base as-is
+base: base-he
+label: "תצוגת הדפסה (עברית)"
+order: 3

@@ -1,0 +1,77 @@
+# Print View - condensed English for printing
+base: base-en
+label: "Print View"
+order: 2
+
+projects:
+  categories:
+    - heading: "Long-Running Projects - Complex Systems"
+      items:
+        - title: "Kavim Ledmutam (~2 years)"
+          subtitle: "Memorial Project Platform"
+          url: "https://www.kavimledmutam.co.il"
+          description: "Volunteer memorial project connecting painters with families of fallen IDF heroes. Built React frontend with memorial pages and comprehensive CRM managing 7 operational crews using WIX platform with custom HTTP endpoints."
+          tech: "React, WIX No-Code Builder"
+        - title: "MePo (~3 years, ongoing)"
+          subtitle: "Educational Data Management Platform"
+          url: "https://www.mepo.info"
+          description: "Educational data management platform connecting schools, extracurricular programs, transportation providers, and parents. Part of ongoing Master's thesis research on educational technology innovation. V3 currently in development with enhanced features."
+          tech: "React TypeScript, SQL, Google Cloud Platform"
+
+    - heading: "Applications - Focused Solutions"
+      items:
+        - title: "ADELA Research (~5 week)"
+          subtitle: "Weizmann Institute"
+          url: "https://adela-research.onrender.com"
+          description: "Behavioral research platform studying childhood decision-making."
+          tech: "React TypeScript"
+        - title: "Gushnik (~4 months)"
+          subtitle: "Local Business Club"
+          url: "https://gushnik.com"
+          description: "Professional networking platform for local business owners."
+          tech: "React TypeScript"
+
+    - heading: "Business Websites - Client Adaptability (~2-3 weeks each)"
+      description: "Developed custom booking and landing page solutions for diverse service businesses, demonstrating ability to rapidly adapt technical architecture to unique client requirements. Built client-focused applications using React TypeScript with flexible backend integration (Convex, WIX Headless Services), creating polished user experiences across event services, hospitality, and wellness industries."
+      links:
+        - label: "DJ Bar Twito"
+          url: "https://www.dj-bar-twito.co.il"
+        - label: "Loft5"
+          url: "https://www.loft5.vip"
+        - label: "HaShovach"
+          url: "https://www.hashovach.com"
+      tech: "React TypeScript, Convex, WIX Headless Services"
+
+experience:
+  - title: "Freelance"
+    period: "2019 – Present"
+    description: "Web development for small and medium businesses."
+    note: "React TS, CSS, Convex, TanStack"
+  - title: "Co-Founder & CEO"
+    org: "MePo Technology"
+    period: "2022 – Present"
+    description: "Educational software design, development, marketing, and sales to regional authorities."
+  - title: "CTO"
+    org: "Kavim Le'Dmutam"
+    period: "2023 – Present"
+    description: "Digital platform development."
+  - title: "Project Managers Mentor"
+    org: "Shelach Studies"
+    period: "2024 – Present"
+    description: "Mentoring young leadership training in state and special education."
+  - title: "Development and Research"
+    org: "Tel-Hai Innovation Lab"
+    period: "2019 – 2023"
+    description: "Database management, software testing, and educational initiatives."
+
+education:
+  - degree: "Master's Degree – Management and Organization of Education Systems"
+    institution: "Tel-Hai College"
+    period: "2022 – 2025"
+    description: "Thesis: Developing AI-powered teaching companion that streamlines the complete workflow cycle (plan > execute > assess > reflect > re-plan). Research focuses on reducing \"technological fatigue\" by unifying teaching tools into a single interface."
+  - degree: "Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)"
+    institution: "Tel-Hai College"
+    period: "2018 – 2023"
+  - degree: "C++ Programming Course"
+    institution: "Hebrew University of Jerusalem"
+    period: "2013"

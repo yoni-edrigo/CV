@@ -1,0 +1,1792 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yonatan Vasilevski - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+:root {
+  --primary: #1a1a1a;
+  --accent: #2563eb;
+  --secondary: #4b5563;
+  --bg-light: #f8fafc;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  line-height: 1.35;
+  color: var(--primary);
+  background: #f1f5f9;
+  -webkit-print-color-adjust: exact;
+}
+
+/* --- Tab bar --- */
+.tab-bar {
+  max-width: 850px;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.view-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 6px 14px;
+  background: var(--bg-light);
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.tab-btn.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.tab-btn:hover:not(.active) {
+  background: #e2e8f0;
+}
+
+.download-btn {
+  padding: 6px 14px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.download-btn:hover {
+  background: #333;
+}
+
+/* --- CV content tabs --- */
+.cv-content {
+  display: none;
+}
+
+.cv-content.active {
+  display: block;
+}
+
+/* --- Page layout --- */
+.page {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  padding: 25px 35px;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 8px 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 12px;
+}
+
+header h1 {
+  font-size: 26pt;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 8.5pt;
+  color: var(--secondary);
+  flex-wrap: wrap;
+}
+
+.contact-info i {
+  color: var(--accent);
+  font-size: 8pt;
+  width: 14px;
+  text-align: center;
+}
+
+.contact-info a {
+  color: var(--secondary);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--secondary);
+}
+
+.contact-info a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* --- Two-column body --- */
+.cv-body {
+  display: grid;
+  grid-template-columns: 1.9fr 1.1fr;
+  gap: 20px;
+}
+
+section {
+  margin-bottom: 14px;
+}
+
+/* --- Headings --- */
+h2 {
+  font-size: 12pt;
+  color: var(--accent);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+h2 i {
+  font-size: 11pt;
+  width: 18px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 10.5pt;
+  margin-bottom: 1px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+h3 a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+h3 a:hover {
+  color: var(--accent);
+}
+
+.date {
+  font-size: 8pt;
+  color: var(--secondary);
+  font-weight: normal;
+}
+
+/* --- Content elements --- */
+p,
+li {
+  font-size: 9pt;
+  margin-bottom: 3px;
+  color: #374151;
+}
+
+ul {
+  margin: 3px 0 6px 16px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 2px;
+}
+
+.tech-stack {
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+.project-item,
+.experience-item {
+  margin-bottom: 8px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* --- Sidebar --- */
+.sidebar-section {
+  margin-bottom: 15px;
+}
+
+.sidebar-section h2 {
+  font-size: 11pt;
+}
+
+.sidebar-section h3 {
+  font-size: 9pt;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  color: var(--primary);
+}
+
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.badge {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 8pt;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.sidebar-section p {
+  font-size: 8.5pt;
+  margin-bottom: 6px;
+}
+
+.sidebar-section em {
+  font-size: 8pt;
+  color: var(--secondary);
+}
+
+/* --- RTL support --- */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl header {
+  text-align: center;
+}
+
+.rtl .contact-info {
+  direction: rtl;
+}
+
+.rtl .cv-body {
+  grid-template-columns: 1.1fr 1.9fr;
+}
+
+.rtl .cv-body > .main-col {
+  order: 2;
+}
+
+.rtl .cv-body > .side-col {
+  order: 1;
+}
+
+/* --- Simple single-column layout --- */
+.page.simple {
+  padding: 16px 28px;
+  font-size: 9.5pt;
+  line-height: 1.35;
+}
+
+.page.simple .cv-body {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.page.simple .side-col {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+  align-items: start;
+}
+
+/* Skills and Education span full width; Military + Languages share a row */
+.page.simple .side-col > section:nth-of-type(1),
+.page.simple .side-col > section:nth-of-type(2) {
+  grid-column: 1 / -1;
+}
+
+.page.simple section {
+  margin-bottom: 6px;
+}
+
+.page.simple h2 {
+  font-size: 11pt;
+  margin-bottom: 3px;
+  padding-bottom: 2px;
+}
+
+.page.simple h3 {
+  font-size: 10pt;
+}
+
+.page.simple .experience-item,
+.page.simple .project-item {
+  margin-bottom: 4px;
+}
+
+.page.simple .experience-item p,
+.page.simple .project-item p,
+.page.simple section p {
+  margin: 2px 0;
+}
+
+.page.simple header {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+}
+
+.page.simple header h1 {
+  font-size: 22pt;
+  margin-bottom: 2px;
+}
+
+.page.simple .badge-container {
+  display: block;
+}
+
+.page.simple .badge {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 9.5pt;
+  color: var(--primary);
+}
+
+.page.simple .badge::after {
+  content: " \2022 ";
+  color: var(--secondary);
+}
+
+.page.simple .badge:last-child::after {
+  content: "";
+}
+
+.rtl h2 {
+  direction: rtl;
+}
+
+.rtl ul {
+  margin-left: 0;
+  margin-right: 16px;
+  padding: 0;
+}
+
+.rtl .item-header {
+  flex-direction: row;
+}
+
+.rtl .badge-container {
+  justify-content: flex-start;
+}
+
+.rtl .badge {
+  direction: rtl;
+}
+
+.rtl .sidebar-section p {
+  text-align: right;
+}
+
+.rtl .date {
+  white-space: nowrap;
+}
+
+/* --- Responsive --- */
+@media (max-width: 700px) {
+  .cv-body {
+    grid-template-columns: 1fr;
+  }
+
+  .rtl .cv-body {
+    grid-template-columns: 1fr;
+  }
+
+  .rtl .cv-body > .main-col,
+  .rtl .cv-body > .side-col {
+    order: unset;
+  }
+
+  .page {
+    padding: 15px;
+  }
+
+  .tab-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .view-tabs {
+    justify-content: center;
+  }
+}
+
+/* --- Print --- */
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .tab-bar {
+    display: none;
+  }
+
+  .cv-content {
+    display: block !important;
+  }
+
+  .cv-content:not(.active) {
+    display: none !important;
+  }
+
+  .page {
+    padding: 0.3in;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .page + .page {
+    page-break-before: always;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+
+  .contact-info a {
+    border-bottom: none;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .project-item,
+  .experience-item,
+  .sidebar-section {
+    page-break-inside: avoid;
+  }
+
+  p,
+  ul {
+    orphans: 3;
+    widows: 3;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="tab-bar">
+      <div class="view-tabs">
+        <button class="tab-btn active" data-tab="simple-view">Simple</button>
+          <button class="tab-btn" data-tab="web-view">Web View</button>
+          <button class="tab-btn" data-tab="dev-manager-view">Dev Manager</button>
+          <button class="tab-btn" data-tab="print-view">Print View</button>
+          <button class="tab-btn" data-tab="print-hebrew-view">תצוגת הדפסה (עברית)</button>
+          <button class="tab-btn" data-tab="museum-director-view">Museum Director</button>
+          <button class="tab-btn" data-tab="techno-pedagogy-view">טכנו-פדגוגיה</button>
+          <button class="tab-btn" data-tab="fullpath-view">Fullpath</button>
+          <button class="tab-btn" data-tab="innovation-authority-view">רשות החדשנות</button>
+          <button class="tab-btn" data-tab="clarivate-view">Clarivate PM</button>
+          <button class="tab-btn" data-tab="automation-consultant-view">יועץ אוטומציה</button>
+          <button class="tab-btn" data-tab="neoja-view">Neoja</button>
+          <button class="tab-btn" data-tab="techno-ped-pm-view">מנהל פרויקטים טכנו-פד</button>
+          <button class="tab-btn" data-tab="edutech-view">EduTech</button>
+      </div>
+      <button class="download-btn" onclick="window.print()">Download PDF</button>
+    </div>
+    
+    <div class="cv-content active" id="simple-view">
+      
+    <div class="page simple">
+      
+    <header>
+      <h1>Yonatan Vasilevski</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">LinkedIn</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+        <p>Software developer and tech entrepreneur specializing in AI-integrated educational technology. Experienced in React TypeScript, agentic AI-assisted development, and building end-to-end products for schools, businesses, and research institutions. Eager to apply my skills to impactful, innovative projects.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Selected Projects</h2>
+        <div class="project-item">
+          <h3><a href="https://www.mepo.info">MePo – Educational Data Management Platform <i class="fas fa-external-link-alt"></i></a></h3><p>Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Built with React TypeScript, SQL, and Google Cloud Platform.</p></div>
+        <div class="project-item">
+          <h3>Teacher Companion App – Master's Thesis Project</h3><p>AI-powered digital companion streamlining the teaching workflow cycle (plan &gt; execute &gt; assess &gt; reflect). Built with React TypeScript and AI SDK integration.</p></div>
+        <div class="project-item">
+          <h3><a href="https://www.kavimledmutam.co.il">Kavim Ledmutam – Memorial Project Platform <i class="fas fa-external-link-alt"></i></a></h3><p>Volunteer memorial project connecting painters with families of fallen IDF heroes. Features individual memorial pages and a multi-team CRM workflow.</p></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Freelance Web Developer</h3>
+            <span class="date">2019 – Present</span>
+          </div><p>Developing websites and web applications for small and medium businesses, academic institutions, and research projects. Main stack: React TypeScript, Convex, TanStack tools.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Co-Founder &amp; CEO | MePo Technology Venture</h3>
+            <span class="date">2022 – Present</span>
+          </div><p>Design and development of educational software and a digital communication platform. Marketing and sales to regional authorities and schools in Northern Israel.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | Kavim Le'Dmutam Memorial Project</h3>
+            <span class="date">2023 – Present</span>
+          </div><p>Established a React-based digital platform with memorial pages and a CRM system for order management, built with custom HTTP endpoints.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Development &amp; Research | Tel-Hai Innovation Lab</h3>
+            <span class="date">2019 – 2023</span>
+          </div><p>Member of the Innovation Lab development team. Responsible for databases and software testing. Partner in educational initiatives including robotics, electronic controllers, 3D, and software.</p></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> Skills</h2>
+          <div class="badge-container"><span class="badge">Frontend – React, TypeScript, JavaScript, HTML, CSS</span><span class="badge">Backend &amp; Data – Node.js, Convex, SQL, Google Cloud Platform</span><span class="badge">AI-Assisted Development – Claude Code, Cursor, GitHub Copilot</span><span class="badge">Creative Tools – Blender, Fusion 360, Adobe Suite</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2><p><strong>M.A. – Management and Organization of Education Systems</strong><br>Tel-Hai College | 2022 – 2025<br><em>Research focus: designing unified teaching tools that reduce 'technological fatigue' by combining planning, teaching, and assessment in one interface.</em></p><p><strong>B.A. – Jewish Studies and Land of Israel Studies (Teaching Certificate)</strong><br>Tel-Hai College | 2018 – 2023</p><p><strong>C++ Programming Course</strong><br>Hebrew University of Jerusalem | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> Military</h2><p><strong>Acting Head of HR Systems Organization Department</strong><br>Ground Forces | 2017 – 2018</p><p><strong>Recruit Commander</strong><br>Magal Division | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          <p><strong>Hebrew:</strong> Native<br><strong>English:</strong> Fluent<br><strong>Russian:</strong> Good proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="web-view">
+      
+    <div class="page">
+      
+    <header>
+      <h1>Yonatan Vasilevski</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">LinkedIn</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+        <p>Software developer and tech entrepreneur specializing in AI-integrated educational technology. Proficient in agentic AI-assisted development using tools like Claude Code, Cursor, and GitHub Copilot. Proven experience developing digital educational products and leading teams to implement innovative solutions in complex environments.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Business Websites</h2>
+        <div class="project-item">
+          <h3><a href="https://www.dj-bar-twito.co.il">DJ Bar Twito (~1 weeks) <i class="fas fa-external-link-alt"></i></a></h3><p>Landing page for DJ sound and lighting services specializing in weddings and events.</p><div class="tech-stack">React TypeScript (frontend), WIX Headless Services (backend)</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.loft5.vip">Loft5 (~4 weeks) <i class="fas fa-external-link-alt"></i></a></h3><p>Professional event hall booking website for a luxury venue in Qazrin with integrated karaoke, photography services, and F&amp;B management.</p><div class="tech-stack">React TypeScript (frontend), Convex (database &amp; storage backend)</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.hashovach.com">HaShovach (~3 weeks) <i class="fas fa-external-link-alt"></i></a></h3><p>Landing page and booking system for zimmer accommodation with integrated wellness center offering massage therapy and spa services.</p><div class="tech-stack">React TypeScript (frontend), Convex (database &amp; storage backend)</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Single Page Applications (2024-Present)</h2>
+        <div class="project-item">
+          <h3><a href="https://adela-research.onrender.com">ADELA Research App (~5 weeks) - Weizmann Institute <i class="fas fa-external-link-alt"></i></a></h3><p>Research application studying decision-making in children ages 5-6, testing kindergarten children's responses to violent day-to-day situations as part of a behavioral research study.</p><div class="tech-stack">React TypeScript</div></div>
+        <div class="project-item">
+          <h3><a href="https://gushnik.com">Gushnik (~ 5 months) - Local Business Club Platform <i class="fas fa-external-link-alt"></i></a></h3><p>Networking platform connecting local business owners and professionals. Serves as a membership-based community hub facilitating connections and business development among local entrepreneurs.</p><div class="tech-stack">React TypeScript</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Long-Running Projects</h2>
+        <div class="project-item">
+          <h3>Webbi (~2 months, In Development) - Multi-Tenant Site Building Platform</h3><p>Site building platform enabling businesses to create branded mini-site experiences through a template system. Features multi-tenant architecture with unique subdomains and cross-subdomain authentication.</p><div class="tech-stack">React TypeScript (frontend), Convex (database &amp; backend services), Cloudflare Workers (deployment)</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.kavimledmutam.co.il">Kavim Ledmutam (~2 years) - Memorial Project Platform <i class="fas fa-external-link-alt"></i></a></h3><p>Volunteer memorial project connecting painters with families of fallen IDF heroes. Features individual memorial pages, family story management, and comprehensive CRM with multi-team workflow supporting 7 operational crews.</p><div class="tech-stack">React (frontend), WIX No-Code Builder with custom HTTP endpoints (backend CMS)</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.mepo.info">MePo (~3 years, ongoing) - Educational Data Management Platform <i class="fas fa-external-link-alt"></i></a></h3><p>Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Features unified communication center and secure data sharing protocols.</p><div class="tech-stack">React TypeScript (frontend), SQL Database, hosted on Google Cloud Platform</div></div>
+        <div class="project-item">
+          <h3>Teacher Companion App (~8 months, In Development) - Master's Thesis Project</h3><p>Digital companion streamlining the teaching workflow cycle (plan &gt; execute &gt; assess &gt; reflect &gt; re-plan). Reduces &quot;technological fatigue&quot; by unifying teaching tools into a single interface with AI-powered assistance.</p><div class="tech-stack">React TypeScript, AI SDK integration, widget architecture</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Freelance | Web Developer</h3>
+            <span class="date">2019 – Present</span>
+          </div><p>Develops websites and web applications for small and medium business owners based on needs analysis.</p><div class="tech-stack">Building mainly with: React TS, CSS, CONVEX Backend services, TANSTACK tools.</div></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Co-Founder &amp; CEO | MePo Technology Venture</h3>
+            <span class="date">2022 – Present</span>
+          </div><p>Design and development of educational software and digital communication platform. Marketing and sales to regional authorities and schools in Northern Israel.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | &quot;Kavim Le'Dmutam&quot; Memorial Project</h3>
+            <span class="date">2023 – Present</span>
+          </div><p>Established React-based digital platform with memorial pages and CRM system for order management. Built with WIX no-code and custom HTTP endpoints.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Project Managers Mentor | Shelach Studies – Jerusalem District</h3>
+            <span class="date">2024 – Present</span>
+          </div><p>Mentoring development and management of young leadership training in state education and special education frameworks.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Development and Research | Tel-Hai Innovation Lab</h3>
+            <span class="date">2019 – 2023</span>
+          </div><p>Member of the Innovation Lab development team. Responsible for databases and software testing. Partner in educational initiatives in formal and informal education, including activities in robotics, electronic controllers, 3D, and software.</p></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> Skills and Tools</h2>
+          <div class="badge-container"><span class="badge">Software Development (React TS)</span><span class="badge">Agentic AI Development (Claude Code, Cursor, Copilot)</span><span class="badge">3D and Modeling (Fusion, Blender)</span><span class="badge">Adobe Suite (graphics, image, and video editing)</span><span class="badge">Task Management</span><span class="badge">Creativity</span><span class="badge">Problem Solving</span><span class="badge">Critical Thinking</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2><p><strong>Master's Degree – Management and Organization of Education Systems</strong><br>Tel-Hai College | 2022 – 2025<br><em>Research focuses on designing unified teaching tools that reduce &quot;technological fatigue&quot; by combining planning, teaching, and assessment in one interface.</em></p><p><strong>Bachelor's Degree – Jewish Studies and Land of Israel Studies (with Teaching Certificate)</strong><br>Tel-Hai College | 2018 – 2023</p><p><strong>C++ Programming Course</strong><br>Hebrew University of Jerusalem | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> Military</h2><p><strong>Acting Head of HR Systems Organization Department</strong><br>Ground Forces | 2017 – 2018</p><p><strong>Recruit Commander</strong><br>Magal Division | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          <p><strong>Hebrew:</strong> Native<br><strong>English:</strong> Full proficiency<br><strong>Russian:</strong> Good proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="dev-manager-view">
+      
+    <div class="page simple">
+      
+    <header>
+      <h1>Yonatan Vasilevski</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">LinkedIn</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+        <p>Software developer and tech entrepreneur with hands-on experience building technology products end-to-end — from needs analysis through development and cloud deployment. Co-founded and leads an EdTech venture serving schools in Northern Israel. Experienced in React TypeScript, AI integration, and agentic AI-assisted development (Claude Code, Cursor, Copilot).
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Selected Projects</h2>
+        <div class="project-item">
+          <h3><a href="https://www.mepo.info">MePo – Educational Data Management Platform <i class="fas fa-external-link-alt"></i></a></h3><p>Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Built with React TypeScript, SQL, and Google Cloud Platform.</p></div>
+        <div class="project-item">
+          <h3>Teacher Companion App – Master's Thesis Project</h3><p>AI-powered digital companion streamlining the teaching workflow cycle (plan &gt; execute &gt; assess &gt; reflect). Built with React TypeScript and AI SDK integration.</p></div>
+        <div class="project-item">
+          <h3><a href="https://www.kavimledmutam.co.il">Kavim Ledmutam – Memorial Project Platform <i class="fas fa-external-link-alt"></i></a></h3><p>React-based platform with memorial pages and a CRM system supporting a multi-team volunteer workflow across 7 operational crews.</p></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Co-Founder &amp; CEO | MePo Technology Venture</h3>
+            <span class="date">2022 – Present</span>
+          </div><p>Design and development of educational software and a digital communication platform. Responsible for product direction, technology choices, and delivery to regional authorities and schools in Northern Israel.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | Kavim Le'Dmutam Memorial Project</h3>
+            <span class="date">2023 – Present</span>
+          </div><p>Established a React-based platform with memorial pages and a CRM for order management. Coordinates technology decisions and delivery for a volunteer project with multiple operational teams.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Freelance Web Developer</h3>
+            <span class="date">2019 – Present</span>
+          </div><p>Develops web applications for small and medium businesses, academic institutions, and research projects. Main stack: React TypeScript, Convex.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Project Managers Mentor | Shelach Studies – Jerusalem District</h3>
+            <span class="date">2024 – Present</span>
+          </div><p>Mentors young project managers in state and special education frameworks, supporting their professional growth and program delivery.</p></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> Skills</h2>
+          <div class="badge-container"><span class="badge">Product development &amp; delivery</span><span class="badge">Frontend – React, TypeScript, JavaScript</span><span class="badge">Backend &amp; Cloud – Node.js, Convex, SQL, Google Cloud Platform</span><span class="badge">AI Integration – Claude, OpenAI SDKs</span><span class="badge">AI-Assisted Development – Claude Code, Cursor, Copilot</span><span class="badge">Needs analysis &amp; stakeholder management</span><span class="badge">Mentoring &amp; professional growth</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2><p><strong>M.A. – Management and Organization of Education Systems</strong><br>Tel-Hai College | 2022 – 2025<br><em>Thesis research on designing unified teaching tools that reduce 'technological fatigue' by combining planning, teaching, and assessment in one interface.</em></p><p><strong>B.A. – Jewish Studies and Land of Israel Studies (Teaching Certificate)</strong><br>Tel-Hai College | 2018 – 2023</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> Military</h2><p><strong>Acting Head of HR Systems Organization Department</strong><br>Ground Forces | 2017 – 2018</p><p><strong>Recruit Commander</strong><br>Magal Division | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          <p><strong>Hebrew:</strong> Native<br><strong>English:</strong> Fluent<br><strong>Russian:</strong> Good proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="print-view">
+      
+    <div class="page">
+      
+    <header>
+      <h1>Yonatan Vasilevski</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">LinkedIn</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+        <p>Software developer and tech entrepreneur specializing in AI-integrated educational technology. Proficient in agentic AI-assisted development using tools like Claude Code, Cursor, and GitHub Copilot. Proven experience developing digital educational products and leading teams to implement innovative solutions in complex environments.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Long-Running Projects - Complex Systems</h2>
+        <div class="project-item">
+          <h3><a href="https://www.kavimledmutam.co.il">Kavim Ledmutam (~2 years) - Memorial Project Platform <i class="fas fa-external-link-alt"></i></a></h3><p>Volunteer memorial project connecting painters with families of fallen IDF heroes. Built React frontend with memorial pages and comprehensive CRM managing 7 operational crews using WIX platform with custom HTTP endpoints.</p><div class="tech-stack">React, WIX No-Code Builder</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.mepo.info">MePo (~3 years, ongoing) - Educational Data Management Platform <i class="fas fa-external-link-alt"></i></a></h3><p>Educational data management platform connecting schools, extracurricular programs, transportation providers, and parents. Part of ongoing Master's thesis research on educational technology innovation. V3 currently in development with enhanced features.</p><div class="tech-stack">React TypeScript, SQL, Google Cloud Platform</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Applications - Focused Solutions</h2>
+        <div class="project-item">
+          <h3><a href="https://adela-research.onrender.com">ADELA Research (~5 week) - Weizmann Institute <i class="fas fa-external-link-alt"></i></a></h3><p>Behavioral research platform studying childhood decision-making.</p><div class="tech-stack">React TypeScript</div></div>
+        <div class="project-item">
+          <h3><a href="https://gushnik.com">Gushnik (~4 months) - Local Business Club <i class="fas fa-external-link-alt"></i></a></h3><p>Professional networking platform for local business owners.</p><div class="tech-stack">React TypeScript</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Business Websites - Client Adaptability (~2-3 weeks each)</h2>
+        <div class="project-item">
+          <p>Developed custom booking and landing page solutions for diverse service businesses, demonstrating ability to rapidly adapt technical architecture to unique client requirements. Built client-focused applications using React TypeScript with flexible backend integration (Convex, WIX Headless Services), creating polished user experiences across event services, hospitality, and wellness industries.</p><p><a href="https://www.dj-bar-twito.co.il" style="font-size:8.5pt;color:var(--accent)">DJ Bar Twito <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://www.loft5.vip" style="font-size:8.5pt;color:var(--accent)">Loft5 <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://www.hashovach.com" style="font-size:8.5pt;color:var(--accent)">HaShovach <i class="fas fa-external-link-alt"></i></a></p><div class="tech-stack">React TypeScript, Convex, WIX Headless Services</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Freelance</h3>
+            <span class="date">2019 – Present</span>
+          </div><p>Web development for small and medium businesses.</p><div class="tech-stack">React TS, CSS, Convex, TanStack</div></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Co-Founder &amp; CEO | MePo Technology</h3>
+            <span class="date">2022 – Present</span>
+          </div><p>Educational software design, development, marketing, and sales to regional authorities.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | Kavim Le'Dmutam</h3>
+            <span class="date">2023 – Present</span>
+          </div><p>Digital platform development.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Project Managers Mentor | Shelach Studies</h3>
+            <span class="date">2024 – Present</span>
+          </div><p>Mentoring young leadership training in state and special education.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Development and Research | Tel-Hai Innovation Lab</h3>
+            <span class="date">2019 – 2023</span>
+          </div><p>Database management, software testing, and educational initiatives.</p></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> Skills and Tools</h2>
+          <div class="badge-container"><span class="badge">Software Development (React TS)</span><span class="badge">Agentic AI Development (Claude Code, Cursor, Copilot)</span><span class="badge">3D and Modeling (Fusion, Blender)</span><span class="badge">Adobe Suite (graphics, image, and video editing)</span><span class="badge">Task Management</span><span class="badge">Creativity</span><span class="badge">Problem Solving</span><span class="badge">Critical Thinking</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2><p><strong>Master's Degree – Management and Organization of Education Systems</strong><br>Tel-Hai College | 2022 – 2025<br><em>Thesis: Developing AI-powered teaching companion that streamlines the complete workflow cycle (plan &gt; execute &gt; assess &gt; reflect &gt; re-plan). Research focuses on reducing &quot;technological fatigue&quot; by unifying teaching tools into a single interface.</em></p><p><strong>Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)</strong><br>Tel-Hai College | 2018 – 2023</p><p><strong>C++ Programming Course</strong><br>Hebrew University of Jerusalem | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> Military</h2><p><strong>Acting Head of HR Systems Organization Department</strong><br>Ground Forces | 2017 – 2018</p><p><strong>Recruit Commander</strong><br>Magal Division | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          <p><strong>Hebrew:</strong> Native<br><strong>English:</strong> Full proficiency<br><strong>Russian:</strong> Good proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="print-hebrew-view">
+      
+    <div class="page rtl">
+      
+    <header>
+      <h1>יונתן וסילבסקי</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">יוני וסילבסקי</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> תקציר מקצועי</h2>
+        <p>מפתח תוכנה ויזם טכנולוגי המתמחה בטכנולוגיה חינוכית משולבת AI. בקיאות בפיתוח בסיוע AI אגנטי באמצעות כלים כמו Claude Code, Cursor ו-GitHub Copilot. ניסיון מוכח בפיתוח מוצרים חינוכיים דיגיטליים והובלת צוותים ליישום פתרונות חדשניים בסביבות מורכבות.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> פרויקטים ארוכי טווח - מערכות מורכבות</h2>
+        <div class="project-item">
+          <h3><a href="https://www.kavimledmutam.co.il">קווים לדמותם (~4 חודשים) - פלטפורמת הנצחה <i class="fas fa-external-link-alt"></i></a></h3><p>פרויקט התנדבותי הקושר ציירים עם משפחות גיבורי צה&quot;ל שנפלו. בניית ממשק React עם דפי הנצחה ומערכת CRM מקיפה המנהלת 7 צוותי עבודה תפעוליים באמצעות פלטפורמת WIX עם נקודות קצה HTTP מותאמות.</p><div class="tech-stack">React, WIX No-Code Builder</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.mepo.info">MePo (~שנתיים, פעיל) - פלטפורמת ניהול נתונים חינוכיים <i class="fas fa-external-link-alt"></i></a></h3><p>פלטפורמה לניהול נתונים חינוכיים המקשרת בתי ספר, תוכניות חוץ-לימודיות, ספקי הסעות והורים. חלק ממחקר תזה מתמשך על חדשנות טכנולוגית חינוכית. גרסה 3 כעת בפיתוח עם תכונות משופרות.</p><div class="tech-stack">React TypeScript, SQL, Google Cloud Platform</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> אפליקציות - פתרונות ממוקדים</h2>
+        <div class="project-item">
+          <h3><a href="https://adela-research.onrender.com">ADELA Research (~שבוע) - מכון ויצמן <i class="fas fa-external-link-alt"></i></a></h3><p>פלטפורמת מחקר התנהגותי החוקרת קבלת החלטות בילדות.</p><div class="tech-stack">React TypeScript</div></div>
+        <div class="project-item">
+          <h3><a href="https://gushnik.com">גושניק (~שבועיים) - מועדון עסקים מקומי <i class="fas fa-external-link-alt"></i></a></h3><p>פלטפורמת רשת מקצועית לבעלי עסקים מקומיים.</p><div class="tech-stack">React TypeScript</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> אתרי עסקים - התאמה ללקוחות (~2-3 שבועות כל אחד)</h2>
+        <div class="project-item">
+          <p>פיתוח פתרונות הזמנות ודפי נחיתה מותאמים אישית לעסקי שירות מגוונים, המדגימים יכולת להתאים במהירות ארכיטקטורה טכנית לדרישות לקוח ייחודיות. בניית אפליקציות ממוקדות לקוח באמצעות React TypeScript עם אינטגרציית backend גמישה (Convex, WIX Headless Services), יצירת חוויות משתמש מלוטשות בתחומי שירותי אירועים, אירוח ובריאות.</p><p><a href="https://www.dj-bar-twito.co.il" style="font-size:8.5pt;color:var(--accent)">DJ Bar Twito <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://www.loft5.vip" style="font-size:8.5pt;color:var(--accent)">Loft5 <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://www.hashovach.com" style="font-size:8.5pt;color:var(--accent)">HaShovach <i class="fas fa-external-link-alt"></i></a></p><div class="tech-stack">React TypeScript, Convex, WIX Headless Services</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> ניסיון מקצועי</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>עצמאי</h3>
+            <span class="date">2019 – כיום</span>
+          </div><p>פיתוח אתרים עבור עסקים קטנים ובינוניים.</p><div class="tech-stack">React TS, CSS, Convex, TanStack</div></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מייסד שותף ומנכ&quot;ל | MePo Technology</h3>
+            <span class="date">2022 – כיום</span>
+          </div><p>עיצוב ופיתוח תוכנה חינוכית, שיווק ומכירות לרשויות אזוריות.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | קווים לדמותם</h3>
+            <span class="date">2023 – כיום</span>
+          </div><p>פיתוח פלטפורמה דיגיטלית.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מנחה מנהלי פרויקטים | שלח לימודים</h3>
+            <span class="date">2024 – כיום</span>
+          </div><p>הדרכת הכשרת מנהיגות צעירה במערכת חינוך ממלכתית וחינוך מיוחד.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>פיתוח ומחקר | מעבדת חדשנות תל-חי</h3>
+            <span class="date">2019 – 2023</span>
+          </div><p>ניהול מסדי נתונים, בדיקות תוכנה ויוזמות חינוכיות.</p></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> כישורים וכלים</h2>
+          <div class="badge-container"><span class="badge">פיתוח תוכנה (React TS)</span><span class="badge">פיתוח בסיוע AI אגנטי (Claude Code, Cursor, Copilot)</span><span class="badge">תלת מימד ומודלים (Fusion, Blender)</span><span class="badge">חבילת Adobe (עריכת גרפיקה, תמונה ווידאו)</span><span class="badge">ניהול משימות</span><span class="badge">יצירתיות</span><span class="badge">פתרון בעיות</span><span class="badge">חשיבה ביקורתית</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> השכלה</h2><p><strong>תואר שני – ניהול וארגון של מערכות חינוך</strong><br>מכללת תל-חי | 2022 – 2025<br><em>תזה: פיתוח מלווה הוראה מבוסס AI שמייעל את מחזור העבודה המלא (תכנון ← ביצוע ← הערכה ← השתקפות ← תכנון מחדש). המחקר מתמקד בהפחתת &quot;עייפות טכנולוגית&quot; על ידי איחוד כלי הוראה לממשק אחד.</em></p><p><strong>תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)</strong><br>מכללת תל-חי | 2018 – 2023</p><p><strong>קורס תכנות C++</strong><br>האוניברסיטה העברית בירושלים | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> שירות צבאי</h2><p><strong>מ&quot;מ ראש מחלקת ארגון מערכות כ&quot;א</strong><br>זרוע היבשה | 2017 – 2018</p><p><strong>מפקד מתגייסים</strong><br>אוגדת מגל | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> שפות</h2>
+          <p><strong>עברית:</strong> שפת אם<br><strong>אנגלית:</strong> שליטה מלאה<br><strong>רוסית:</strong> שליטה טובה</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="museum-director-view">
+      
+    <div class="page rtl">
+      
+    <header>
+      <h1>יונתן וסילבסקי</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">יוני וסילבסקי</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> תקציר מקצועי</h2>
+        <p>מנהל מערכות חינוך וטכנולוגיה עם תואר שני בניהול וארגון מערכות חינוך. בעל ניסיון עשיר בהובלה אסטרטגית של מיזמים חינוכיים, ניהול צוותים ומתנדבים, והטמעת תהליכי מדידה והערכה. מומחה בפיתוח והתאמת פתרונות פדגוגיים לצרכי השטח, תוך שילוב חדשנות טכנולוגית לשיפור תהליכי למידה והוראה. בעל יכולת מוכחת בניהול תקציב, בניית שותפויות עם רשויות מקומיות ומוסדות חינוך, והובלת שינויים מערכתיים.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> ניסיון מקצועי</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מייסד ומנהל מערך טכנולוגי-חינוכי | MePo</h3>
+            <span class="date">2022 – כיום</span>
+          </div><p>ניהול כולל של פלטפורמה חינוכית המשרתת בתי ספר, רשויות וארגונים בצפון הארץ.</p><ul><li>הובלה אסטרטגית של הפיתוח וההטמעה, תוך עבודה ישירה מול מנהלי מחלקות חינוך ומנהלי בתי ספר.</li><li>ניהול תקציב ומשאבים, כולל תמחור שירותים ומודלים עסקיים מול רשויות.</li><li>הגדרת מדדי הצלחה (KPIs) ומדידת אפקטיביות השימוש במערכת לשיפור מתמיד.</li><li>ניהול קשרי לקוחות אסטרטגיים וייצוג המיזם מול בעלי עניין בכירים.</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מנהל אופרציה וטכנולוגיה | קווים לדמותם</h3>
+            <span class="date">2023 – כיום</span>
+          </div><p>ניהול התשתית הדיגיטלית והתפעולית של מיזם הנצחה ארצי בהתנדבות.</p><ul><li>ניהול והובלת צוותי מתנדבים (7 צוותים) וסנכרון פעילותם מול משפחות שכולות וציירים.</li><li>בניית תהליכי עבודה (Workflows) יעילים לניהול אלפי פניות ומיזמים במקביל.</li><li>אחריות על הסטנדרטיזציה ואיכות התוצרים המופקים במיזם.</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מנחה מנהלי פרויקטים | שלח לימודים – מחוז ירושלים</h3>
+            <span class="date">2024 – כיום</span>
+          </div><ul><li>חניכה ופיתוח מנהיגות בקרב צוותי הדרכה ונוער.</li><li>הובלת תהליכים חינוכיים במסגרות חינוך ממלכתי וחינוך מיוחד.</li><li>פיתוח והטמעת תכנים פדגוגיים לצוותי ההדרכה.</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>פיתוח ומחקר | מעבדת חדשנות תל-חי</h3>
+            <span class="date">2019 – 2023</span>
+          </div><ul><li>הובלת יוזמות חינוכיות בחינוך הפורמלי והבלתי פורמלי.</li><li>פיתוח מערכי שיעור והדרכה בתחומי הטכנולוגיה והמדעים.</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> כישורים ומיומנויות</h2>
+          <div class="badge-container"><span class="badge">ניהול מערכות חינוך</span><span class="badge">הובלת צוותים ומתנדבים</span><span class="badge">חשיבה אסטרטגית</span><span class="badge">מדידה והערכה (KPIs)</span><span class="badge">ניהול תקציב</span><span class="badge">פיתוח פדגוגי</span><span class="badge">ניהול קשרי לקוחות</span><span class="badge">טכנולוגיה חינוכית</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> השכלה</h2><p><strong>תואר שני – ניהול וארגון של מערכות חינוך</strong><br>מכללת תל-חי | 2022 – 2025<br><em>תזה: פיתוח מלווה הוראה מבוסס AI שמייעל את מחזור העבודה המלא (תכנון ← ביצוע ← הערכה ← השתקפות ← תכנון מחדש). המחקר מתמקד בשיפור תהליכי הוראה וניהול פדגוגי.</em></p><p><strong>תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)</strong><br>מכללת תל-חי | 2018 – 2023</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> שירות צבאי</h2><p><strong>מ&quot;מ ראש מחלקת ארגון מערכות כ&quot;א</strong><br>זרוע היבשה | 2017 – 2018<br><em>ניהול מערכתי של תהליכי כוח אדם, הובלת שינויים ארגוניים ועבודה מול דרגים בכירים.</em></p><p><strong>מפקד מתגייסים</strong><br>אוגדת מגל | 2015 – 2017<br><em>פיקוד והדרכה, אחריות על הכשרת חיילים וניהול שגרה.</em></p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> שפות</h2>
+          <p><strong>עברית:</strong> שפת אם<br><strong>אנגלית:</strong> שליטה מלאה<br><strong>רוסית:</strong> שליטה טובה</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="techno-pedagogy-view">
+      
+    <div class="page rtl">
+      
+    <header>
+      <h1>יונתן וסילבסקי</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">יוני וסילבסקי</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> תקציר מקצועי</h2>
+        <p>מחנך ומפתח טכנולוגיה חינוכית בעל תואר שני בניהול וארגון מערכות חינוך, עם שילוב ייחודי של ניסיון פדגוגי בשטח ויכולות פיתוח תוכנה. בעל 3 שנות ניסיון בהוראה בבית הספר תוך שילוב תקשוב בתהליכי הוראה-למידה, כולל הוראת חשיבה חישובית והנחיית סדנאות AI למורים. חוקר בתחום כלים טכנו-פדגוגיים דיגיטליים, עם יכולת מוכחת בהובלת פרויקטים חדשניים, איסוף וניתוח נתונים, ועבודה מול רשויות מקומיות, בתי ספר וצוותי הוראה.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> ניסיון מקצועי</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>רכז תחום מנהיגות נוער (משצ&quot;ים) | שלח לימודים – מחוז ירושלים, משרד החינוך</h3>
+            <span class="date">2024 – כיום</span>
+          </div><ul><li>ריכוז פעילות הנהגת ירושלים של המש&quot;צים (מדריכי של&quot;ח צעירים)</li><li>ליווי וחניכה של מנהלי פרויקטים צעירים בחינוך ממלכתי וחינוך מיוחד</li><li>הנחיית סדנאות למורים בשילוב כלי AI בתהליכי הוראה</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מורה וחוקר טכנו-פדגוגיה | מעבדת חדשנות תל-חי ובתי ספר באזור הצפון</h3>
+            <span class="date">2019 – 2023</span>
+          </div><ul><li>הוראת חשיבה חישובית בכיתות ד'-ה' תוך שילוב כלים דיגיטליים בתהליכי למידה</li><li>הוראה משותפת (Co-Teaching) בשיטת PBL עם סטודנטים להוראה</li><li>הדרכת מרצים בשילוב טכנולוגיה בהוראה ושדרוג כישורים טכניים</li><li>פיתוח מערכי הדרכה בתחומי רובוטיקה, בקרים אלקטרוניים, תלת-מימד ותוכנה</li><li>ליווי בתי ספר בהטמעת טכנולוגיות חדשניות – עבודה משולבת בין מעבדה לשטח</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מייסד שותף ומנכ&quot;ל | MePo – מיזם טכנולוגיה חינוכית</h3>
+            <span class="date">2022 – כיום</span>
+          </div><ul><li>אפיון ופיתוח תכנה המלווה מורים בעבודתם (תכנון → ביצוע → הערכה), בשילוב AI</li><li>ניהול פיתוח מרכז תקשורת דיגיטלי המחבר בתי ספר, חוגים, הסעות והורים</li><li>שיווק ומכירות לרשויות מקומיות ובתי ספר בצפון הארץ</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מנהל טכנולוגיה ותפעול | קווים לדמותם – פרויקט הנצחה ארצי</h3>
+            <span class="date">2023 – כיום</span>
+          </div><ul><li>ייזום והובלת מיזמים, ניהול 7 צוותי מתנדבים וסנכרון פעילות רב-צוותית</li><li>בניית מערכות דיגיטליות ותהליכי עבודה לניהול פרויקט רחב היקף</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>עצמאי – פיתוח אתרים ואפליקציות ווב</h3>
+            <span class="date">2019 – כיום</span>
+          </div><div class="tech-stack">React TypeScript, Convex, WIX Headless Services</div><ul><li>פיתוח 10+ אתרים ואפליקציות עבור עסקים, מוסדות אקדמיים וארגונים חברתיים</li><li>ניתוח צרכים, תכנון ארכיטקטורה, עיצוב ופיתוח מקצה לקצה באופן עצמאי</li><li>פרויקטים נבחרים: אפליקציית מחקר התנהגותי עבור מכון ויצמן, פלטפורמת רשת עסקית מקומית, אתרי הזמנות ודפי נחיתה לעסקים</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> כישורים ומיומנויות</h2>
+          <div class="badge-container"><span class="badge">שילוב תקשוב בהוראה-למידה</span><span class="badge">פיתוח כלים טכנו-פדגוגיים</span><span class="badge">פיתוח תוכנה (React TypeScript)</span><span class="badge">כלי AI (Claude Code, Cursor, Copilot)</span><span class="badge">ניתוח נתונים ומיפוי צרכים</span><span class="badge">הובלת פרויקטים חדשניים</span><span class="badge">פיתוח מקצועי והדרכת מורים</span><span class="badge">ארגון, תכנון ועבודת צוות</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> השכלה</h2><p><strong>תואר שני – ניהול וארגון של מערכות חינוך</strong><br>מכללת תל-חי | 2022 – 2025<br><em>תזה: פיתוח כלי הוראה טכנו-פדגוגי מבוסס AI שמייעל את מחזור העבודה של המורה (תכנון ← ביצוע ← הערכה ← רפלקציה ← תכנון מחדש). המחקר מתמקד בהפחתת &quot;עייפות טכנולוגית&quot; באמצעות איחוד כלים דיגיטליים לממשק אחד.</em></p><p><strong>תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)</strong><br>מכללת תל-חי | 2018 – 2023</p><p><strong>קורס תכנות C++</strong><br>האוניברסיטה העברית בירושלים | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> שירות צבאי</h2><p><strong>מ&quot;מ ראש מחלקת ארגון מערכות כ&quot;א</strong><br>זרוע היבשה | 2017 – 2018</p><p><strong>מפקד מתגייסים</strong><br>אוגדת מגל | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> שפות</h2>
+          <p><strong>עברית:</strong> שפת אם<br><strong>אנגלית:</strong> שליטה מלאה<br><strong>רוסית:</strong> שליטה טובה</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="fullpath-view">
+      
+    <div class="page">
+      
+    <header>
+      <h1>Yonatan Vasilevski</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">LinkedIn</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+        <p>AI practitioner and software developer with hands-on experience building LLM-integrated products and agentic AI workflows. Proficient in AI SDK integration, prompt engineering, and production-grade agentic tooling (Claude Code, Cursor, GitHub Copilot). Strong product sense developed across multiple client-facing products with experience collaborating across research, product, and end-user teams. Combines technical depth (React TypeScript) with genuine passion for practical LLM adoption in product development.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Co-Founder &amp; Product Lead | MePo Educational Technology</h3>
+            <span class="date">2022 – Present</span>
+          </div><ul><li>Designed and developed AI-integrated teacher companion software for the full workflow cycle (plan &gt; teach &gt; assess)</li><li>Managed development of a digital communication hub connecting schools, extracurricular programs, transportation, and parents</li><li>Managed full product lifecycle across both products: discovery, prototyping, delivery, and monitoring</li><li>Marketing and sales to regional authorities and schools across Northern Israel</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Freelance Software Developer</h3>
+            <span class="date">2019 – Present</span>
+          </div><div class="tech-stack">React TypeScript, Convex, WIX Headless Services, AI SDK</div><ul><li>Developed Teacher Companion App with AI SDK integration — LLM-powered tool automating the teacher workflow cycle (plan &gt; teach &gt; assess &gt; reflect &gt; re-plan); core of Master's thesis research</li><li>Expert-level agentic AI development using Claude Code, Cursor, and GitHub Copilot for production code generation, debugging, and workflow automation</li><li>Built and shipped 10+ web applications for businesses, academic institutions, and social organizations, owning the full cycle from needs analysis through QA and delivery</li><li>Delivered ADELA behavioral research app for Weizmann Institute; local business networking platform; booking systems for hospitality clients</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | Kavim Le'Dmutam Memorial Project</h3>
+            <span class="date">2023 – Present</span>
+          </div><ul><li>Architected and shipped React-based platform with CRM supporting 7 operational crews</li><li>Designed multi-team workflows and monitored system quality across concurrent stakeholder groups</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Youth Leadership Coordinator | Shelach Studies – Jerusalem District, Ministry of Education</h3>
+            <span class="date">2024 – Present</span>
+          </div><ul><li>Coordinate Jerusalem youth leadership programs for young Shelach instructors (Mesh'tzim)</li><li>Deliver AI workshops for teachers, introducing practical LLM tools into classroom workflows</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Development &amp; Research | Tel-Hai Innovation Lab</h3>
+            <span class="date">2019 – 2023</span>
+          </div><ul><li>Developed and QA'd educational software products; maintained databases and testing infrastructure</li><li>Collaborated with educators, researchers, and technical teams on cross-functional initiatives</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> Skills and Tools</h2>
+          <div class="badge-container"><span class="badge">AI SDK &amp; LLM Integration (Claude API, OpenAI)</span><span class="badge">Agentic AI Development (Claude Code, Cursor, Copilot)</span><span class="badge">JavaScript / React TypeScript</span><span class="badge">Prompt Engineering &amp; AI Workflow Design</span><span class="badge">Product Development &amp; Roadmapping</span><span class="badge">QA &amp; Evaluation (software and AI outputs)</span><span class="badge">Cross-functional Collaboration</span><span class="badge">Analytical Thinking &amp; Problem Solving</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2><p><strong>Master's Degree – Management and Organization of Education Systems</strong><br>Tel-Hai College | 2022 – 2025<br><em>Thesis: Developing an AI-powered teaching companion using LLM integration to streamline the complete workflow cycle. Research focused on reducing &quot;technological fatigue&quot; through unified, AI-assisted tooling.</em></p><p><strong>Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)</strong><br>Tel-Hai College | 2018 – 2023</p><p><strong>C++ Programming Course</strong><br>Hebrew University of Jerusalem | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> Military</h2><p><strong>Acting Head of HR Systems Organization Department</strong><br>Ground Forces | 2017 – 2018</p><p><strong>Recruit Commander</strong><br>Magal Division | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          <p><strong>Hebrew:</strong> Native<br><strong>English:</strong> Full professional proficiency (verbal and written)<br><strong>Russian:</strong> Good proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="innovation-authority-view">
+      
+    <div class="page rtl">
+      
+    <header>
+      <h1>יונתן וסילבסקי</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">יוני וסילבסקי</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> תקציר מקצועי</h2>
+        <p>בעל תואר שני בניהול וארגון מערכות חינוך ורקע יזמי-טכנולוגי, עם ניסיון מוכח בניהול פרויקטים חוצי-ארגון, עבודה מול גורמים ממשלתיים ורשויות, וניהול תהליכי קבלת החלטות. מתאפיין ביכולת ביטוי גבוהה, חשיבה אסטרטגית וריבוי משימות מורכבות בסביבות דינמיות. אנגלית ברמה גבוהה, כתיבה ודיבור.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> ניסיון מקצועי</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>רכז תחום מנהיגות נוער (משצ&quot;ים) | שלח לימודים – מחוז ירושלים, משרד החינוך</h3>
+            <span class="date">2024 – כיום</span>
+          </div><ul><li>ריכוז פעילות הנהגת ירושלים של המש&quot;צים (מדריכי של&quot;ח צעירים)</li><li>ניהול תהליכים שוטפים בתוך מטה ממשלתי – תיאום בין מנהלים, מדריכים ובתי ספר</li><li>הכנת חומרים, דוחות ותדרוכים לדרג הבכיר</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מייסד שותף ומנכ&quot;ל | MePo – מיזם טכנולוגיה חינוכית</h3>
+            <span class="date">2022 – כיום</span>
+          </div><ul><li>אפיון ופיתוח שני מוצרים: כלי ליווי מורים (תכנון → ביצוע → הערכה, בשילוב AI) ומרכז תקשורת דיגיטלי לבתי ספר</li><li>עבודה שוטפת מול רשויות מקומיות ומנהלי מחלקות חינוך</li><li>גיבוש חומרים, מצגות ותדרוכים מול מקבלי החלטות במגזר הציבורי</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מנהל תפעול | קווים לדמותם – פרויקט הנצחה ארצי</h3>
+            <span class="date">2023 – כיום</span>
+          </div><ul><li>ניהול 7 צוותי מתנדבים ופרויקט רחב היקף תחת ריבוי משימות ולחץ זמן</li><li>בניית תהליכי עבודה, מעקב החלטות וסנכרון בין גורמים מרובים</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>יו&quot;ר אגודת הסטודנטים | מכללת אוהלו</h3>
+            <span class="date">2020 – 2021</span>
+          </div><ul><li>ניהול תקציב שנתי של 120 אלף ₪ לאגודת הסטודנטים</li><li>ניהול שוטף של עמותה – תכנון, ביצוע ודיווח</li><li>עבודה מול גורמים חיצוניים: הנהלת המוסד, ספקים ורשויות</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>פיתוח ומחקר | מעבדת חדשנות תל-חי</h3>
+            <span class="date">2019 – 2023</span>
+          </div><ul><li>עבודה בסביבת מחקר ופיתוח בתחום הטכנולוגיה והחדשנות</li><li>שיתוף פעולה עם גורמים אקדמיים ועסקיים בפרויקטים חוצי-ארגון</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> כישורים ומיומנויות</h2>
+          <div class="badge-container"><span class="badge">ניהול פרויקטים חוצי-ארגון</span><span class="badge">הכנת מצגות וחומרים לדרג הבכיר</span><span class="badge">כושר ביטוי וסיפור (Storytelling)</span><span class="badge">עבודה מול מגזר ציבורי ועסקי</span><span class="badge">ריבוי משימות בסביבה דינמית</span><span class="badge">חשיבה אסטרטגית ואנליטית</span><span class="badge">עבודת צוות ויחסי אנוש</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> השכלה</h2><p><strong>תואר שני – ניהול וארגון של מערכות חינוך</strong><br>מכללת תל-חי | 2022 – 2025</p><p><strong>תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)</strong><br>מכללת תל-חי | 2018 – 2023</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> שירות צבאי</h2><p><strong>מ&quot;מ ראש מחלקת ארגון מערכות כ&quot;א</strong><br>זרוע היבשה | 2017 – 2018</p><p><strong>מפקד מתגייסים</strong><br>אוגדת מגל | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> שפות</h2>
+          <p><strong>עברית:</strong> שפת אם<br><strong>אנגלית:</strong> רמה גבוהה (דיבור וכתיבה)<br><strong>רוסית:</strong> שליטה טובה</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="clarivate-view">
+      
+    <div class="page">
+      
+    <header>
+      <h1>Yonatan Vasilevski</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">LinkedIn</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+        <p>Education technology professional with Master's degree in Management and Organization of Education Systems and 5+ years managing concurrent projects. Specialized in educational software project management, CMS/LMS platform administration, and AI-driven workflow optimization. Experience coordinating cross-functional teams, managing multilingual content, and building analytics dashboards.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Co-Founder &amp; CEO | MePo Educational Technology Venture</h3>
+            <span class="date">2022 – Present</span>
+          </div><p>Lead educational software development for platform serving schools and educational service providers across Northern Israel.</p><ul><li>Coordinate development cycles, feature releases, and stakeholder requirements across 3+ years of platform evolution</li><li>Manage SQL database and Google Cloud Platform infrastructure configuration</li><li>Track platform usage metrics and user engagement across multiple stakeholder groups</li><li>Manage multilingual content and interface elements for Hebrew and English users</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | Kavim Le'Dmutam Memorial Project</h3>
+            <span class="date">2023 – Present</span>
+          </div><p>Oversee digital platform development for volunteer organization connecting artists with IDF families.</p><ul><li>Manage end-to-end delivery of CRM system and workflow tools supporting 7 operational crews</li><li>Configure and maintain WIX-based CMS with custom HTTP endpoints</li><li>Coordinate workflows between painters, coordinators, family liaisons, and content managers</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Project Managers Mentor | Shelach Studies – Jerusalem District</h3>
+            <span class="date">2024 – Present</span>
+          </div><p>Mentor project managers developing young leadership training programs in state and special education frameworks.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Development and Research | Tel-Hai Innovation Lab</h3>
+            <span class="date">2019 – 2023</span>
+          </div><ul><li>Maintained databases and testing infrastructure for educational software products</li><li>Created user guides and technical documentation for educational programs</li><li>Collaborated with instructional designers, educators, and technical teams on formal and informal education projects</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Freelance Web Developer</h3>
+            <span class="date">2019 – Present</span>
+          </div><ul><li>Successfully delivered 10+ web applications with timelines ranging from 1 week to 3 years</li><li>Conduct needs analysis, define project scope, and manage client expectations</li><li>Use GitHub version control for all projects with systematic commit and deployment processes</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+          <div class="badge-container"><span class="badge">Version Control: Git, GitHub (daily use across all projects)</span><span class="badge">AI Productivity Tools: Claude Code, Cursor, GitHub Copilot (expert level)</span><span class="badge">Content Management Systems: WIX CMS, Convex, custom HTTP endpoints</span><span class="badge">Databases &amp; Cloud: SQL, Google Cloud Platform</span><span class="badge">Development: React TypeScript, modern web technologies</span><span class="badge">Project Management: Agile methodologies, requirements analysis, scope management</span><span class="badge">Analytics: Dashboard building, usage tracking, metrics reporting</span><span class="badge">Additional Tools: Adobe Suite, 3D modeling</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2><p><strong>Master's Degree – Management and Organization of Education Systems</strong><br>Tel-Hai College | 2022 – 2025<br><em>Thesis: Developing AI-powered teaching companion streamlining workflow cycles. Focus on reducing &quot;technological fatigue&quot; by unifying teaching tools into single interface with AI assistance.</em></p><p><strong>Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)</strong><br>Tel-Hai College | 2018 – 2023</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> Military</h2><p><strong>Acting Head of HR Systems Organization Department</strong><br>Ground Forces | 2017 – 2018</p><p><strong>Recruit Commander</strong><br>Magal Division | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          <p><strong>Hebrew:</strong> Native proficiency<br><strong>English:</strong> Full professional proficiency (written and spoken)<br><strong>Russian:</strong> Good working proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="automation-consultant-view">
+      
+    <div class="page rtl">
+      
+    <header>
+      <h1>יונתן וסילבסקי</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">יוני וסילבסקי</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> תקציר מקצועי</h2>
+        <p>יזם טכנולוגי ומפתח תוכנה עם ניסיון מוכח בליווי עסקים, התאמת פתרונות טכנולוגיים לצרכי לקוחות, וניהול תהליכי מכירה מקצה לקצה. בעל רקע עשיר באוטומציה וייעול תהליכים באמצעות כלי AI מתקדמים, עם יכולת תקשורת גבוהה, חשיבה עסקית ויוזמה. ניסיון בעבודה ישירה מול בעלי עסקים, רשויות מקומיות ומקבלי החלטות, כולל ניהול מו&quot;מ, פגישות פרונטליות וסגירת עסקאות.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> ניסיון מקצועי</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מייסד שותף ומנכ&quot;ל | MePo – מיזם טכנולוגיה חינוכית</h3>
+            <span class="date">2022 – כיום</span>
+          </div><ul><li>ליווי לקוחות עסקיים (רשויות מקומיות, בתי ספר) מאפיון צרכים ועד הטמעת המערכת</li><li>ניהול מו&quot;מ ופגישות פרונטליות מול מנהלי מחלקות חינוך ומנהלי בתי ספר</li><li>התאמת פתרונות טכנולוגיים לצרכי כל לקוח – אוטומציה של תהליכי תקשורת, ניהול נתונים ודיווח</li><li>שיווק ומכירות B2B לרשויות אזוריות בצפון הארץ</li><li>מעקב שוטף אחר תהליכים, סגירת מעגל טיפול ושימור לקוחות</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מנהל תפעול וטכנולוגיה | קווים לדמותם – פרויקט הנצחה ארצי</h3>
+            <span class="date">2023 – כיום</span>
+          </div><ul><li>בניית תהליכי אוטומציה וייעול עבודה לניהול 7 צוותי מתנדבים ואלפי פניות</li><li>סנכרון בין גורמים מרובים – משפחות, ציירים, מתנדבים ומנהלי צוותים</li><li>ניהול מערכת CRM מותאמת אישית לתהליכי העבודה</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>עצמאי – פיתוח אתרים ואפליקציות</h3>
+            <span class="date">2019 – כיום</span>
+          </div><ul><li>ליווי 10+ לקוחות עסקיים מניתוח צרכים ועד מסירת מוצר מוגמר</li><li>עבודה פרונטלית מול בעלי עסקים קטנים ובינוניים – התאמת פתרונות טכנולוגיים לצרכי העסק</li><li>פיתוח כלי אוטומציה בסיוע AI אגנטי (Claude Code, Cursor, Copilot) לייעול תהליכים</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>רכז תחום מנהיגות נוער | שלח לימודים – מחוז ירושלים, משרד החינוך</h3>
+            <span class="date">2024 – כיום</span>
+          </div><ul><li>ניהול תהליכים שוטפים בתוך מטה ממשלתי – תיאום בין מנהלים, מדריכים ובתי ספר</li><li>הכנת חומרים, דוחות ותדרוכים לדרג הבכיר</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>יו&quot;ר אגודת הסטודנטים | מכללת אוהלו</h3>
+            <span class="date">2020 – 2021</span>
+          </div><ul><li>ניהול תקציב שנתי של 120 אלף ₪</li><li>עבודה מול גורמים חיצוניים: הנהלת המוסד, ספקים ורשויות</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> כישורים ומיומנויות</h2>
+          <div class="badge-container"><span class="badge">מכירות B2B וליווי לקוחות עסקיים</span><span class="badge">התאמת פתרונות אוטומציה לצרכי עסק</span><span class="badge">ניהול מו&quot;מ ופגישות פרונטליות</span><span class="badge">מערכות CRM וכלי אוטומציה</span><span class="badge">כלי AI (Claude Code, Cursor, Copilot)</span><span class="badge">חשיבה עסקית ויוזמה</span><span class="badge">תקשורת בינאישית מצוינת</span><span class="badge">ריבוי משימות בסביבה דינמית</span><span class="badge">ניהול פרויקטים חוצי-ארגון</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> השכלה</h2><p><strong>תואר שני – ניהול וארגון של מערכות חינוך</strong><br>מכללת תל-חי | 2022 – 2025</p><p><strong>תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)</strong><br>מכללת תל-חי | 2018 – 2023</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> שירות צבאי</h2><p><strong>מ&quot;מ ראש מחלקת ארגון מערכות כ&quot;א</strong><br>זרוע היבשה | 2017 – 2018<br><em>ניהול מערכתי של תהליכי כוח אדם, הובלת שינויים ארגוניים ועבודה מול דרגים בכירים</em></p><p><strong>מפקד מתגייסים</strong><br>אוגדת מגל | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> שפות</h2>
+          <p><strong>עברית:</strong> שפת אם<br><strong>אנגלית:</strong> שליטה מלאה<br><strong>רוסית:</strong> שליטה טובה</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="neoja-view">
+      
+    <div class="page">
+      
+    <header>
+      <h1>Yonatan Vasilevski</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">LinkedIn</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+        <p>Frontend developer specializing in React TypeScript with experience building responsive, animated web applications and interactive kiosk-style interfaces. Skilled in creating engaging UX with modern CSS (SCSS, Tailwind) and seamless frontend-backend integration.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Web Applications &amp; Business Websites</h2>
+        <div class="project-item">
+          <p>Built 10+ production web apps and business websites featuring responsive design, interactive UI components, smooth animations, and kiosk-style touch interfaces. Projects range from event hall booking systems and community platforms to research applications for the Weizmann Institute.</p><p><a href="https://www.dj-bar-twito.co.il" style="font-size:8.5pt;color:var(--accent)">DJ Bar Twito <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://www.loft5.vip" style="font-size:8.5pt;color:var(--accent)">Loft5 <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://www.hashovach.com" style="font-size:8.5pt;color:var(--accent)">HaShovach <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://adela-research.onrender.com" style="font-size:8.5pt;color:var(--accent)">ADELA Research <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://gushnik.com" style="font-size:8.5pt;color:var(--accent)">Gushnik <i class="fas fa-external-link-alt"></i></a></p><div class="tech-stack">React TypeScript, CSS/SCSS animations, Convex, WIX Headless Services</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> Long-Running Projects</h2>
+        <div class="project-item">
+          <h3>Webbi (In Development)</h3><p>Multi-tenant site builder with dynamic theming and cross-subdomain auth.</p><div class="tech-stack">React TypeScript, SCSS, Convex, Cloudflare Workers</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.kavimledmutam.co.il">Kavim Ledmutam <i class="fas fa-external-link-alt"></i></a></h3><p>Memorial platform with media galleries and responsive layouts.</p><div class="tech-stack">React, CSS, WIX with custom HTTP endpoints</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.mepo.info">MePo <i class="fas fa-external-link-alt"></i></a></h3><p>Data platform with responsive dashboards and multi-role UI.</p><div class="tech-stack">React TypeScript, SQL, Google Cloud Platform</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Freelance | Frontend Developer</h3>
+            <span class="date">2019 – Present</span>
+          </div><p>Develops responsive websites and interactive web applications for small and medium businesses.</p><div class="tech-stack">React TypeScript, SCSS, CSS animations, Convex, Tailwind CSS, TANSTACK tools</div><ul><li>Built 10+ production apps in React TypeScript with responsive design for mobile, tablet, and desktop</li><li>Created animations and dynamic UI for event venues, booking systems, and community platforms</li><li>Integrated frontend with backend services (Convex, WIX Headless, REST APIs)</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Co-Founder &amp; CEO | MePo Technology Venture</h3>
+            <span class="date">2022 – Present</span>
+          </div><p>Design and development of educational software with frontend dashboards and multi-role user interfaces.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | &quot;Kavim Le'Dmutam&quot; Memorial Project</h3>
+            <span class="date">2023 – Present</span>
+          </div><p>Built React-based platform with memorial pages, media galleries, and CRM supporting 7 crews.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Development and Research | Tel-Hai Innovation Lab</h3>
+            <span class="date">2019 – 2023</span>
+          </div><p>Software testing and UI development for educational initiatives including interactive displays and kiosks.</p></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+          <div class="badge-container"><span class="badge">Frontend: React, TypeScript, JavaScript, HTML, CSS</span><span class="badge">Styling: SCSS, Tailwind CSS, CSS Animations, Responsive Design</span><span class="badge">Integration: REST APIs, Convex, WIX Headless Services</span><span class="badge">AI Dev Tools: Claude Code, Cursor, GitHub Copilot</span><span class="badge">Tools: Git/GitHub, Adobe Suite, Figma</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2><p><strong>Master's Degree – Management and Organization of Education Systems</strong><br>Tel-Hai College | 2022 – 2025<br><em>Research focuses on designing unified teaching tools that reduce &quot;technological fatigue&quot; by combining planning, teaching, and assessment in one interface.</em></p><p><strong>Bachelor's Degree – Jewish Studies and Land of Israel Studies (with Teaching Certificate)</strong><br>Tel-Hai College | 2018 – 2023</p><p><strong>C++ Programming Course</strong><br>Hebrew University of Jerusalem | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> Military</h2><p><strong>Acting Head of HR Systems Organization Department</strong><br>Ground Forces | 2017 – 2018</p><p><strong>Recruit Commander</strong><br>Magal Division | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          <p><strong>Hebrew:</strong> Native<br><strong>English:</strong> Full proficiency<br><strong>Russian:</strong> Good proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    <div class="page rtl">
+      
+    <header>
+      <h1>יונתן וסילבסקי</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">יוני וסילבסקי</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> תקציר מקצועי</h2>
+        <p>מפתח Frontend המתמחה ב-React TypeScript עם ניסיון בבניית אפליקציות ווב רספונסיביות ואינטראקטיביות. מיומן ביצירת חוויות משתמש מרתקות עם CSS מודרני (SCSS, Tailwind) ואינטגרציית frontend-backend חלקה.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> אפליקציות ווב ואתרי עסקים</h2>
+        <div class="project-item">
+          <p>בניית 10+ אפליקציות ווב ואתרי עסקים עם עיצוב רספונסיבי, רכיבי UI אינטראקטיביים, אנימציות חלקות וממשקי מגע בסגנון קיוסק. פרויקטים הכוללים מערכות הזמנות לאולמות אירועים, פלטפורמות קהילתיות ואפליקציות מחקר עבור מכון ויצמן.</p><p><a href="https://www.dj-bar-twito.co.il" style="font-size:8.5pt;color:var(--accent)">DJ Bar Twito <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://www.loft5.vip" style="font-size:8.5pt;color:var(--accent)">Loft5 <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://www.hashovach.com" style="font-size:8.5pt;color:var(--accent)">HaShovach <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://adela-research.onrender.com" style="font-size:8.5pt;color:var(--accent)">ADELA Research <i class="fas fa-external-link-alt"></i></a> &middot; <a href="https://gushnik.com" style="font-size:8.5pt;color:var(--accent)">גושניק <i class="fas fa-external-link-alt"></i></a></p><div class="tech-stack">React TypeScript, CSS/SCSS animations, Convex, WIX Headless Services</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-code"></i> פרויקטים ארוכי טווח</h2>
+        <div class="project-item">
+          <h3>Webbi (בפיתוח)</h3><p>פלטפורמת בניית אתרים multi-tenant עם ערכות עיצוב דינמיות ואימות cross-subdomain.</p><div class="tech-stack">React TypeScript, SCSS, Convex, Cloudflare Workers</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.kavimledmutam.co.il">קווים לדמותם <i class="fas fa-external-link-alt"></i></a></h3><p>פלטפורמת הנצחה עם גלריות מדיה ופריסות רספונסיביות.</p><div class="tech-stack">React, CSS, WIX עם HTTP endpoints מותאמים</div></div>
+        <div class="project-item">
+          <h3><a href="https://www.mepo.info">MePo <i class="fas fa-external-link-alt"></i></a></h3><p>פלטפורמת נתונים עם דשבורדים רספונסיביים וממשק מרובה תפקידים.</p><div class="tech-stack">React TypeScript, SQL, Google Cloud Platform</div></div>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> ניסיון מקצועי</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>עצמאי | מפתח Frontend</h3>
+            <span class="date">2019 – כיום</span>
+          </div><p>פיתוח אתרים רספונסיביים ואפליקציות ווב אינטראקטיביות לעסקים קטנים ובינוניים.</p><div class="tech-stack">React TypeScript, SCSS, CSS animations, Convex, Tailwind CSS, TANSTACK tools</div><ul><li>בניית 10+ אפליקציות ב-React TypeScript עם עיצוב רספונסיבי למובייל, טאבלט ודסקטופ</li><li>יצירת אנימציות ואינטראקציות UI דינמיות לאולמות אירועים, מערכות הזמנות ופלטפורמות קהילתיות</li><li>אינטגרציית frontend עם שירותי backend מרובים (Convex, WIX Headless, REST APIs)</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מייסד שותף ומנכ&quot;ל | MePo Technology Venture</h3>
+            <span class="date">2022 – כיום</span>
+          </div><p>עיצוב ופיתוח תוכנה חינוכית עם דשבורדים וממשקי משתמש מרובי תפקידים.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | &quot;קווים לדמותם&quot; פרויקט הנצחה</h3>
+            <span class="date">2023 – כיום</span>
+          </div><p>בניית פלטפורמה מבוססת React עם דפי הנצחה, גלריות מדיה ומערכת CRM ל-7 צוותים.</p></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>פיתוח ומחקר | מעבדת חדשנות תל-חי</h3>
+            <span class="date">2019 – 2023</span>
+          </div><p>בדיקות תוכנה ופיתוח UI ליוזמות חינוכיות כולל תצוגות אינטראקטיביות וממשקי קיוסק.</p></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> כישורים טכניים</h2>
+          <div class="badge-container"><span class="badge">Frontend: React, TypeScript, JavaScript, HTML, CSS</span><span class="badge">עיצוב: SCSS, Tailwind CSS, אנימציות CSS, עיצוב רספונסיבי</span><span class="badge">אינטגרציה: REST APIs, Convex, WIX Headless Services</span><span class="badge">כלי AI: Claude Code, Cursor, GitHub Copilot</span><span class="badge">כלים: Git/GitHub, Adobe Suite, Figma</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> השכלה</h2><p><strong>תואר שני – ניהול וארגון של מערכות חינוך</strong><br>מכללת תל-חי | 2022 – 2025<br><em>תזה: פיתוח מלווה הוראה מבוסס AI שמייעל את מחזור העבודה המלא (תכנון ← ביצוע ← הערכה ← השתקפות ← תכנון מחדש). המחקר מתמקד בהפחתת &quot;עייפות טכנולוגית&quot; על ידי איחוד כלי הוראה לממשק אחד.</em></p><p><strong>תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)</strong><br>מכללת תל-חי | 2018 – 2023</p><p><strong>קורס תכנות C++</strong><br>האוניברסיטה העברית בירושלים | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> שירות צבאי</h2><p><strong>מ&quot;מ ראש מחלקת ארגון מערכות כ&quot;א</strong><br>זרוע היבשה | 2017 – 2018</p><p><strong>מפקד מתגייסים</strong><br>אוגדת מגל | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> שפות</h2>
+          <p><strong>עברית:</strong> שפת אם<br><strong>אנגלית:</strong> שליטה מלאה<br><strong>רוסית:</strong> שליטה טובה</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="techno-ped-pm-view">
+      
+    <div class="page rtl">
+      
+    <header>
+      <h1>יונתן וסילבסקי</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">יוני וסילבסקי</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> תקציר מקצועי</h2>
+        <p>מנהל פרויקטים טכנו-פדגוגיים בעל תואר שני בניהול וארגון מערכות חינוך, עם 5+ שנות ניסיון בניהול ואפיון פרויקטים חינוכיים מבוססי טכנולוגיה. ניסיון מוכח במיפוי וניתוח סביבות למידה, הגדרת פתרונות טכנולוגיים, ניהול תקציבים ולוחות זמנים, ועבודה מול צוותי מחקר, פיתוח ותוכן. שליטה מלאה בעברית ואנגלית.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> ניסיון מקצועי</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מייסד שותף ומנכ&quot;ל | MePo – מיזם טכנולוגיה חינוכית</h3>
+            <span class="date">2022 – כיום</span>
+          </div><p>ניהול פרויקט פיתוח פלטפורמה חינוכית מקצה לקצה, כולל אפיון, תקציב, פיתוח והטמעה.</p><div class="tech-stack">React TypeScript, SQL, Google Cloud Platform</div><ul><li>אפיון פתרונות טכנולוגיים לניהול נתוני תלמידים, תקשורת בין-מוסדית ומעקב התקדמות</li><li>ניהול תקציב פרויקט רב-שנתי, הגשת הצעות מחיר, מעקב הוצאות ובקרה על הכנסות</li><li>שיתוף פעולה עם צוותי פיתוח, עיצוב ומחקר ליישום מטרות פדגוגיות</li><li>שיווק והצגת הפלטפורמה לרשויות מקומיות ובתי ספר – ניהול רכש וספקים</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>רכז תחום מנהיגות נוער (משצ&quot;ים) | שלח לימודים – מחוז ירושלים, משרד החינוך</h3>
+            <span class="date">2024 – כיום</span>
+          </div><ul><li>ניהול ותכנון פרויקטים חינוכיים תוך עמידה בלוחות זמנים ויעדים</li><li>ליווי וחניכה של מנהלי פרויקטים צעירים בחינוך ממלכתי וחינוך מיוחד</li><li>הנחיית סדנאות למורים בשילוב כלי AI בתהליכי הוראה</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מנהל טכנולוגיה ותפעול | קווים לדמותם – פרויקט הנצחה ארצי</h3>
+            <span class="date">2023 – כיום</span>
+          </div><ul><li>ניהול 7 צוותי מתנדבים וסנכרון פעילות רב-צוותית עם תיעוד מלא</li><li>בניית מערכות דיגיטליות (CRM) ותהליכי עבודה לניהול פרויקט רחב היקף</li><li>פיקוח על תקציבי הפרויקט ובקרה על משאבים</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מורה וחוקר טכנו-פדגוגיה | מעבדת חדשנות תל-חי ובתי ספר באזור הצפון</h3>
+            <span class="date">2019 – 2023</span>
+          </div><ul><li>מיפוי, ניתוח ואפיון סביבות למידה וטכנולוגיות חינוכיות לתהליכי הוראה</li><li>זיהוי והערכה של טכנולוגיות חינוכיות ופיקוח על אינטגרציה לתוך פרויקטים קיימים</li><li>פיתוח מערכי הדרכה בתחומי רובוטיקה, בקרים אלקטרוניים, תלת-מימד ותוכנה</li><li>הוראת חשיבה חישובית תוך שילוב כלים דיגיטליים בתהליכי למידה</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>עצמאי – פיתוח פרויקטים טכנולוגיים</h3>
+            <span class="date">2019 – כיום</span>
+          </div><p>ניהול ואפיון 10+ פרויקטי פיתוח ווב עבור עסקים, מוסדות אקדמיים וארגונים חברתיים.</p><ul><li>ניתוח צרכים, אפיון פתרונות, תכנון תקציב וליווי לאורך כל שלבי הפרויקט</li><li>פרויקט נבחר: אפליקציית מחקר התנהגותי עבור מכון ויצמן – אפיון, פיתוח ותיעוד</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> כישורים ומיומנויות</h2>
+          <div class="badge-container"><span class="badge">ניהול ואפיון פרויקטים טכנו-פדגוגיים</span><span class="badge">מיפוי וניתוח סביבות למידה וטכנולוגיות חינוכיות</span><span class="badge">ניהול תקציבים, לוחות זמנים ומעקב הוצאות</span><span class="badge">תיעוד: מסמכי אפיון, פיצוח ותכנון</span><span class="badge">מערכות LMS וכלי ניהול פרויקטים</span><span class="badge">פיתוח תוכנה (React TypeScript)</span><span class="badge">כלי AI (Claude Code, Cursor, Copilot)</span><span class="badge">יוזמה, ראייה מערכתית והובלה עצמאית</span><span class="badge">תודעת שירות ותקשורת בינאישית</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> השכלה</h2><p><strong>תואר שני – ניהול וארגון של מערכות חינוך</strong><br>מכללת תל-חי | 2022 – 2025<br><em>תזה: אפיון ופיתוח כלי טכנו-פדגוגי מבוסס AI המייעל את מחזור העבודה של המורה. מיפוי צרכים, תיעוד באמצעות מסמכי אפיון, וניתוח נתוני שימוש.</em></p><p><strong>תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)</strong><br>מכללת תל-חי | 2018 – 2023</p><p><strong>קורס תכנות C++</strong><br>האוניברסיטה העברית בירושלים | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> שירות צבאי</h2><p><strong>מ&quot;מ ראש מחלקת ארגון מערכות כ&quot;א</strong><br>זרוע היבשה | 2017 – 2018</p><p><strong>מפקד מתגייסים</strong><br>אוגדת מגל | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> שפות</h2>
+          <p><strong>עברית:</strong> שפת אם<br><strong>אנגלית:</strong> שליטה מלאה<br><strong>רוסית:</strong> שליטה טובה</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      
+    <header>
+      <h1>Yonatan Vasilevski</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">LinkedIn</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+        <p>Techno-pedagogical project manager with a Master's degree in Management and Organization of Education Systems and 5+ years of experience managing technology-based educational projects. Proven expertise in mapping and analyzing learning environments, defining technology solutions, managing budgets and timelines, and collaborating with research, development, and content teams.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Co-Founder &amp; CEO | MePo – Educational Technology Venture</h3>
+            <span class="date">2022 – Present</span>
+          </div><p>End-to-end management of educational platform development including specification, budgeting, development, and deployment.</p><ul><li>Defined technology solutions for student data management, inter-institutional communication, and progress tracking</li><li>Managed multi-year project budget, submitted proposals, tracked expenses, and controlled revenue vs. costs</li><li>Collaborated with development, design, and research teams to implement pedagogical objectives</li><li>Presented platform to local authorities and schools — managed procurement and vendor relations</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Youth Leadership Coordinator | Shelach Studies – Jerusalem District, Ministry of Education</h3>
+            <span class="date">2024 – Present</span>
+          </div><ul><li>Managed and planned educational projects while meeting timelines and objectives</li><li>Mentored young project managers in state and special education frameworks</li><li>Led teacher workshops integrating AI tools into teaching processes</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Technology &amp; Operations Manager | Kavim Le'Dmutam – National Memorial Project</h3>
+            <span class="date">2023 – Present</span>
+          </div><ul><li>Managed 7 volunteer teams with full documentation and multi-team coordination</li><li>Built digital systems (CRM) and workflows for large-scale project management</li><li>Oversaw project budgets and resource allocation</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Teacher &amp; Techno-Pedagogy Researcher | Tel-Hai Innovation Lab &amp; Northern Schools</h3>
+            <span class="date">2019 – 2023</span>
+          </div><ul><li>Mapped, analyzed, and specified learning environments and educational technologies</li><li>Evaluated EdTech tools and supervised their integration into existing educational projects</li><li>Developed training programs in robotics, electronic controllers, 3D, and software</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Freelance – Technology Project Development</h3>
+            <span class="date">2019 – Present</span>
+          </div><p>Managed and specified 10+ web development projects for businesses, academic institutions, and social organizations.</p><ul><li>Needs analysis, solution specification, budget planning, and project lifecycle management</li><li>Selected project: Behavioral research app for the Weizmann Institute — specification, development, and documentation</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> Skills &amp; Competencies</h2>
+          <div class="badge-container"><span class="badge">Techno-pedagogical project management &amp; specification</span><span class="badge">Learning environment mapping &amp; EdTech evaluation</span><span class="badge">Budget management, timelines &amp; expense tracking</span><span class="badge">Documentation: specification, design &amp; planning documents</span><span class="badge">LMS systems &amp; project management tools</span><span class="badge">Software development (React TypeScript)</span><span class="badge">AI tools (Claude Code, Cursor, Copilot)</span><span class="badge">Initiative, systems thinking &amp; independent leadership</span><span class="badge">Service orientation &amp; interpersonal communication</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2><p><strong>Master's Degree – Management and Organization of Education Systems</strong><br>Tel-Hai College | 2022 – 2025<br><em>Thesis: Specification and development of an AI-based techno-pedagogical tool. Needs mapping, specification documentation, and usage data analysis.</em></p><p><strong>Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)</strong><br>Tel-Hai College | 2018 – 2023</p><p><strong>C++ Programming Course</strong><br>Hebrew University of Jerusalem | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> Military</h2><p><strong>Acting Head of HR Systems Organization Department</strong><br>Ground Forces | 2017 – 2018</p><p><strong>Recruit Commander</strong><br>Magal Division | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          <p><strong>Hebrew:</strong> Native<br><strong>English:</strong> Full proficiency<br><strong>Russian:</strong> Good proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="edutech-view">
+      
+    <div class="page">
+      
+    <header>
+      <h1>Yonatan Vasilevski</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">LinkedIn</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+        <p>Educational technology developer with a Master's degree in Management and Organization of Education Systems and a teaching certificate. Combines hands-on software development (React TypeScript) with direct classroom experience and pedagogical research. Built and shipped EdTech products used by schools and educators in Northern Israel. Experienced in AI-assisted development and integrating AI tools into teaching workflows.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Co-Founder &amp; CEO | MePo – Educational Technology Venture</h3>
+            <span class="date">2022 – Present</span>
+          </div><p>Educational data management platform connecting schools, extracurricular programs, transportation providers, and parents in Northern Israel.</p><div class="tech-stack">React TypeScript, SQL, Google Cloud Platform</div><ul><li>Designed and developed platform for managing and sharing student data across institutions with secure data protocols</li><li>Built unified communication center enabling schools and parents to coordinate across services</li><li>Led product lifecycle from needs analysis with educators through development, deployment, and ongoing iteration</li><li>Marketed and presented the platform to regional authorities and school administrators</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Freelance Software Developer</h3>
+            <span class="date">2019 – Present</span>
+          </div><div class="tech-stack">React TypeScript, Convex, AI SDK integration</div><ul><li>Developing AI-powered Teacher Companion App that streamlines the teaching workflow cycle (plan &gt; execute &gt; assess &gt; reflect &gt; re-plan) — core of Master's thesis research</li><li>Built ADELA behavioral research application for Weizmann Institute, studying decision-making in children ages 5-6</li><li>Shipped 10+ web applications for businesses, academic institutions, and social organizations</li><li>Proficient in agentic AI-assisted development using Claude Code, Cursor, and GitHub Copilot</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Youth Leadership Coordinator | Shelach Studies – Jerusalem District, Ministry of Education</h3>
+            <span class="date">2024 – Present</span>
+          </div><ul><li>Mentor young project managers in state education and special education frameworks</li><li>Lead workshops for teachers on integrating AI tools into classroom practice</li><li>Plan and manage educational programs meeting Ministry of Education objectives and timelines</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>CTO | Kavim Le'Dmutam – National Memorial Project</h3>
+            <span class="date">2023 – Present</span>
+          </div><ul><li>Built React-based platform with CRM supporting 7 operational volunteer crews</li><li>Designed multi-team workflows, documentation systems, and project coordination processes</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>Development &amp; Research | Tel-Hai Innovation Lab</h3>
+            <span class="date">2019 – 2023</span>
+          </div><ul><li>Developed and tested educational software products; managed databases and QA processes</li><li>Created training programs in robotics, electronic controllers, 3D modeling, and software for formal and informal education settings</li><li>Taught computational thinking with digital tools in K-12 classrooms</li><li>Collaborated with educators and researchers on cross-functional educational initiatives</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> Skills &amp; Tools</h2>
+          <div class="badge-container"><span class="badge">EdTech Product Development</span><span class="badge">React TypeScript / JavaScript</span><span class="badge">AI Integration (Claude Code, Cursor, Copilot)</span><span class="badge">Curriculum &amp; Training Design</span><span class="badge">Learning Environment Analysis</span><span class="badge">Project Management &amp; Needs Analysis</span><span class="badge">Database Management (SQL, GCP)</span><span class="badge">Cross-functional Team Collaboration</span><span class="badge">Adobe Suite / 3D Tools (Blender, Fusion 360)</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2><p><strong>Master's Degree – Management and Organization of Education Systems</strong><br>Tel-Hai College | 2022 – 2025<br><em>Thesis: Designing an AI-powered teaching companion that reduces 'technological fatigue' by unifying planning, teaching, and assessment tools in a single interface.</em></p><p><strong>Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)</strong><br>Tel-Hai College | 2018 – 2023</p><p><strong>C++ Programming Course</strong><br>Hebrew University of Jerusalem | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> Military</h2><p><strong>Acting Head of HR Systems Organization Department</strong><br>Ground Forces | 2017 – 2018</p><p><strong>Recruit Commander</strong><br>Magal Division | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          <p><strong>Hebrew:</strong> Native<br><strong>English:</strong> Full professional proficiency (verbal and written)<br><strong>Russian:</strong> Good proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script>
+// Tab switching
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const tabId = btn.getAttribute("data-tab");
+    document.querySelectorAll(".cv-content").forEach((content) => {
+      content.classList.remove("active");
+    });
+    document.getElementById(tabId).classList.add("active");
+  });
+});
+
+    </script>
+  </body>
+</html>

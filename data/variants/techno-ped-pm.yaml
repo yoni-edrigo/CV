@@ -1,0 +1,154 @@
+# Techno-Pedagogical Project Manager (Hebrew + English, 2 pages)
+base: base-he
+label: "מנהל פרויקטים טכנו-פד"
+order: 11
+
+summary: >
+  מנהל פרויקטים טכנו-פדגוגיים בעל תואר שני בניהול וארגון מערכות חינוך, עם 5+
+  שנות ניסיון בניהול ואפיון פרויקטים חינוכיים מבוססי טכנולוגיה. ניסיון מוכח
+  במיפוי וניתוח סביבות למידה, הגדרת פתרונות טכנולוגיים, ניהול תקציבים ולוחות
+  זמנים, ועבודה מול צוותי מחקר, פיתוח ותוכן. שליטה מלאה בעברית ואנגלית.
+
+experience:
+  - title: "מייסד שותף ומנכ\"ל"
+    org: "MePo – מיזם טכנולוגיה חינוכית"
+    period: "2022 – כיום"
+    description: "ניהול פרויקט פיתוח פלטפורמה חינוכית מקצה לקצה, כולל אפיון, תקציב, פיתוח והטמעה."
+    bullets:
+      - "אפיון פתרונות טכנולוגיים לניהול נתוני תלמידים, תקשורת בין-מוסדית ומעקב התקדמות"
+      - "ניהול תקציב פרויקט רב-שנתי, הגשת הצעות מחיר, מעקב הוצאות ובקרה על הכנסות"
+      - "שיתוף פעולה עם צוותי פיתוח, עיצוב ומחקר ליישום מטרות פדגוגיות"
+      - "שיווק והצגת הפלטפורמה לרשויות מקומיות ובתי ספר – ניהול רכש וספקים"
+    note: "React TypeScript, SQL, Google Cloud Platform"
+  - title: "רכז תחום מנהיגות נוער (משצ\"ים)"
+    org: "שלח לימודים – מחוז ירושלים, משרד החינוך"
+    period: "2024 – כיום"
+    bullets:
+      - "ניהול ותכנון פרויקטים חינוכיים תוך עמידה בלוחות זמנים ויעדים"
+      - "ליווי וחניכה של מנהלי פרויקטים צעירים בחינוך ממלכתי וחינוך מיוחד"
+      - "הנחיית סדנאות למורים בשילוב כלי AI בתהליכי הוראה"
+  - title: "מנהל טכנולוגיה ותפעול"
+    org: "קווים לדמותם – פרויקט הנצחה ארצי"
+    period: "2023 – כיום"
+    bullets:
+      - "ניהול 7 צוותי מתנדבים וסנכרון פעילות רב-צוותית עם תיעוד מלא"
+      - "בניית מערכות דיגיטליות (CRM) ותהליכי עבודה לניהול פרויקט רחב היקף"
+      - "פיקוח על תקציבי הפרויקט ובקרה על משאבים"
+  - title: "מורה וחוקר טכנו-פדגוגיה"
+    org: "מעבדת חדשנות תל-חי ובתי ספר באזור הצפון"
+    period: "2019 – 2023"
+    bullets:
+      - "מיפוי, ניתוח ואפיון סביבות למידה וטכנולוגיות חינוכיות לתהליכי הוראה"
+      - "זיהוי והערכה של טכנולוגיות חינוכיות ופיקוח על אינטגרציה לתוך פרויקטים קיימים"
+      - "פיתוח מערכי הדרכה בתחומי רובוטיקה, בקרים אלקטרוניים, תלת-מימד ותוכנה"
+      - "הוראת חשיבה חישובית תוך שילוב כלים דיגיטליים בתהליכי למידה"
+  - title: "עצמאי – פיתוח פרויקטים טכנולוגיים"
+    period: "2019 – כיום"
+    description: "ניהול ואפיון 10+ פרויקטי פיתוח ווב עבור עסקים, מוסדות אקדמיים וארגונים חברתיים."
+    bullets:
+      - "ניתוח צרכים, אפיון פתרונות, תכנון תקציב וליווי לאורך כל שלבי הפרויקט"
+      - "פרויקט נבחר: אפליקציית מחקר התנהגותי עבור מכון ויצמן – אפיון, פיתוח ותיעוד"
+
+projects: false
+
+education:
+  - degree: "תואר שני – ניהול וארגון של מערכות חינוך"
+    institution: "מכללת תל-חי"
+    period: "2022 – 2025"
+    description: "תזה: אפיון ופיתוח כלי טכנו-פדגוגי מבוסס AI המייעל את מחזור העבודה של המורה. מיפוי צרכים, תיעוד באמצעות מסמכי אפיון, וניתוח נתוני שימוש."
+  - degree: "תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)"
+    institution: "מכללת תל-חי"
+    period: "2018 – 2023"
+  - degree: "קורס תכנות C++"
+    institution: "האוניברסיטה העברית בירושלים"
+    period: "2013"
+
+skills:
+  label: "כישורים ומיומנויות"
+  items:
+    - "ניהול ואפיון פרויקטים טכנו-פדגוגיים"
+    - "מיפוי וניתוח סביבות למידה וטכנולוגיות חינוכיות"
+    - "ניהול תקציבים, לוחות זמנים ומעקב הוצאות"
+    - "תיעוד: מסמכי אפיון, פיצוח ותכנון"
+    - "מערכות LMS וכלי ניהול פרויקטים"
+    - "פיתוח תוכנה (React TypeScript)"
+    - "כלי AI (Claude Code, Cursor, Copilot)"
+    - "יוזמה, ראייה מערכתית והובלה עצמאית"
+    - "תודעת שירות ותקשורת בינאישית"
+
+# --- Page 2: English version ---
+pages:
+  - base: base-en
+    lang: en
+    summary: >
+      Techno-pedagogical project manager with a Master's degree in Management and
+      Organization of Education Systems and 5+ years of experience managing
+      technology-based educational projects. Proven expertise in mapping and
+      analyzing learning environments, defining technology solutions, managing
+      budgets and timelines, and collaborating with research, development, and
+      content teams.
+
+    projects: false
+
+    experience:
+      - title: "Co-Founder & CEO"
+        org: "MePo – Educational Technology Venture"
+        period: "2022 – Present"
+        description: "End-to-end management of educational platform development including specification, budgeting, development, and deployment."
+        bullets:
+          - "Defined technology solutions for student data management, inter-institutional communication, and progress tracking"
+          - "Managed multi-year project budget, submitted proposals, tracked expenses, and controlled revenue vs. costs"
+          - "Collaborated with development, design, and research teams to implement pedagogical objectives"
+          - "Presented platform to local authorities and schools — managed procurement and vendor relations"
+      - title: "Youth Leadership Coordinator"
+        org: "Shelach Studies – Jerusalem District, Ministry of Education"
+        period: "2024 – Present"
+        bullets:
+          - "Managed and planned educational projects while meeting timelines and objectives"
+          - "Mentored young project managers in state and special education frameworks"
+          - "Led teacher workshops integrating AI tools into teaching processes"
+      - title: "Technology & Operations Manager"
+        org: "Kavim Le'Dmutam – National Memorial Project"
+        period: "2023 – Present"
+        bullets:
+          - "Managed 7 volunteer teams with full documentation and multi-team coordination"
+          - "Built digital systems (CRM) and workflows for large-scale project management"
+          - "Oversaw project budgets and resource allocation"
+      - title: "Teacher & Techno-Pedagogy Researcher"
+        org: "Tel-Hai Innovation Lab & Northern Schools"
+        period: "2019 – 2023"
+        bullets:
+          - "Mapped, analyzed, and specified learning environments and educational technologies"
+          - "Evaluated EdTech tools and supervised their integration into existing educational projects"
+          - "Developed training programs in robotics, electronic controllers, 3D, and software"
+      - title: "Freelance – Technology Project Development"
+        period: "2019 – Present"
+        description: "Managed and specified 10+ web development projects for businesses, academic institutions, and social organizations."
+        bullets:
+          - "Needs analysis, solution specification, budget planning, and project lifecycle management"
+          - "Selected project: Behavioral research app for the Weizmann Institute — specification, development, and documentation"
+
+    education:
+      - degree: "Master's Degree – Management and Organization of Education Systems"
+        institution: "Tel-Hai College"
+        period: "2022 – 2025"
+        description: "Thesis: Specification and development of an AI-based techno-pedagogical tool. Needs mapping, specification documentation, and usage data analysis."
+      - degree: "Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)"
+        institution: "Tel-Hai College"
+        period: "2018 – 2023"
+      - degree: "C++ Programming Course"
+        institution: "Hebrew University of Jerusalem"
+        period: "2013"
+
+    skills:
+      label: "Skills & Competencies"
+      items:
+        - "Techno-pedagogical project management & specification"
+        - "Learning environment mapping & EdTech evaluation"
+        - "Budget management, timelines & expense tracking"
+        - "Documentation: specification, design & planning documents"
+        - "LMS systems & project management tools"
+        - "Software development (React TypeScript)"
+        - "AI tools (Claude Code, Cursor, Copilot)"
+        - "Initiative, systems thinking & independent leadership"
+        - "Service orientation & interpersonal communication"

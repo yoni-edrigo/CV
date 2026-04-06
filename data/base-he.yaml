@@ -1,0 +1,119 @@
+lang: he
+name: "יונתן וסילבסקי"
+contact:
+  phone: "054-7282-477"
+  phone_link: "tel:+972547282477"
+  email: "yonivasilevski@gmail.com"
+  linkedin:
+    url: "https://www.linkedin.com/in/yoni-vasilevski-517780211/"
+    label: "יוני וסילבסקי"
+  github:
+    url: "https://github.com/yoni-edrigo"
+    label: "GitHub"
+
+summary: >
+  מפתח תוכנה ויזם טכנולוגי המתמחה בטכנולוגיה חינוכית משולבת AI. בקיאות
+  בפיתוח בסיוע AI אגנטי באמצעות כלים כמו Claude Code, Cursor ו-GitHub
+  Copilot. ניסיון מוכח בפיתוח מוצרים חינוכיים דיגיטליים והובלת צוותים
+  ליישום פתרונות חדשניים בסביבות מורכבות.
+
+projects:
+  categories:
+    - heading: "פרויקטים ארוכי טווח - מערכות מורכבות"
+      items:
+        - title: "קווים לדמותם (~4 חודשים)"
+          subtitle: "פלטפורמת הנצחה"
+          url: "https://www.kavimledmutam.co.il"
+          description: "פרויקט התנדבותי הקושר ציירים עם משפחות גיבורי צה\"ל שנפלו. בניית ממשק React עם דפי הנצחה ומערכת CRM מקיפה המנהלת 7 צוותי עבודה תפעוליים באמצעות פלטפורמת WIX עם נקודות קצה HTTP מותאמות."
+          tech: "React, WIX No-Code Builder"
+        - title: "MePo (~שנתיים, פעיל)"
+          subtitle: "פלטפורמת ניהול נתונים חינוכיים"
+          url: "https://www.mepo.info"
+          description: "פלטפורמה לניהול נתונים חינוכיים המקשרת בתי ספר, תוכניות חוץ-לימודיות, ספקי הסעות והורים. חלק ממחקר תזה מתמשך על חדשנות טכנולוגית חינוכית. גרסה 3 כעת בפיתוח עם תכונות משופרות."
+          tech: "React TypeScript, SQL, Google Cloud Platform"
+
+    - heading: "אפליקציות - פתרונות ממוקדים"
+      items:
+        - title: "ADELA Research (~שבוע)"
+          subtitle: "מכון ויצמן"
+          url: "https://adela-research.onrender.com"
+          description: "פלטפורמת מחקר התנהגותי החוקרת קבלת החלטות בילדות."
+          tech: "React TypeScript"
+        - title: "גושניק (~שבועיים)"
+          subtitle: "מועדון עסקים מקומי"
+          url: "https://gushnik.com"
+          description: "פלטפורמת רשת מקצועית לבעלי עסקים מקומיים."
+          tech: "React TypeScript"
+
+    - heading: "אתרי עסקים - התאמה ללקוחות (~2-3 שבועות כל אחד)"
+      description: "פיתוח פתרונות הזמנות ודפי נחיתה מותאמים אישית לעסקי שירות מגוונים, המדגימים יכולת להתאים במהירות ארכיטקטורה טכנית לדרישות לקוח ייחודיות. בניית אפליקציות ממוקדות לקוח באמצעות React TypeScript עם אינטגרציית backend גמישה (Convex, WIX Headless Services), יצירת חוויות משתמש מלוטשות בתחומי שירותי אירועים, אירוח ובריאות."
+      links:
+        - label: "DJ Bar Twito"
+          url: "https://www.dj-bar-twito.co.il"
+        - label: "Loft5"
+          url: "https://www.loft5.vip"
+        - label: "HaShovach"
+          url: "https://www.hashovach.com"
+      tech: "React TypeScript, Convex, WIX Headless Services"
+
+experience:
+  - title: "עצמאי"
+    period: "2019 – כיום"
+    description: "פיתוח אתרים עבור עסקים קטנים ובינוניים."
+    note: "React TS, CSS, Convex, TanStack"
+  - title: "מייסד שותף ומנכ\"ל"
+    org: "MePo Technology"
+    period: "2022 – כיום"
+    description: "עיצוב ופיתוח תוכנה חינוכית, שיווק ומכירות לרשויות אזוריות."
+  - title: "CTO"
+    org: "קווים לדמותם"
+    period: "2023 – כיום"
+    description: "פיתוח פלטפורמה דיגיטלית."
+  - title: "מנחה מנהלי פרויקטים"
+    org: "שלח לימודים"
+    period: "2024 – כיום"
+    description: "הדרכת הכשרת מנהיגות צעירה במערכת חינוך ממלכתית וחינוך מיוחד."
+  - title: "פיתוח ומחקר"
+    org: "מעבדת חדשנות תל-חי"
+    period: "2019 – 2023"
+    description: "ניהול מסדי נתונים, בדיקות תוכנה ויוזמות חינוכיות."
+
+education:
+  - degree: "תואר שני – ניהול וארגון של מערכות חינוך"
+    institution: "מכללת תל-חי"
+    period: "2022 – 2025"
+    description: "תזה: פיתוח מלווה הוראה מבוסס AI שמייעל את מחזור העבודה המלא (תכנון ← ביצוע ← הערכה ← השתקפות ← תכנון מחדש). המחקר מתמקד בהפחתת \"עייפות טכנולוגית\" על ידי איחוד כלי הוראה לממשק אחד."
+  - degree: "תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)"
+    institution: "מכללת תל-חי"
+    period: "2018 – 2023"
+  - degree: "קורס תכנות C++"
+    institution: "האוניברסיטה העברית בירושלים"
+    period: "2013"
+
+military:
+  - role: "מ\"מ ראש מחלקת ארגון מערכות כ\"א"
+    unit: "זרוע היבשה"
+    period: "2017 – 2018"
+  - role: "מפקד מתגייסים"
+    unit: "אוגדת מגל"
+    period: "2015 – 2017"
+
+languages:
+  - name: "עברית"
+    level: "שפת אם"
+  - name: "אנגלית"
+    level: "שליטה מלאה"
+  - name: "רוסית"
+    level: "שליטה טובה"
+
+skills:
+  label: "כישורים וכלים"
+  items:
+    - "פיתוח תוכנה (React TS)"
+    - "פיתוח בסיוע AI אגנטי (Claude Code, Cursor, Copilot)"
+    - "תלת מימד ומודלים (Fusion, Blender)"
+    - "חבילת Adobe (עריכת גרפיקה, תמונה ווידאו)"
+    - "ניהול משימות"
+    - "יצירתיות"
+    - "פתרון בעיות"
+    - "חשיבה ביקורתית"

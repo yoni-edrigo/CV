@@ -1,0 +1,133 @@
+lang: en
+name: "Yonatan Vasilevski"
+contact:
+  phone: "054-7282-477"
+  phone_link: "tel:+972547282477"
+  email: "yonivasilevski@gmail.com"
+  linkedin:
+    url: "https://www.linkedin.com/in/yoni-vasilevski-517780211/"
+    label: "LinkedIn"
+  github:
+    url: "https://github.com/yoni-edrigo"
+    label: "GitHub"
+
+summary: >
+  Software developer and tech entrepreneur specializing in AI-integrated
+  educational technology. Proficient in agentic AI-assisted development using
+  tools like Claude Code, Cursor, and GitHub Copilot. Proven experience
+  developing digital educational products and leading teams to implement
+  innovative solutions in complex environments.
+
+projects:
+  categories:
+    - heading: "Business Websites"
+      items:
+        - title: "DJ Bar Twito (~1 weeks)"
+          url: "https://www.dj-bar-twito.co.il"
+          description: "Landing page for DJ sound and lighting services specializing in weddings and events."
+          tech: "React TypeScript (frontend), WIX Headless Services (backend)"
+        - title: "Loft5 (~4 weeks)"
+          url: "https://www.loft5.vip"
+          description: "Professional event hall booking website for a luxury venue in Qazrin with integrated karaoke, photography services, and F&B management."
+          tech: "React TypeScript (frontend), Convex (database & storage backend)"
+        - title: "HaShovach (~3 weeks)"
+          url: "https://www.hashovach.com"
+          description: "Landing page and booking system for zimmer accommodation with integrated wellness center offering massage therapy and spa services."
+          tech: "React TypeScript (frontend), Convex (database & storage backend)"
+
+    - heading: "Single Page Applications (2024-Present)"
+      items:
+        - title: "ADELA Research App (~5 weeks)"
+          subtitle: "Weizmann Institute"
+          url: "https://adela-research.onrender.com"
+          description: "Research application studying decision-making in children ages 5-6, testing kindergarten children's responses to violent day-to-day situations as part of a behavioral research study."
+          tech: "React TypeScript"
+        - title: "Gushnik (~ 5 months)"
+          subtitle: "Local Business Club Platform"
+          url: "https://gushnik.com"
+          description: "Networking platform connecting local business owners and professionals. Serves as a membership-based community hub facilitating connections and business development among local entrepreneurs."
+          tech: "React TypeScript"
+
+    - heading: "Long-Running Projects"
+      items:
+        - title: "Webbi (~2 months, In Development)"
+          subtitle: "Multi-Tenant Site Building Platform"
+          description: "Site building platform enabling businesses to create branded mini-site experiences through a template system. Features multi-tenant architecture with unique subdomains and cross-subdomain authentication."
+          tech: "React TypeScript (frontend), Convex (database & backend services), Cloudflare Workers (deployment)"
+        - title: "Kavim Ledmutam (~2 years)"
+          subtitle: "Memorial Project Platform"
+          url: "https://www.kavimledmutam.co.il"
+          description: "Volunteer memorial project connecting painters with families of fallen IDF heroes. Features individual memorial pages, family story management, and comprehensive CRM with multi-team workflow supporting 7 operational crews."
+          tech: "React (frontend), WIX No-Code Builder with custom HTTP endpoints (backend CMS)"
+        - title: "MePo (~3 years, ongoing)"
+          subtitle: "Educational Data Management Platform"
+          url: "https://www.mepo.info"
+          description: "Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Features unified communication center and secure data sharing protocols."
+          tech: "React TypeScript (frontend), SQL Database, hosted on Google Cloud Platform"
+        - title: "Teacher Companion App (~8 months, In Development)"
+          subtitle: "Master's Thesis Project"
+          description: "Digital companion streamlining the teaching workflow cycle (plan > execute > assess > reflect > re-plan). Reduces \"technological fatigue\" by unifying teaching tools into a single interface with AI-powered assistance."
+          tech: "React TypeScript, AI SDK integration, widget architecture"
+
+experience:
+  - title: "Freelance"
+    role: "Web Developer"
+    period: "2019 – Present"
+    description: "Develops websites and web applications for small and medium business owners based on needs analysis."
+    note: "Building mainly with: React TS, CSS, CONVEX Backend services, TANSTACK tools."
+  - title: "Co-Founder & CEO"
+    org: "MePo Technology Venture"
+    period: "2022 – Present"
+    description: "Design and development of educational software and digital communication platform. Marketing and sales to regional authorities and schools in Northern Israel."
+  - title: "CTO"
+    org: "\"Kavim Le'Dmutam\" Memorial Project"
+    period: "2023 – Present"
+    description: "Established React-based digital platform with memorial pages and CRM system for order management. Built with WIX no-code and custom HTTP endpoints."
+  - title: "Project Managers Mentor"
+    org: "Shelach Studies – Jerusalem District"
+    period: "2024 – Present"
+    description: "Mentoring development and management of young leadership training in state education and special education frameworks."
+  - title: "Development and Research"
+    org: "Tel-Hai Innovation Lab"
+    period: "2019 – 2023"
+    description: "Member of the Innovation Lab development team. Responsible for databases and software testing. Partner in educational initiatives in formal and informal education, including activities in robotics, electronic controllers, 3D, and software."
+
+education:
+  - degree: "Master's Degree – Management and Organization of Education Systems"
+    institution: "Tel-Hai College"
+    period: "2022 – 2025"
+    description: "Research focuses on designing unified teaching tools that reduce \"technological fatigue\" by combining planning, teaching, and assessment in one interface."
+  - degree: "Bachelor's Degree – Jewish Studies and Land of Israel Studies (with Teaching Certificate)"
+    institution: "Tel-Hai College"
+    period: "2018 – 2023"
+  - degree: "C++ Programming Course"
+    institution: "Hebrew University of Jerusalem"
+    period: "2013"
+
+military:
+  - role: "Acting Head of HR Systems Organization Department"
+    unit: "Ground Forces"
+    period: "2017 – 2018"
+  - role: "Recruit Commander"
+    unit: "Magal Division"
+    period: "2015 – 2017"
+
+languages:
+  - name: "Hebrew"
+    level: "Native"
+  - name: "English"
+    level: "Full proficiency"
+  - name: "Russian"
+    level: "Good proficiency"
+
+skills:
+  label: "Skills and Tools"
+  items:
+    - "Software Development (React TS)"
+    - "Agentic AI Development (Claude Code, Cursor, Copilot)"
+    - "3D and Modeling (Fusion, Blender)"
+    - "Adobe Suite (graphics, image, and video editing)"
+    - "Task Management"
+    - "Creativity"
+    - "Problem Solving"
+    - "Critical Thinking"

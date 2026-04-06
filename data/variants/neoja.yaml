@@ -1,0 +1,145 @@
+# Neoja - Frontend Developer position (EN + HE, 2 pages)
+base: base-en
+label: "Neoja"
+order: 10
+
+summary: >
+  Frontend developer specializing in React TypeScript with experience building
+  responsive, animated web applications and interactive kiosk-style interfaces.
+  Skilled in creating engaging UX with modern CSS (SCSS, Tailwind) and seamless
+  frontend-backend integration.
+
+projects:
+  categories:
+    - heading: "Web Applications & Business Websites"
+      description: "Built 10+ production web apps and business websites featuring responsive design, interactive UI components, smooth animations, and kiosk-style touch interfaces. Projects range from event hall booking systems and community platforms to research applications for the Weizmann Institute."
+      links:
+        - label: "DJ Bar Twito"
+          url: "https://www.dj-bar-twito.co.il"
+        - label: "Loft5"
+          url: "https://www.loft5.vip"
+        - label: "HaShovach"
+          url: "https://www.hashovach.com"
+        - label: "ADELA Research"
+          url: "https://adela-research.onrender.com"
+        - label: "Gushnik"
+          url: "https://gushnik.com"
+      tech: "React TypeScript, CSS/SCSS animations, Convex, WIX Headless Services"
+
+    - heading: "Long-Running Projects"
+      items:
+        - title: "Webbi (In Development)"
+          description: "Multi-tenant site builder with dynamic theming and cross-subdomain auth."
+          tech: "React TypeScript, SCSS, Convex, Cloudflare Workers"
+        - title: "Kavim Ledmutam"
+          url: "https://www.kavimledmutam.co.il"
+          description: "Memorial platform with media galleries and responsive layouts."
+          tech: "React, CSS, WIX with custom HTTP endpoints"
+        - title: "MePo"
+          url: "https://www.mepo.info"
+          description: "Data platform with responsive dashboards and multi-role UI."
+          tech: "React TypeScript, SQL, Google Cloud Platform"
+
+experience:
+  - title: "Freelance"
+    role: "Frontend Developer"
+    period: "2019 – Present"
+    description: "Develops responsive websites and interactive web applications for small and medium businesses."
+    bullets:
+      - "Built 10+ production apps in React TypeScript with responsive design for mobile, tablet, and desktop"
+      - "Created animations and dynamic UI for event venues, booking systems, and community platforms"
+      - "Integrated frontend with backend services (Convex, WIX Headless, REST APIs)"
+    note: "React TypeScript, SCSS, CSS animations, Convex, Tailwind CSS, TANSTACK tools"
+  - title: "Co-Founder & CEO"
+    org: "MePo Technology Venture"
+    period: "2022 – Present"
+    description: "Design and development of educational software with frontend dashboards and multi-role user interfaces."
+  - title: "CTO"
+    org: "\"Kavim Le'Dmutam\" Memorial Project"
+    period: "2023 – Present"
+    description: "Built React-based platform with memorial pages, media galleries, and CRM supporting 7 crews."
+  - title: "Development and Research"
+    org: "Tel-Hai Innovation Lab"
+    period: "2019 – 2023"
+    description: "Software testing and UI development for educational initiatives including interactive displays and kiosks."
+
+skills:
+  label: "Technical Skills"
+  items:
+    - "Frontend: React, TypeScript, JavaScript, HTML, CSS"
+    - "Styling: SCSS, Tailwind CSS, CSS Animations, Responsive Design"
+    - "Integration: REST APIs, Convex, WIX Headless Services"
+    - "AI Dev Tools: Claude Code, Cursor, GitHub Copilot"
+    - "Tools: Git/GitHub, Adobe Suite, Figma"
+
+# --- Page 2: Hebrew version ---
+pages:
+  - base: base-he
+    lang: he
+    summary: >
+      מפתח Frontend המתמחה ב-React TypeScript עם ניסיון בבניית אפליקציות ווב
+      רספונסיביות ואינטראקטיביות. מיומן ביצירת חוויות משתמש מרתקות עם CSS מודרני
+      (SCSS, Tailwind) ואינטגרציית frontend-backend חלקה.
+
+    projects:
+      categories:
+        - heading: "אפליקציות ווב ואתרי עסקים"
+          description: "בניית 10+ אפליקציות ווב ואתרי עסקים עם עיצוב רספונסיבי, רכיבי UI אינטראקטיביים, אנימציות חלקות וממשקי מגע בסגנון קיוסק. פרויקטים הכוללים מערכות הזמנות לאולמות אירועים, פלטפורמות קהילתיות ואפליקציות מחקר עבור מכון ויצמן."
+          links:
+            - label: "DJ Bar Twito"
+              url: "https://www.dj-bar-twito.co.il"
+            - label: "Loft5"
+              url: "https://www.loft5.vip"
+            - label: "HaShovach"
+              url: "https://www.hashovach.com"
+            - label: "ADELA Research"
+              url: "https://adela-research.onrender.com"
+            - label: "גושניק"
+              url: "https://gushnik.com"
+          tech: "React TypeScript, CSS/SCSS animations, Convex, WIX Headless Services"
+
+        - heading: "פרויקטים ארוכי טווח"
+          items:
+            - title: "Webbi (בפיתוח)"
+              description: "פלטפורמת בניית אתרים multi-tenant עם ערכות עיצוב דינמיות ואימות cross-subdomain."
+              tech: "React TypeScript, SCSS, Convex, Cloudflare Workers"
+            - title: "קווים לדמותם"
+              url: "https://www.kavimledmutam.co.il"
+              description: "פלטפורמת הנצחה עם גלריות מדיה ופריסות רספונסיביות."
+              tech: "React, CSS, WIX עם HTTP endpoints מותאמים"
+            - title: "MePo"
+              url: "https://www.mepo.info"
+              description: "פלטפורמת נתונים עם דשבורדים רספונסיביים וממשק מרובה תפקידים."
+              tech: "React TypeScript, SQL, Google Cloud Platform"
+
+    experience:
+      - title: "עצמאי"
+        role: "מפתח Frontend"
+        period: "2019 – כיום"
+        description: "פיתוח אתרים רספונסיביים ואפליקציות ווב אינטראקטיביות לעסקים קטנים ובינוניים."
+        bullets:
+          - "בניית 10+ אפליקציות ב-React TypeScript עם עיצוב רספונסיבי למובייל, טאבלט ודסקטופ"
+          - "יצירת אנימציות ואינטראקציות UI דינמיות לאולמות אירועים, מערכות הזמנות ופלטפורמות קהילתיות"
+          - "אינטגרציית frontend עם שירותי backend מרובים (Convex, WIX Headless, REST APIs)"
+        note: "React TypeScript, SCSS, CSS animations, Convex, Tailwind CSS, TANSTACK tools"
+      - title: "מייסד שותף ומנכ\"ל"
+        org: "MePo Technology Venture"
+        period: "2022 – כיום"
+        description: "עיצוב ופיתוח תוכנה חינוכית עם דשבורדים וממשקי משתמש מרובי תפקידים."
+      - title: "CTO"
+        org: "\"קווים לדמותם\" פרויקט הנצחה"
+        period: "2023 – כיום"
+        description: "בניית פלטפורמה מבוססת React עם דפי הנצחה, גלריות מדיה ומערכת CRM ל-7 צוותים."
+      - title: "פיתוח ומחקר"
+        org: "מעבדת חדשנות תל-חי"
+        period: "2019 – 2023"
+        description: "בדיקות תוכנה ופיתוח UI ליוזמות חינוכיות כולל תצוגות אינטראקטיביות וממשקי קיוסק."
+
+    skills:
+      label: "כישורים טכניים"
+      items:
+        - "Frontend: React, TypeScript, JavaScript, HTML, CSS"
+        - "עיצוב: SCSS, Tailwind CSS, אנימציות CSS, עיצוב רספונסיבי"
+        - "אינטגרציה: REST APIs, Convex, WIX Headless Services"
+        - "כלי AI: Claude Code, Cursor, GitHub Copilot"
+        - "כלים: Git/GitHub, Adobe Suite, Figma"
