@@ -79,7 +79,7 @@ skills:
 # --- Page 2: Selected Projects (single column, own page) ---
 pages:
   - base: base-en
-    layout: simple
+    layout: projects
     summary: false
     experience: false
     education: false

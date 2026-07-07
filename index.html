@@ -409,6 +409,57 @@ li {
   order: unset;
 }
 
+/* --- Projects page layout (dedicated full-page project showcase) --- */
+.page.projects .cv-body {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.page.projects .side-col {
+  display: none;
+}
+
+.page.projects section {
+  margin-bottom: 0;
+}
+
+.page.projects h2 {
+  font-size: 15pt;
+  margin-bottom: 22px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--accent);
+}
+
+.page.projects .project-item {
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: var(--bg-light);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  page-break-inside: avoid;
+}
+
+.page.projects .project-item:last-child {
+  margin-bottom: 0;
+}
+
+.page.projects .project-item h3 {
+  font-size: 12pt;
+  margin-bottom: 6px;
+}
+
+.page.projects .project-item p {
+  font-size: 10pt;
+  line-height: 1.5;
+  color: var(--secondary);
+}
+
+.page.projects .tech-stack {
+  font-size: 9pt;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
 .rtl h2 {
   direction: rtl;
 }
@@ -1926,7 +1977,7 @@ li {
         </div>
       </div>
     </div>
-    <div class="page simple">
+    <div class="page projects">
       
     <header>
       <h1>Yonatan Vasilevski</h1>
