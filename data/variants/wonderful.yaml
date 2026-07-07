@@ -7,10 +7,11 @@ summary: >
   Software developer and tech entrepreneur who builds AI-integrated products
   end-to-end — from needs analysis with customers through development, deployment,
   and iteration. Co-founded and leads an EdTech venture serving schools and
-  regional authorities in Northern Israel. Hands-on with LLM integration and
-  agentic AI-assisted development (Claude Code, Cursor, AI SDK), and used to
-  working directly with stakeholders to turn business problems into working
-  software.
+  regional authorities in Northern Israel, and has worked inside a government
+  ministry and a university innovation lab (hands-on VR/3D R&D). Hands-on with
+  LLM integration and agentic AI-assisted development (Claude Code, AI SDK), and
+  used to working directly with stakeholders to turn business problems into
+  working software.
 
 projects: false
 
@@ -21,20 +22,26 @@ experience:
     description: "Design and development of educational software and a digital communication platform. Own the full cycle from needs analysis with customers through development, deployment, and support. Marketing and sales to regional authorities and schools in Northern Israel."
   - title: "Freelance Web Developer"
     period: "2019 – Present"
-    description: "Develop websites and web applications for small and medium businesses based on needs analysis, owning each project from analysis through delivery. Regular use of agentic AI tools (Claude Code, Cursor, Copilot) in development."
+    description: "Develop websites and web applications for small and medium businesses based on needs analysis, owning each project from analysis through delivery. Regular use of agentic AI tools (Claude Code, Copilot) in development."
     note: "React TypeScript, Convex, WIX Headless Services, AI SDK"
+  - title: "Youth Leadership Coordinator"
+    org: "Shelach Studies – Jerusalem District, Ministry of Education"
+    period: "2024 – Present"
+    bullets:
+      - "Work inside a government ministry, coordinating between managers, instructors, and schools"
+      - "Mentor young project managers in state and special education frameworks"
+      - "Prepare materials, reports, and briefings for senior leadership"
   - title: "CTO"
     org: "\"Kavim Le'Dmutam\" Memorial Project"
     period: "2023 – Present"
     description: "Established a React-based platform with memorial pages and a CRM for order management, coordinating a volunteer workflow across 7 operational crews. Built with WIX no-code and custom HTTP endpoints."
-  - title: "Project Managers Mentor"
-    org: "Shelach Studies – Jerusalem District"
-    period: "2024 – Present"
-    description: "Mentoring development and management of young leadership training in state and special education frameworks."
-  - title: "Development and Research"
+  - title: "VR & 3D R&D"
     org: "Tel-Hai Innovation Lab"
     period: "2019 – 2023"
-    description: "Member of the Innovation Lab development team, responsible for databases and software testing, and partner in educational initiatives across robotics, controllers, 3D, and software."
+    bullets:
+      - "Hands-on R&D in an innovation lab: built VR and 3D prototypes and educational technology"
+      - "Evaluated EdTech tools and supported their integration into educational programs"
+      - "Built training programs across robotics, electronic controllers, 3D, and software; collaborated with academic and business partners on cross-functional projects"
 
 education:
   - degree: "Master's Degree – Management and Organization of Education Systems"
@@ -69,7 +76,7 @@ skills:
   items:
     - "Software Development (React TypeScript)"
     - "AI & LLM Integration (Claude API, AI SDK, OpenAI)"
-    - "Agentic AI Development (Claude Code, Cursor, Copilot)"
+    - "Agentic AI Development (Claude Code, Copilot)"
     - "Backend & Cloud (Convex, SQL, Google Cloud Platform)"
     - "Needs analysis & working directly with customers"
     - "End-to-end product delivery"
