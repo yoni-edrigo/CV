@@ -79,7 +79,7 @@ skills:
 # --- Page 2: Selected Projects (single column, own page) ---
 pages:
   - base: base-en
-    layout: projects
+    layout: simple
     summary: false
     experience: false
     education: false
@@ -101,9 +101,9 @@ pages:
               url: "https://www.kavimledmutam.co.il"
               description: "Volunteer memorial project connecting painters with families of fallen IDF soldiers. React-based platform with a CRM supporting a multi-team workflow across 7 operational crews."
               tech: "React, WIX with custom HTTP endpoints"
-            - title: "Webbi – Multi-Tenant Site Building Platform"
-              description: "Site building platform letting businesses create branded mini-site experiences from templates. Multi-tenant architecture with unique subdomains and cross-subdomain authentication."
-              tech: "React TypeScript, Convex, Cloudflare Workers"
+            - title: "Webbi – Multi-Tenant Store Platform"
+              description: "Multi-tenant platform where furniture stores run branded storefronts on unique subdomains. AI features include placing catalog furniture into customers' room photos, an AI site builder for tenant stores, and a \"customize with AI\" option for shoppers to restyle existing furniture."
+              tech: "React TypeScript, Convex, Cloudflare Workers, AI SDK"
             - title: "Gushnik – Local Business Club Platform"
               url: "https://gushnik.com"
               description: "Membership-based networking platform connecting local business owners and professionals, serving as a community hub for connections and business development."

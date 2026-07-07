@@ -266,7 +266,7 @@ function renderPage(data) {
 
   const headerHtml = renderHeader(data);
   const rtlClass = lang === "he" ? " rtl" : "";
-  const simpleClass = data.layout ? ` ${data.layout}` : "";
+  const simpleClass = data.layout === "simple" ? " simple" : "";
 
   return `
     <div class="page${rtlClass}${simpleClass}">
