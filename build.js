@@ -67,6 +67,7 @@ function icon(cls) {
 
 // --- Render: Summary ---
 function renderSummary(summary, lang) {
+  if (!summary) return "";
   const heading = lang === "he" ? "תקציר מקצועי" : "Professional Summary";
   return `
       <section>

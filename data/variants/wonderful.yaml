@@ -12,25 +12,7 @@ summary: >
   working directly with stakeholders to turn business problems into working
   software.
 
-projects:
-  categories:
-    - heading: "Selected Projects"
-      items:
-        - title: "MePo – Educational Data Management Platform"
-          url: "https://www.mepo.info"
-          description: "Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Built with React TypeScript, SQL, and Google Cloud Platform; deployed with regional authorities and schools."
-          tech: "React TypeScript, SQL, Google Cloud Platform"
-        - title: "Teacher Companion App – Master's Thesis Project"
-          description: "AI-powered digital companion streamlining the teaching workflow cycle (plan > execute > assess > reflect). Built with React TypeScript and AI SDK integration."
-          tech: "React TypeScript, AI SDK"
-        - title: "Kavim Ledmutam – Memorial Project Platform"
-          url: "https://www.kavimledmutam.co.il"
-          description: "Volunteer memorial project connecting painters with families of fallen IDF soldiers. React-based platform with a CRM supporting a multi-team workflow across 7 operational crews."
-          tech: "React, WIX with custom HTTP endpoints"
-        - title: "ADELA Research App – Weizmann Institute"
-          url: "https://adela-research.onrender.com"
-          description: "Research application studying decision-making in children ages 5–6, built for a behavioral research study."
-          tech: "React TypeScript"
+projects: false
 
 experience:
   - title: "Co-Founder & CEO"
@@ -93,3 +75,33 @@ skills:
     - "End-to-end product delivery"
     - "Problem Solving"
     - "Critical Thinking"
+
+# --- Page 2: Selected Projects (single column, own page) ---
+pages:
+  - base: base-en
+    layout: simple
+    summary: false
+    experience: false
+    education: false
+    military: false
+    languages: false
+    skills: false
+    projects:
+      categories:
+        - heading: "Selected Projects"
+          items:
+            - title: "MePo – Educational Data Management Platform"
+              url: "https://www.mepo.info"
+              description: "Platform for safely managing and sharing student data between schools, extracurricular activities, transportation providers, and parents. Built with React TypeScript, SQL, and Google Cloud Platform; deployed with regional authorities and schools."
+              tech: "React TypeScript, SQL, Google Cloud Platform"
+            - title: "Teacher Companion App – Master's Thesis Project"
+              description: "AI-powered digital companion streamlining the teaching workflow cycle (plan > execute > assess > reflect). Built with React TypeScript and AI SDK integration."
+              tech: "React TypeScript, AI SDK"
+            - title: "Kavim Ledmutam – Memorial Project Platform"
+              url: "https://www.kavimledmutam.co.il"
+              description: "Volunteer memorial project connecting painters with families of fallen IDF soldiers. React-based platform with a CRM supporting a multi-team workflow across 7 operational crews."
+              tech: "React, WIX with custom HTTP endpoints"
+            - title: "ADELA Research App – Weizmann Institute"
+              url: "https://adela-research.onrender.com"
+              description: "Research application studying decision-making in children ages 5–6, built for a behavioral research study."
+              tech: "React TypeScript"
