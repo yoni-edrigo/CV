@@ -349,6 +349,10 @@ li {
   padding-bottom: 2px;
 }
 
+.page.simple .side-col > section:nth-of-type(n+3) h2 {
+  border-bottom: none;
+}
+
 .page.simple h3 {
   font-size: 10pt;
 }
@@ -393,6 +397,16 @@ li {
 
 .page.simple .badge:last-child::after {
   content: "";
+}
+
+/* --- Simple + RTL combined --- */
+.page.simple.rtl .cv-body {
+  grid-template-columns: 1fr;
+}
+
+.page.simple.rtl .cv-body > .main-col,
+.page.simple.rtl .cv-body > .side-col {
+  order: unset;
 }
 
 .rtl h2 {
@@ -540,6 +554,7 @@ li {
           <button class="tab-btn" data-tab="neoja-view">Neoja</button>
           <button class="tab-btn" data-tab="techno-ped-pm-view">מנהל פרויקטים טכנו-פד</button>
           <button class="tab-btn" data-tab="edutech-view">EduTech</button>
+          <button class="tab-btn" data-tab="poenta-view">פואנטה - רכז/ת פדגוגי/ת</button>
       </div>
       <button class="download-btn" onclick="window.print()">Download PDF</button>
     </div>
@@ -1767,6 +1782,73 @@ li {
         <section class="sidebar-section">
           <h2><i class="fas fa-language"></i> Languages</h2>
           <p><strong>Hebrew:</strong> Native<br><strong>English:</strong> Full professional proficiency (verbal and written)<br><strong>Russian:</strong> Good proficiency</p>
+        </section>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="cv-content" id="poenta-view">
+      
+    <div class="page rtl simple">
+      
+    <header>
+      <h1>יונתן וסילבסקי</h1>
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> <a href="tel:+972547282477">054-7282-477</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:yonivasilevski@gmail.com">yonivasilevski@gmail.com</a></span>
+        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yoni-vasilevski-517780211/">יוני וסילבסקי</a></span>
+        <span><i class="fab fa-github"></i> <a href="https://github.com/yoni-edrigo">GitHub</a></span>
+      </div>
+    </header>
+      <div class="cv-body">
+        <div class="main-col">
+          
+      <section>
+        <h2><i class="fas fa-user-tie"></i> תקציר מקצועי</h2>
+        <p>מחנך ומפתח טכנולוגיה חינוכית בעל תואר שני בניהול וארגון מערכות חינוך ותעודת הוראה, עם שילוב ייחודי של ניסיון פדגוגי בשטח, הובלת תהליכי שינוי בית-ספריים ופיתוח תכניות הכשרה למורים. בעל 3+ שנות ניסיון בהוראה ובליווי צוותים חינוכיים, כולל הנחיית סדנאות למורים, פיתוח מערכי למידה התנסותית-יוצרת, והטמעת שינויים פדגוגיים בבתי ספר. מחפש להצטרף לצוות פואנטה ולהוביל תהליכי שינוי פדגוגיים במערכת החינוך הירושלמית.
+</p>
+      </section>
+      <section>
+        <h2><i class="fas fa-briefcase"></i> ניסיון מקצועי</h2>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>רכז תחום מנהיגות נוער (משצ&quot;ים) | שלח לימודים – מחוז ירושלים, משרד החינוך</h3>
+            <span class="date">2024 – כיום</span>
+          </div><ul><li>ליווי וחניכה מקצועית של מנהלי פרויקטים צעירים בחינוך ממלכתי וחינוך מיוחד</li><li>הנחיית סדנאות והשתלמויות למורים בשילוב כלי AI בתהליכי הוראה</li><li>ריכוז פעילות הנהגת ירושלים – תכנון, סנכרון ועבודה מול צוותי חינוך מרובים</li><li>הובלת תהליכי הטמעה של שינויים פדגוגיים בחדרי מורים ובבתי ספר</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מורה וחוקר טכנו-פדגוגיה | מעבדת חדשנות תל-חי ובתי ספר באזור הצפון</h3>
+            <span class="date">2019 – 2023</span>
+          </div><ul><li>הוראת חשיבה חישובית בכיתות ד'-ה' תוך שילוב למידה התנסותית-יוצרת</li><li>פיתוח מערכי הדרכה וסדנאות בתחומי רובוטיקה, בקרים אלקטרוניים, תלת-מימד ויצירה דיגיטלית</li><li>הדרכת מרצים ומורים בשילוב טכנולוגיה בהוראה ופיתוח מקצועי</li><li>הוראה משותפת (Co-Teaching) בשיטת PBL – למידה מבוססת פרויקטים</li><li>ליווי בתי ספר בהטמעת טכנולוגיות חדשניות וגישות פדגוגיות חדשות</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מייסד שותף ומנכ&quot;ל | MePo – מיזם טכנולוגיה חינוכית</h3>
+            <span class="date">2022 – כיום</span>
+          </div><ul><li>אפיון ופיתוח כלי טכנו-פדגוגי המלווה מורים בעבודתם (תכנון → ביצוע → הערכה → רפלקציה)</li><li>עבודה ישירה מול מורים, בתי ספר ורשויות מקומיות – איסוף צרכים, התאמת תוכן והטמעה</li><li>פיתוח תכנים חינוכיים ותהליכי הנחיה לצוותי הוראה</li></ul></div>
+        <div class="experience-item">
+          <div class="item-header">
+            <h3>מנהל טכנולוגיה ותפעול | קווים לדמותם – פרויקט הנצחה ארצי</h3>
+            <span class="date">2023 – כיום</span>
+          </div><ul><li>ייזום והובלת מיזמים, ניהול 7 צוותי מתנדבים וסנכרון פעילות רב-צוותית</li><li>בניית מערכות דיגיטליות ותהליכי עבודה לניהול פרויקט רחב היקף</li></ul></div>
+      </section>
+        </div>
+        <div class="side-col">
+          
+        <section class="sidebar-section">
+          <h2><i class="fas fa-tools"></i> כישורים ומיומנויות</h2>
+          <div class="badge-container"><span class="badge">הנחיית סדנאות ותהליכים פדגוגיים</span><span class="badge">ליווי והכשרת צוותי הוראה</span><span class="badge">הטמעת שינויים פדגוגיים בבתי ספר</span><span class="badge">פיתוח תוכן ומערכי למידה</span><span class="badge">למידה התנסותית-יוצרת ומייקינג</span><span class="badge">שילוב תקשוב וכלי AI בהוראה</span><span class="badge">ניהול פרויקטים ועבודת צוות</span><span class="badge">חניכה והדרכה מקצועית</span><span class="badge">PBL – למידה מבוססת פרויקטים</span><span class="badge">גמישות, סקרנות ורצון להתפתח</span>
+          </div>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-graduation-cap"></i> השכלה</h2><p><strong>תואר שני – ניהול וארגון של מערכות חינוך</strong><br>מכללת תל-חי | 2022 – 2025<br><em>תזה: פיתוח כלי הוראה טכנו-פדגוגי מבוסס AI שמייעל את מחזור העבודה של המורה. המחקר מתמקד בהפחתת &quot;עייפות טכנולוגית&quot; באמצעות איחוד כלים דיגיטליים לממשק אחד.</em></p><p><strong>תואר ראשון – לימודי יהדות וארץ ישראל (תעודת הוראה)</strong><br>מכללת תל-חי | 2018 – 2023</p><p><strong>קורס תכנות C++</strong><br>האוניברסיטה העברית בירושלים | 2013</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-medal"></i> שירות צבאי</h2><p><strong>מ&quot;מ ראש מחלקת ארגון מערכות כ&quot;א</strong><br>זרוע היבשה | 2017 – 2018</p><p><strong>מפקד מתגייסים</strong><br>אוגדת מגל | 2015 – 2017</p>
+        </section>
+        <section class="sidebar-section">
+          <h2><i class="fas fa-language"></i> שפות</h2>
+          <p><strong>עברית:</strong> שפת אם<br><strong>אנגלית:</strong> שליטה מלאה<br><strong>רוסית:</strong> שליטה טובה</p>
         </section>
         </div>
       </div>
