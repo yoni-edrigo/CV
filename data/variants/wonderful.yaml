@@ -1,0 +1,81 @@
+# Wonderful AI - Forward Deployed Engineer / Deployment Strategist
+base: base-en
+label: "Wonderful"
+order: 15
+
+summary: >
+  High-ownership builder and founder who ships AI in production, not slideware.
+  Co-founded and leads an EdTech venture, owning the full loop from on-site needs
+  discovery with real customers through building, deploying, and iterating on live
+  systems. Deep hands-on experience designing and shipping LLM-integrated products
+  and agentic AI workflows (Claude Code, Cursor, AI SDK) under real-world
+  constraints. Comfortable embedding directly with stakeholders, translating messy
+  business problems into working software, and being measured on outcomes rather
+  than titles.
+
+projects: false
+
+experience:
+  - title: "Co-Founder & CEO"
+    org: "MePo Educational Technology Venture"
+    period: "2022 – Present"
+    bullets:
+      - "Own the full deployment loop end-to-end: on-site discovery with schools and regional authorities, solution design, build, rollout, and ongoing iteration in production"
+      - "Designed and shipped an AI-integrated teacher companion driving the full workflow cycle (plan > teach > assess > reflect), plus a communication hub connecting schools, programs, transportation, and parents"
+      - "Sold and deployed directly to regional authorities and schools across Northern Israel — carrying the customer relationship and outcome, not just the code"
+      - "Made pragmatic build-vs-buy and technology calls under budget, time, and adoption constraints typical of real enterprise deployments"
+  - title: "Forward-Deployed Web Developer (Freelance)"
+    period: "2019 – Present"
+    bullets:
+      - "Embedded with 10+ business and institutional customers, owning each engagement from needs analysis through delivery, QA, and support"
+      - "Expert-level agentic AI development (Claude Code, Cursor, GitHub Copilot) for production code generation, debugging, and workflow automation — shipping faster in weeks, not months"
+      - "Delivered a behavioral-research app for the Weizmann Institute, a local-business networking platform, and booking systems for hospitality clients — each a distinct workflow solved end to end"
+    note: "React TypeScript, Convex, AI SDK, WIX Headless Services"
+  - title: "CTO"
+    org: "Kavim Le'Dmutam Memorial Project"
+    period: "2023 – Present"
+    bullets:
+      - "Architected and shipped a React platform with a custom CRM coordinating 7 volunteer crews and thousands of requests"
+      - "Designed multi-team workflows across families, painters, and coordinators, and kept the live system reliable across concurrent stakeholder groups"
+  - title: "Youth Leadership Coordinator"
+    org: "Shelach Studies – Jerusalem District, Ministry of Education"
+    period: "2024 – Present"
+    bullets:
+      - "Coordinate a government-education program end to end — aligning managers, instructors, and schools, and running practical AI workshops that put LLM tools into real workflows"
+  - title: "Acting Head, HR Systems Organization Dept."
+    org: "IDF Ground Forces"
+    period: "2017 – 2018"
+    bullets:
+      - "Led systemic HR process work and organizational change against hard operational constraints, working with senior stakeholders — early proof of high-ownership execution under pressure"
+
+education:
+  - degree: "M.A. – Management and Organization of Education Systems"
+    institution: "Tel-Hai College"
+    period: "2022 – 2025"
+    description: "Thesis: an AI-powered teaching companion using LLM integration to streamline the full teaching workflow and reduce \"technological fatigue\" through unified, agentic tooling."
+  - degree: "B.A. – Jewish Studies and Land of Israel Studies (Teaching Certificate)"
+    institution: "Tel-Hai College"
+    period: "2018 – 2023"
+  - degree: "C++ Programming Course"
+    institution: "Hebrew University of Jerusalem"
+    period: "2013"
+
+languages:
+  - name: "Hebrew"
+    level: "Native"
+  - name: "English"
+    level: "Full professional proficiency"
+  - name: "Russian"
+    level: "Good proficiency"
+
+skills:
+  label: "Skills and Tools"
+  items:
+    - "End-to-end deployment ownership (discovery → production)"
+    - "AI agent & LLM integration (Claude API, AI SDK, OpenAI)"
+    - "Agentic AI development (Claude Code, Cursor, Copilot)"
+    - "React / TypeScript, Convex, SQL, Google Cloud"
+    - "Customer-facing problem solving & stakeholder management"
+    - "Rapid prototyping & shipping under constraints"
+    - "Founder / operator mindset — high ownership"
+    - "Cross-functional & on-site execution"
