@@ -14,7 +14,7 @@ summary: >
 projects: false
 
 experience:
-  - title: "CTO"
+  - title: "CTO (Contract)"
     org: "Revoducate – Adaptive Learning Platform"
     period: "2026 – Present"
     description: "Hebrew-first platform for adaptive, branching learning paths, delivered into any school LMS via LTI 1.3."

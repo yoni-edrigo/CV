@@ -61,7 +61,7 @@ projects:
       tech: "React TypeScript, Convex, WIX Headless Services"
 
 experience:
-  - title: "CTO"
+  - title: "CTO (פרילנס)"
     org: "Revoducate"
     period: "2026 – כיום"
     description: "הובלת הארכיטקטורה והפיתוח של פלטפורמת למידה אדפטיבית מבוססת AI המשתלבת במערכות LMS בתי-ספריות באמצעות LTI 1.3. הקמת תהליך פיתוח מבוסס AI אגנטי (Claude Code) עם בדיקות אוטומטיות ובקרת איכות קוד, מהשורה הראשונה ועד פלטפורמה עובדת בשלושה חודשים."
