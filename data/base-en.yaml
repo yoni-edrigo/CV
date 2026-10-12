@@ -74,10 +74,10 @@ projects:
           tech: "React TypeScript, AI SDK integration, widget architecture"
 
 experience:
-  - title: "Co-Founder & CEO"
+  - title: "CTO"
     org: "Revoducate"
     period: "2026 – Present"
-    description: "Leading product and development of an AI-powered adaptive learning platform that integrates with school LMSs over LTI 1.3. Drove ~2,200 commits and 100+ merged pull requests in three months through agentic AI development (Claude Code), backed by ~6,000 automated tests and browser end-to-end journeys."
+    description: "Leading the architecture and development of an AI-powered adaptive learning platform that integrates with school LMSs over LTI 1.3. Drove ~2,200 commits and 100+ merged pull requests in three months through agentic AI development (Claude Code), backed by ~6,000 automated tests and browser end-to-end journeys."
   - title: "Freelance"
     role: "Web Developer"
     period: "2019 – Present"
