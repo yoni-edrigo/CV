@@ -13,8 +13,9 @@ contact:
 
 summary: >
   Software developer and tech entrepreneur specializing in AI-integrated
-  educational technology. Proficient in agentic AI-assisted development using
-  tools like Claude Code, Cursor, and GitHub Copilot. Proven experience
+  educational technology. Builds products by leading AI coding agents (Claude
+  Code) as tech lead and product owner: writing the specs, planning the work,
+  setting the rules, and checking every change with automated tests. Proven experience
   developing digital educational products and leading teams to implement
   innovative solutions in complex environments.
 
@@ -22,6 +23,10 @@ projects:
   categories:
     - heading: "Business Websites"
       items:
+        - title: "Naser Furniture (~3 months)"
+          subtitle: "End-to-End Store for a Furniture Business"
+          description: "Built end to end for a furniture store client: a server-rendered Hebrew catalog gallery on Cloudflare's edge, and an admin where the owner uploads and manages products. Performance was a core focus throughout: server-side rendering, image preloading with thumbnail placeholders, prefetching, lazy-loaded components, batched data loading and layout-shift fixes. Also includes experiments in AI image enhancement and 3D models generated from photos, and a proof of concept for hosting more stores."
+          tech: "React 19 TypeScript, TanStack Start (SSR), Convex, Cloudflare Pages, Gemini / fal.ai (AI experiments)"
         - title: "DJ Bar Twito (~1 weeks)"
           url: "https://www.dj-bar-twito.co.il"
           description: "Landing page for DJ sound and lighting services specializing in weddings and events."
@@ -37,11 +42,16 @@ projects:
 
     - heading: "Single Page Applications (2024-Present)"
       items:
-        - title: "ADELA Research App (~5 weeks)"
+        - title: "EventQR"
+          subtitle: "Wedding Photo Sharing by QR Code"
+          url: "https://eventqr.link"
+          description: "Guests scan the QR code on their table and post photos to a shared, Instagram-style gallery, with no app and no account; the couple later gets the photographers' album in the same place. Engineered for the wedding night's real constraint, one congested venue network shared by 200 guests: a 150 KB app-shell budget enforced in CI, photo compression in the browser before upload, tiny blurred placeholders (ThumbHash), batched upload signing, chunked video uploads with a retry queue that survives reloads, edge image resizing, and kill switches for the night."
+          tech: "React 19 TypeScript, Convex, Cloudflare R2 + Image Transformations, Better Auth"
+        - title: "ADELA Research App (ongoing)"
           subtitle: "Weizmann Institute"
           url: "https://adela-research.onrender.com"
-          description: "Research application studying decision-making in children ages 5-6, testing kindergarten children's responses to violent day-to-day situations as part of a behavioral research study."
-          tech: "React TypeScript"
+          description: "Research platform for a kindergarten field study on how children ages 5-6 choose solutions to everyday social conflicts. An offline, audio-first tablet app for the children's sessions, and a researcher admin for sessions, content and answer coding."
+          tech: "React TypeScript, Convex, offline PWA"
         - title: "Gushnik (~ 5 months)"
           subtitle: "Local Business Club Platform"
           url: "https://gushnik.com"
@@ -50,9 +60,17 @@ projects:
 
     - heading: "Long-Running Projects"
       items:
-        - title: "Webbi (~2 months, In Development)"
+        - title: "Revoducate (~3 months, In Development)"
+          subtitle: "Adaptive Learning-Path Platform"
+          description: "Hebrew-first platform for adaptive, branching learning paths. An AI authoring agent grounded (RAG) on real curriculum documents builds paths of interactive stations; learners launch from any school LMS via LTI 1.3 and grades post back to the gradebook (AGS). Includes a visual Path Designer, a lesson/activity editor, a learner player, and Common Cartridge / SCORM import-export."
+          tech: "React 19 TypeScript, TanStack Router, Convex (database, workflows, RAG), AI SDK, Tailwind/shadcn, LTI 1.3"
+        - title: "Accompanier (In Progress)"
+          subtitle: "Research Prototype – Tel-Hai College"
+          description: "Prototype for a participatory research study: a browser assistant that helps people with cognitive disabilities fill in Israeli public-service web forms, explaining each field in simple Hebrew through a speaking avatar. It never submits a form for the user."
+          tech: "React TypeScript, LLM integration, Chrome extension"
+        - title: "Webbi (Proof of Concept)"
           subtitle: "Multi-Tenant Site Building Platform"
-          description: "Site building platform enabling businesses to create branded mini-site experiences through a template system. Features multi-tenant architecture with unique subdomains and cross-subdomain authentication."
+          description: "Proof of concept for a site building platform enabling businesses to create branded mini-site experiences through a template system. Features multi-tenant architecture with unique subdomains and cross-subdomain authentication."
           tech: "React TypeScript (frontend), Convex (database & backend services), Cloudflare Workers (deployment)"
         - title: "Kavim Ledmutam (~2 years)"
           subtitle: "Memorial Project Platform"
@@ -70,6 +88,10 @@ projects:
           tech: "React TypeScript, AI SDK integration, widget architecture"
 
 experience:
+  - title: "CTO (Contract)"
+    org: "Revoducate"
+    period: "2026 – Present"
+    description: "Leading the architecture and development of an AI-powered adaptive learning platform that integrates with school LMSs over LTI 1.3. Set up an AI-first engineering process (Claude Code) with automated testing and code-review gates, taking the product from first commit to a working platform in three months."
   - title: "Freelance"
     role: "Web Developer"
     period: "2019 – Present"
@@ -123,8 +145,12 @@ languages:
 skills:
   label: "Skills and Tools"
   items:
-    - "Software Development (React TS)"
-    - "Agentic AI Development (Claude Code, Cursor, Copilot)"
+    - "React + TypeScript (TanStack, Tailwind, shadcn/ui)"
+    - "Backend: Convex; basic SQL (Drizzle ORM)"
+    - "Agent-Led Development (Claude Code, Cursor)"
+    - "AI Product Integration (LLM agents, RAG)"
+    - "EdTech Standards (LTI 1.3, SCORM, Common Cartridge)"
+    - "Hebrew-First / RTL Product Design"
     - "3D and Modeling (Fusion, Blender)"
     - "Adobe Suite (graphics, image, and video editing)"
     - "Task Management"

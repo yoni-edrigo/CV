@@ -28,7 +28,7 @@ projects:
 
     - heading: "Long-Running Projects"
       items:
-        - title: "Webbi (In Development)"
+        - title: "Webbi (Proof of Concept)"
           description: "Multi-tenant site builder with dynamic theming and cross-subdomain auth."
           tech: "React TypeScript, SCSS, Convex, Cloudflare Workers"
         - title: "Kavim Ledmutam"
@@ -100,7 +100,7 @@ pages:
 
         - heading: "פרויקטים ארוכי טווח"
           items:
-            - title: "Webbi (בפיתוח)"
+            - title: "Webbi (הוכחת היתכנות)"
               description: "פלטפורמת בניית אתרים multi-tenant עם ערכות עיצוב דינמיות ואימות cross-subdomain."
               tech: "React TypeScript, SCSS, Convex, Cloudflare Workers"
             - title: "קווים לדמותם"

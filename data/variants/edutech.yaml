@@ -8,12 +8,22 @@ summary: >
   Organization of Education Systems and a teaching certificate. Combines
   hands-on software development (React TypeScript) with direct classroom
   experience and pedagogical research. Built and shipped EdTech products
-  used by schools and educators in Northern Israel. Experienced in AI-assisted
-  development and integrating AI tools into teaching workflows.
+  used by schools and educators in Northern Israel. Builds software by leading
+  AI coding agents (Claude Code) and integrates AI tools into teaching workflows.
 
 projects: false
 
 experience:
+  - title: "CTO (Contract)"
+    org: "Revoducate – Adaptive Learning Platform"
+    period: "2026 – Present"
+    description: "Hebrew-first platform for adaptive, branching learning paths, delivered into any school LMS via LTI 1.3."
+    bullets:
+      - "Lead architecture and development of an AI authoring agent grounded (RAG) on real curriculum documents, which builds learning paths of interactive stations"
+      - "Built the learner experience: one link in the LMS, no extra account, answers route each learner through the path, and grades post back to the LMS gradebook (AGS)"
+      - "Delivered a visual Path Designer, lesson/activity editor, and Common Cartridge / SCORM import-export"
+      - "Set up an AI-first engineering process (Claude Code) with automated testing and code-review gates, from first commit to a working platform in three months"
+    note: "React 19 TypeScript, TanStack Router, Convex, AI SDK, LTI 1.3"
   - title: "Co-Founder & CEO"
     org: "MePo – Educational Technology Venture"
     period: "2022 – Present"
@@ -28,9 +38,10 @@ experience:
     period: "2019 – Present"
     bullets:
       - "Developing AI-powered Teacher Companion App that streamlines the teaching workflow cycle (plan > execute > assess > reflect > re-plan) — core of Master's thesis research"
-      - "Built ADELA behavioral research application for Weizmann Institute, studying decision-making in children ages 5-6"
+      - "Built and maintain ADELA, a research platform for a Weizmann Institute kindergarten study (ages 5-6): an offline tablet app for children and a researcher admin"
+      - "Building (in progress) Accompanier, a research prototype for Tel-Hai College that helps people with cognitive disabilities fill in public-service web forms in simple Hebrew"
       - "Shipped 10+ web applications for businesses, academic institutions, and social organizations"
-      - "Proficient in agentic AI-assisted development using Claude Code, Cursor, and GitHub Copilot"
+      - "Agent-led development: leading AI coding agents (Claude Code) as tech lead and product owner, with specs, work plans, agent rules and automated tests"
     note: "React TypeScript, Convex, AI SDK integration"
   - title: "Youth Leadership Coordinator"
     org: "Shelach Studies – Jerusalem District, Ministry of Education"
@@ -78,8 +89,11 @@ skills:
   label: "Skills & Tools"
   items:
     - "EdTech Product Development"
-    - "React TypeScript / JavaScript"
-    - "AI Integration (Claude Code, Cursor, Copilot)"
+    - "React + TypeScript (TanStack, Tailwind)"
+    - "Convex Backend"
+    - "Agent-Led Development (Claude Code, Cursor)"
+    - "AI Product Integration (LLM agents, RAG)"
+    - "EdTech Standards (LTI 1.3, SCORM, Common Cartridge)"
     - "Curriculum & Training Design"
     - "Learning Environment Analysis"
     - "Project Management & Needs Analysis"
