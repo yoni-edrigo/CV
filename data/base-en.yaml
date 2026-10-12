@@ -42,6 +42,11 @@ projects:
 
     - heading: "Single Page Applications (2024-Present)"
       items:
+        - title: "EventQR"
+          subtitle: "Wedding Photo Sharing by QR Code"
+          url: "https://eventqr.link"
+          description: "Guests scan the QR code on their table and post photos to a shared, Instagram-style gallery, with no app and no account; the couple later gets the photographers' album in the same place. Engineered for the wedding night's real constraint, one congested venue network shared by 200 guests: a 150 KB app-shell budget enforced in CI, photo compression in the browser before upload, tiny blurred placeholders (ThumbHash), batched upload signing, chunked video uploads with a retry queue that survives reloads, edge image resizing, and kill switches for the night."
+          tech: "React 19 TypeScript, Convex, Cloudflare R2 + Image Transformations, Better Auth"
         - title: "ADELA Research App (ongoing)"
           subtitle: "Weizmann Institute"
           url: "https://adela-research.onrender.com"
