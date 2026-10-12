@@ -23,6 +23,10 @@ projects:
   categories:
     - heading: "Business Websites"
       items:
+        - title: "Naser Furniture (~3 months)"
+          subtitle: "End-to-End Store for a Furniture Business"
+          description: "Built end to end for a furniture store client: a server-rendered Hebrew catalog gallery on Cloudflare's edge, and an admin where the owner uploads and manages products. Performance was a core focus throughout: server-side rendering, image preloading with thumbnail placeholders, prefetching, lazy-loaded components, batched data loading and layout-shift fixes. Also includes experiments in AI image enhancement and 3D models generated from photos, and a proof of concept for hosting more stores."
+          tech: "React 19 TypeScript, TanStack Start (SSR), Convex, Cloudflare Pages, Gemini / fal.ai (AI experiments)"
         - title: "DJ Bar Twito (~1 weeks)"
           url: "https://www.dj-bar-twito.co.il"
           description: "Landing page for DJ sound and lighting services specializing in weddings and events."
