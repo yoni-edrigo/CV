@@ -4,13 +4,14 @@ label: "Edventure"
 order: 15
 
 summary: >
-  Full-stack developer since 2019, building web products from idea to
-  production, long before AI coding tools. I co-founded MePo, an educational
-  data platform used by schools, after-school programs and transportation
-  providers in Northern Israel, and today I'm CTO of Revoducate, an AI-powered
-  adaptive learning platform. Also a certified teacher with an M.Ed.: my research
-  field is teacher-facing app development, designing tools that reduce
-  teachers' technological fatigue, so I build EdTech from the classroom out.
+  I started as VR R&D Lead at the Tel-Hai Innovation Lab, then moved into
+  freelance web development, and went on to build my own EdTech product, MePo,
+  which schools in Northern Israel use to share student data. My M.Ed. research
+  focused on interface design for teacher-facing apps. Now I also lead the
+  technology side of Revoducate, an AI-powered adaptive learning platform, as a
+  freelance CTO, while I keep building apps and websites for clients and to learn.
+  Lately my work has moved toward AI that teaches: agents grounded in the
+  school's curriculum, and avatar narration for a kindergarten research app.
 
 projects: false
 
@@ -50,6 +51,7 @@ experience:
     org: "Tel-Hai Innovation Lab"
     period: "2019 – 2023"
     bullets:
+      - "Led VR research and development for educational use"
       - "Developed and tested educational software, managed databases, and taught computational thinking in schools"
 
 education:
