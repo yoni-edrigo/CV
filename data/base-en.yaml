@@ -12,12 +12,12 @@ contact:
     label: "GitHub"
 
 summary: >
-  Software developer and tech entrepreneur specializing in AI-integrated
-  educational technology. Builds products by leading AI coding agents (Claude
-  Code) as tech lead and product owner: writing the specs, planning the work,
-  setting the rules, and checking every change with automated tests. Proven experience
-  developing digital educational products and leading teams to implement
-  innovative solutions in complex environments.
+  I started as VR R&D Lead at the Tel-Hai Innovation Lab, then moved into
+  freelance web development, and went on to build my own EdTech product, MePo,
+  which schools in Northern Israel use to share student data. My M.Ed. research
+  focused on interface design for teacher-facing apps. Now I also lead the
+  technology side of Revoducate, an AI-powered adaptive learning platform, as a
+  freelance CTO, while I keep building apps and websites for clients and to learn.
 
 projects:
   categories:
@@ -60,10 +60,10 @@ projects:
 
     - heading: "Long-Running Projects"
       items:
-        - title: "Revoducate (~3 months, In Development)"
-          subtitle: "Adaptive Learning-Path Platform"
-          description: "Hebrew-first platform for adaptive, branching learning paths. An AI authoring agent grounded (RAG) on real curriculum documents builds paths of interactive stations; learners launch from any school LMS via LTI 1.3 and grades post back to the gradebook (AGS). Includes a visual Path Designer, a lesson/activity editor, a learner player, and Common Cartridge / SCORM import-export."
-          tech: "React 19 TypeScript, TanStack Router, Convex (database, workflows, RAG), AI SDK, Tailwind/shadcn, LTI 1.3"
+        - title: "Revoducate (2026 – Present)"
+          subtitle: "AI Adaptive Learning Platform"
+          description: "AI-powered adaptive learning platform for schools. I lead the technology side as a freelance CTO."
+          tech: "React TypeScript, Convex, LLM integration"
         - title: "Accompanier (In Progress)"
           subtitle: "Research Prototype – Tel-Hai College"
           description: "Prototype for a participatory research study: a browser assistant that helps people with cognitive disabilities fill in Israeli public-service web forms, explaining each field in simple Hebrew through a speaking avatar. It never submits a form for the user."
@@ -91,7 +91,7 @@ experience:
   - title: "CTO (Contract)"
     org: "Revoducate"
     period: "2026 – Present"
-    description: "Leading the architecture and development of an AI-powered adaptive learning platform that integrates with school LMSs over LTI 1.3. Set up an AI-first engineering process (Claude Code) with automated testing and code-review gates, taking the product from first commit to a working platform in three months."
+    description: "Lead the technology side of an AI-powered adaptive learning platform for schools: architecture, AI features, development and engineering standards."
   - title: "Freelance"
     role: "Web Developer"
     period: "2019 – Present"
@@ -112,7 +112,7 @@ experience:
   - title: "Development and Research"
     org: "Tel-Hai Innovation Lab"
     period: "2019 – 2023"
-    description: "Member of the Innovation Lab development team. Responsible for databases and software testing. Partner in educational initiatives in formal and informal education, including activities in robotics, electronic controllers, 3D, and software."
+    description: "Led VR research and development as a member of the Innovation Lab development team. Responsible for databases and software testing. Partner in educational initiatives in formal and informal education, including activities in robotics, electronic controllers, 3D, and software."
 
 education:
   - degree: "Master's Degree – Management and Organization of Education Systems"

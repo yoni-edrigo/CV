@@ -1,0 +1,86 @@
+# StudyWise / Collage AI – developer (AI exam creation and grading for educators)
+base: base-en
+label: "StudyWise"
+order: 17
+
+summary: >
+  I started as VR R&D Lead at the Tel-Hai Innovation Lab, then moved into
+  freelance web development, and went on to build my own EdTech product, MePo,
+  which schools in Northern Israel use to share student data. My M.Ed. research
+  focused on interface design for teacher-facing apps. Now I also lead the
+  technology side of Revoducate, an AI-powered adaptive learning platform, as a
+  freelance CTO, while I keep building apps and websites for clients and to learn.
+  Lately my focus is AI tools for teachers.
+
+projects: false
+
+experience:
+  - title: "CTO (Contract)"
+    org: "Revoducate – AI Adaptive Learning Platform"
+    period: "2026 – Present"
+    description: "AI-powered adaptive learning platform for schools."
+    bullets:
+      - "Lead the technology side of the company as a freelance CTO: architecture, development and technical decisions"
+      - "Responsible for the AI features, backend and the teacher- and learner-facing interfaces"
+      - "Own code quality and engineering standards"
+      - "Work directly with teachers and the founding team to decide what to build"
+    note: "React TypeScript, Convex, LLM integration"
+  - title: "Freelance Full-Stack Developer"
+    period: "2019 – Present"
+    bullets:
+      - "EventQR (eventqr.link): wedding photo sharing built for 200 guests on one congested venue network, with a 150 KB load budget enforced in CI, in-browser compression, chunked uploads with a retry queue, and edge image resizing"
+      - "Naser Furniture: end-to-end store for a client with server-side rendering on Cloudflare and a strong performance focus, plus experiments in AI image enhancement and 3D generation"
+      - "ADELA (Weizmann Institute): research platform for a kindergarten study, with an offline audio-first tablet app and a researcher admin that includes AI-assisted coding of children's answers"
+      - "Accompanier (in progress): Tel-Hai College research prototype that explains web forms in simple Hebrew through a speaking avatar"
+      - "10+ production web apps for businesses, academic institutions and social organizations, from needs analysis to deployment"
+    note: "React TypeScript, Convex, Cloudflare (R2, Pages), AI SDK, Gemini"
+  - title: "Co-Founder & CEO"
+    org: "MePo – Educational Technology Venture"
+    period: "2022 – Present"
+    bullets:
+      - "Built an educational data platform connecting schools, after-school programs, transportation providers and parents, and marketed it to regional authorities"
+      - "Led the product from needs analysis with educators through development, deployment and iteration"
+  - title: "Youth Leadership Coordinator"
+    org: "Shelach Studies – Jerusalem District, Ministry of Education"
+    period: "2024 – Present"
+    bullets:
+      - "Mentor young project managers; lead workshops for teachers on using AI tools in the classroom"
+  - title: "Development & Research"
+    org: "Tel-Hai Innovation Lab"
+    period: "2019 – 2023"
+    bullets:
+      - "Led VR research and development for educational use"
+      - "Developed and tested educational software, managed databases, and taught computational thinking in schools"
+
+education:
+  - degree: "Master's Degree – Management and Organization of Education Systems"
+    institution: "Tel-Hai College"
+    period: "2022 – 2025"
+    description: "Thesis: an AI-powered teaching companion that reduces 'technological fatigue' by unifying planning, teaching and assessment in one interface."
+  - degree: "Bachelor's Degree – Jewish Studies and Land of Israel Studies (Teaching Certificate)"
+    institution: "Tel-Hai College"
+    period: "2018 – 2023"
+  - degree: "C++ Programming Course"
+    institution: "Hebrew University of Jerusalem"
+    period: "2013"
+
+languages:
+  - name: "Hebrew"
+    level: "Native"
+  - name: "English"
+    level: "Full professional proficiency"
+  - name: "Russian"
+    level: "Good proficiency"
+
+skills:
+  label: "Skills and Tools"
+  items:
+    - "AI Features: LLM agents, RAG, prompts"
+    - "React + TypeScript (TanStack, Tailwind, shadcn/ui)"
+    - "Backend: Convex; basic SQL (Drizzle ORM)"
+    - "Cloud: Cloudflare (R2, Pages), Vercel"
+    - "Agent-Led Development (Claude Code, Cursor)"
+    - "Engineering Standards: code review, automated tests (Vitest, Playwright)"
+    - "Web Performance: load budgets, SSR, image pipelines"
+    - "EdTech Standards (LTI 1.3, SCORM, Common Cartridge)"
+    - "Product Discovery with Teachers"
