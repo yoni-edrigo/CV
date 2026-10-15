@@ -10,8 +10,8 @@ summary: >
   focused on interface design for teacher-facing apps. Now I also lead the
   technology side of Revoducate, an AI-powered adaptive learning platform, as a
   freelance CTO, while I keep building apps and websites for clients and to learn.
-  Lately my work has moved toward AI that teaches: agents grounded in the
-  school's curriculum, and avatar narration for a kindergarten research app.
+  Lately my work has moved toward AI in education, including avatar narration
+  for a kindergarten research app.
 
 projects: false
 
@@ -19,14 +19,13 @@ experience:
   - title: "CTO (Contract)"
     org: "Revoducate – AI Adaptive Learning Platform"
     period: "2026 – Present"
-    description: "Hebrew-first platform where teachers build adaptive, branching learning paths and learners launch them from any school LMS (LTI 1.3)."
+    description: "AI-powered adaptive learning platform for schools."
     bullets:
-      - "Own the architecture and ship major features end to end: AI authoring agent, visual Path Designer, lesson editor, learner player, LMS integration and grade passback"
-      - "Designed the AI features: an authoring agent grounded (RAG) on curriculum documents, multi-model routing across Claude, GPT and Gemini, and prompts that plan a lesson and stream it into the editor part by part"
-      - "Backend on Convex: durable workflows, scheduled jobs, vector search and secure LTI endpoints (OIDC, signed JWTs, grade passback)"
-      - "Set the engineering standards: binding rules for every change, required code review, git-hook quality gates, and automated unit and browser tests"
-      - "Decide what to build with the users: course reviews with teachers turned into prioritized fixes and recorded product decisions"
-    note: "React 19 TypeScript, TanStack Router, Convex, AI SDK, LTI 1.3"
+      - "Lead the technology side of the company as a freelance CTO: architecture, development and technical decisions"
+      - "Responsible for the AI features, backend and the teacher- and learner-facing interfaces"
+      - "Own code quality and engineering standards"
+      - "Work directly with teachers and the founding team to decide what to build"
+    note: "React TypeScript, Convex, LLM integration"
   - title: "Freelance Full-Stack Developer"
     period: "2019 – Present"
     bullets:

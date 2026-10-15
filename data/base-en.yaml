@@ -60,10 +60,10 @@ projects:
 
     - heading: "Long-Running Projects"
       items:
-        - title: "Revoducate (~3 months, In Development)"
-          subtitle: "Adaptive Learning-Path Platform"
-          description: "Hebrew-first platform for adaptive, branching learning paths. An AI authoring agent grounded (RAG) on real curriculum documents builds paths of interactive stations; learners launch from any school LMS via LTI 1.3 and grades post back to the gradebook (AGS). Includes a visual Path Designer, a lesson/activity editor, a learner player, and Common Cartridge / SCORM import-export."
-          tech: "React 19 TypeScript, TanStack Router, Convex (database, workflows, RAG), AI SDK, Tailwind/shadcn, LTI 1.3"
+        - title: "Revoducate (2026 – Present)"
+          subtitle: "AI Adaptive Learning Platform"
+          description: "AI-powered adaptive learning platform for schools. I lead the technology side as a freelance CTO."
+          tech: "React TypeScript, Convex, LLM integration"
         - title: "Accompanier (In Progress)"
           subtitle: "Research Prototype – Tel-Hai College"
           description: "Prototype for a participatory research study: a browser assistant that helps people with cognitive disabilities fill in Israeli public-service web forms, explaining each field in simple Hebrew through a speaking avatar. It never submits a form for the user."
@@ -91,7 +91,7 @@ experience:
   - title: "CTO (Contract)"
     org: "Revoducate"
     period: "2026 – Present"
-    description: "Leading the architecture and development of an AI-powered adaptive learning platform that integrates with school LMSs over LTI 1.3. Set up an AI-first engineering process (Claude Code) with automated testing and code-review gates, taking the product from first commit to a working platform in three months."
+    description: "Lead the technology side of an AI-powered adaptive learning platform for schools: architecture, AI features, development and engineering standards."
   - title: "Freelance"
     role: "Web Developer"
     period: "2019 – Present"
